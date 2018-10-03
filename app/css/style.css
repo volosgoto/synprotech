@@ -1,0 +1,68 @@
+body {
+    /* font-family: 'Verdana, Tehoma, sans-serif'; */
+    font-family: 'Segoe UI', Verdana, Tahoma, Geneva, sans-serif;
+    font-size: 16px;
+
+}
+
+.branding{
+    font-size: 17px;
+}
+
+.showcase{
+    background: url('../img/Часть\ схемы\ 3.png') no-repeat;
+    background-color: lightgray;
+    background-size: auto 600px;
+    background-position: center center;
+    height: 600px;
+    padding: 140px 100px;
+}
+
+.showcase p{
+    font-size: 16px;
+}
+
+.showcase p{
+    color: black;
+    padding-bottom: 20px; 
+}
+
+.showcase hr {
+    margin: auto;
+    width: 50%;
+    height: 1px;
+    border-width: 2px;
+    border-color: black;
+    padding: 0;
+}
+
+.section{
+    padding: 40px; 
+}
+
+
+.section h2{
+    margin: 0; 
+    padding: 0; 
+}
+
+
+.section .fa{
+    font-size: 40px; 
+}
+
+.section img{
+    width: 50%;
+
+}
+
+@media only screen and(max-width: 600px) {
+   body { 
+       margin-top: 190px;
+    }
+
+   .showcase {
+       height: 400px;
+       padding: 60px 0px
+   }
+}
