@@ -10,11 +10,11 @@ body {
 }
 
 .showcase{
-    background: url('../img/Часть\ схемы\ 3.png') no-repeat;
+    background: url('../img/Рисунок3.png') no-repeat;
     background-color: lightgray;
     background-size: auto 600px;
     background-position: center center;
-    height: 600px;
+    height: 620px;
     padding: 140px 100px;
 }
 
@@ -61,7 +61,7 @@ body {
        margin-top: 190px;
     }
 
-   .showcase {
+.showcase {
        height: 400px;
        padding: 60px 0px
    }
