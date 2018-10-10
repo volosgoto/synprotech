@@ -4,6 +4,11 @@
                 <meta charset="UTF-8">
                 <meta name="viewport" content="width=device-width, initial-scale=1">
                 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+                
+                <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+
                 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
                 <link rel="stylesheet" href="css/style.css">
                 <title>Home page</title>
@@ -173,12 +178,27 @@
                                     <h2>Contact form</h2>
                                 </div>
                                 <form class="w3-container w3-padding-xlarge">
-                                    <label class="w3-input ">Name</label>
+                                    <label id="name" class="w3-input ">Name</label>
+                                        <div class="invalid-feedback">
+                                            Enter name
+                                        </div>
                                     <input class="w3-input" type="text">
-                                    <label class="w3-input">Email</label>
+                                    <label id="email" class="w3-input">Email</label>
+                                        <div class="invalid-feedback">
+                                            Enter a valid Email
+                                        </div>
+                                    
                                     <input class="w3-input" type="text">
-                                    <label class="w3-input">Message</label>
+                                    <label id="email" class="w3-input">Phone</label>
+                                        <div class="invalid-feedback">
+                                            Enter a valid phone
+                                        </div>
+                                    <input class="w3-input" type="text">
+                                    <label id="message" class="w3-input">Message</label>
                                     <textarea class="w3-input w3-border" style="resize:none"></textarea>
+                                        <div class="invalid-feedback">
+                                            Enter text message
+                                        </div>
                                     <br>
                                     <button type="submit" class="w3-button w3-blue">Submit</button>
                                     <br><br>
