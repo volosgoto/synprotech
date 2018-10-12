@@ -4,13 +4,26 @@ body {
     font-size: 16px;
 
 }
+.navbar {
+    position: fixed;
+    background-color: #1AA3F0;
+    color: white
+    
+
+
+}
+
+.w3-hover-blue:hover{
+    box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.3);
+}
+
 
 .branding{
     font-size: 17px;
 }
 
 .showcase{
-    background: url('../img/Рисунок3.png') no-repeat;
+    /* background: url('../img/Рисунок3.png') no-repeat; */
     background-color: lightgray;
     background-size: auto 600px;
     background-position: center center;

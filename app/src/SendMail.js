@@ -1,26 +1,31 @@
+
+
 var nodemailer = require('nodemailer');
 nodemailer.SMTP = {
-   host: 'mail.yourmail.com',
+   host: 'http://mail.synproeng.com/webmail/',
+   // 25, 465, 587
    port: 25,
+
    use_authentication: true,
-   user: 'info@youdomain.com',
-   pass: 'somepasswd'
+   user: 'office@synproeng.com',
+   pass: '04072018'
  };
 
 var message = {   
-      sender: "sender@domain.com",    
-      to:'somemail@somedomain.com',   
-      subject: '',    
+      sender: "volosovich@i.ua",    
+      to:'office@synproeng.com',   
+      subject: 'Test',    
       html: '<h1>test</h1>',  
-      attachments: [  
-      {   
-          filename: "somepicture.jpg",    
-          contents: new Buffer(data, 'base64'),   
-          cid: cid    
-      }   
-      ]   
+      // attachments: [  
+      // {   
+      //     filename: "somepicture.jpg",    
+      //     contents: new Buffer(data, 'base64'),   
+      //     cid: cid    
+      // }   
+      // ]   
   };
 
+document.getElementById('email-form').addEventListener('submit', function(e){
   nodemailer.send_mail(message,   
     function(err) {   
       if (!err) { 
@@ -28,6 +33,11 @@ var message = {
       } else console.log(sys.inspect(err));       
   });
 
+  e.preventDefault();
+});
+
+
+ 
 
 // class Ui{
 //   // showAlert(message, className) {
