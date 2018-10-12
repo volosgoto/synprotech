@@ -19,25 +19,32 @@ body {
 
 
 .branding{
-    font-size: 17px;
+    font-size: 16px;
 }
 
 .showcase{
-    /* background: url('../img/Рисунок3.png') no-repeat; */
+    background: url('../img/main_background.png') no-repeat;
     background-color: lightgray;
     background-size: auto 600px;
     background-position: center center;
-    height: 620px;
+    height: 600px;
     padding: 140px 100px;
 }
 
-.showcase p{
-    font-size: 16px;
+/* .showcase p{
+ font-size: 16px;
+} */
+
+.showcase-padding{
+    margin-top: 100 px;
 }
+
+
 
 .showcase p{
     color: black;
     padding-bottom: 20px; 
+    font-size: 16px;
 }
 
 .showcase hr {
@@ -48,6 +55,7 @@ body {
     border-color: black;
     padding: 0;
 }
+
 
 .section{
     padding: 40px; 
