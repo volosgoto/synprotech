@@ -75,7 +75,7 @@ a {
 
 
 
-.showcase{
+.showcase {
     background: url('../img/main_background.png') no-repeat;
     /* background-size: 100% auto; */
     background-size: cover;
@@ -84,7 +84,17 @@ a {
     height: auto;
     padding: 160px 100px;
     margin-top: auto;
+    opacity: 0.9;
+  
 }
+
+.showcase:hover {
+   opacity: 0.8;
+}
+
+
+
+
 
 /* .showcase p{
  font-size: 16px;
