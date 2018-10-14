@@ -5,7 +5,7 @@ body {
 
 }
 .navbar {
-    position: fixed;
+    position: relative;
     width: 100%;
     background-color: #1AA3F0;
     color: white
