@@ -12,11 +12,12 @@ a {
 .navbar {
     position: relative;
     width: 100%;
-    /* background-color: #306d7c; */
-    /* background-color: #616161; */
     background-color: #fff;
     border-bottom: 3px solid rgb(0, 173, 230);
-    color: white
+    color: white;
+    padding: 10px;
+    margin: 0;
+    
 }
 
 .w3-hover-blue:hover{
@@ -30,7 +31,7 @@ a {
     justify-content: left;
     flex-wrap: wrap;
     flex-flow: row wrap; 
-    padding: 10px;
+    padding: 0px 0px;
     margin: 0px;
     flex-basis: 100%;
     /* height: 155px; */
@@ -236,7 +237,13 @@ a {
 
 }
 
-@media only screen and (max-width: 400px) {
+
+@media only screen and (max-width: 479px) {
+    .navbar {
+        padding: 0px 4px;
+        margin: 0;
+    }
+    
     .inner-box-1 {
         display: block;
         background: url('../img/navbar-logo2.png') no-repeat;
@@ -247,20 +254,56 @@ a {
         margin-left: 8px;
         flex: 1 1 50px;
         flex-basis: 100px;
-        height: 134px;
+        height: 100px;
         order:1;
     }
-    
 
     p.branding-1 {
         font-size:35px;
     }
     
-    
     p.branding-2 {
         font-size: 21px;
     }   
     
+    .inner-box-2 p {
+        flex: 1;
+        padding-top: 18px;
+        height: 36px;
+        margin-left: -25px;
+        padding-left: 0px;
+    }
+}
+
+
+
+@media only screen and (max-width: 400px) {
+    .navbar {
+        padding: 0px 4px;
+        margin: 0;
+    }
+    
+    .inner-box-1 {
+        display: block;
+        background: url('../img/navbar-logo2.png') no-repeat;
+        background-size: 65% auto;
+        background-position: left center;
+        padding-top: 0px;
+        padding-left: 0px;
+        margin-left: 8px;
+        flex: 1 1 50px;
+        flex-basis: 100px;
+        height: 110px;
+        order:1;
+    }
+
+    p.branding-1 {
+        font-size:35px;
+    }
+    
+    p.branding-2 {
+        font-size: 21px;
+    }   
     
     .inner-box-2 p {
         flex: 1;
@@ -269,6 +312,48 @@ a {
         margin-left: -25px;
         padding-left: 0px;
     }
+}
+
+
+@media only screen and (max-width: 372px) {
+    .navbar {
+        padding: 0px 4px;
+        margin: 0;
     }
+    
+    .inner-box-1 {
+        display: block;
+        background: url('../img/navbar-logo2.png') no-repeat;
+        background-size: 65% auto;
+        background-position: left center;
+        padding-top: 0px;
+        padding-left: 0px;
+        margin-left: 8px;
+        flex: 1 1 25px;
+        flex-basis: 65px;
+        height: 70px;
+        order:1;
+    }
+
+    p.branding-1 {
+        font-size:20px;
+        padding-top: 24px;
+        
+    }
+    
+    p.branding-2 {
+        font-size: 15px;
+        padding-top: 10px;
+    }   
+    
+    .inner-box-2 p {
+        flex: 1;
+        /* padding-top: 30px; */
+        height: 30px;
+        margin-left: -20px;
+        padding-left: 0px;
+    }
+}
+
 
 
