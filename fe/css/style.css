@@ -102,6 +102,10 @@ a {
     font-size: 12px;
 }
 
+.inner-box-footer span {   
+    display: block;
+}
+
 
 .inner-box-footer img
 {
