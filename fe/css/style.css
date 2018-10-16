@@ -67,8 +67,6 @@ a {
 
 .inner-box-2 {
     display: block;
-    /* padding-top: 0px; 
-    padding-left: 0px;  */
     flex-basis: 150px;
     flex: 40;
     justify-content: left;
@@ -80,15 +78,11 @@ a {
 }
 
 .inner-box-2 p {
-    /* display: inline-bloc; */
-    /* align-items: center; */
     flex: 1;
     padding-top: 20px;
     height: 48px;
     margin-left: 8px;
     padding-left: 0px;
-    /* margin-top: 0.5em; */
-    /* margin-bottom: -0.5em; */
 }
 
 
@@ -158,10 +152,10 @@ a {
 
 .branding-1{
     font-size: 46px;
+    /* font-size: fit-height-precise; */
     color: rgb(113, 124, 125);
     font-weight: bold;
 }
-
 
 .branding-2{
     font-size: 30px;
@@ -226,7 +220,9 @@ a {
 .section-what h3{
     padding-top: 10px;
  }
+
  
+
 
 @media only screen and(max-width: 600px) {
    body { 
@@ -237,4 +233,42 @@ a {
         height: 400px;
         padding: 60px 0px
     }
+
 }
+
+@media only screen and (max-width: 400px) {
+    .inner-box-1 {
+        display: block;
+        background: url('../img/navbar-logo2.png') no-repeat;
+        background-size: 65% auto;
+        background-position: left center;
+        padding-top: 0px;
+        padding-left: 0px;
+        margin-left: 8px;
+        flex: 1 1 50px;
+        flex-basis: 100px;
+        height: 134px;
+        order:1;
+    }
+    
+
+    p.branding-1 {
+        font-size:35px;
+    }
+    
+    
+    p.branding-2 {
+        font-size: 21px;
+    }   
+    
+    
+    .inner-box-2 p {
+        flex: 1;
+        padding-top: 20px;
+        height: 36px;
+        margin-left: -25px;
+        padding-left: 0px;
+    }
+    }
+
+
