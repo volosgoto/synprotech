@@ -87,6 +87,7 @@ a {
     height: auto; 
 }
 
+
 .inner-box-footer-social {
     display: block;
     flex: 1;
@@ -101,19 +102,16 @@ a {
     font-size: 12px;
 }
 
+
 .inner-box-footer img
 {
     padding-top: 16px
 }
 
 
-
-
-
 .branding{
     font-size: 16px;
 }
-
 
 
 .showcase {
@@ -123,7 +121,7 @@ a {
     background-color: lightgray;
     background-position: center center;
     height: auto;
-    padding: 160px 100px;
+    padding: 100px 50px;
     margin-top: auto;
     opacity: 0.9;
   
@@ -133,16 +131,6 @@ a {
    opacity: 0.8;
 }
 
-
-/* .showcase p{
- font-size: 16px;
-} */
-
-
-.showcase-padding{
-    /* margin-top: 100 px; */
-    /* margin-top: auto; */
-}
 
 .showcase p{
     color: black;
@@ -161,7 +149,7 @@ a {
 
 
 .section, .section-what{
-    padding: 40px; 
+    padding: 40px 10px; 
 }
 
 
@@ -173,10 +161,6 @@ a {
 
 .section .fa, .section-what .fa{
     font-size: 40px; 
-}
-
-.section img, .section-what img{
-    /* width: 50%; */
 }
 
 
@@ -194,8 +178,8 @@ a {
        margin-top: 190px;
     }
 
-.showcase {
-       height: 400px;
-       padding: 60px 0px
-   }
+    .showcase {
+        height: 400px;
+        padding: 60px 0px
+    }
 }
