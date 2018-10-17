@@ -113,10 +113,10 @@ h1 {
     align-items: center;
     flex-wrap: wrap; 
     /* flex-flow: row wrap;  */
-    padding: 5px;
+    padding: 0px;
     margin: 0;
     flex-basis: 100%;
-    height: 200px;
+    height: 100%;
                     
 }
 
@@ -150,7 +150,7 @@ h1 {
 
 .inner-box-footer img
 {
-    padding-top: 16px
+    margin-top: 20px;
 }
 
 
