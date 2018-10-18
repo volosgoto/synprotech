@@ -16,7 +16,7 @@
     <!-- navbar  -->
         <div class="navbar outer-box w3-top w3-bar" >
             <div class="inner-box-1"> 
-                <!-- <img src="img/navbar-logo2.png" alt="navbar-logo"> -->
+                <!-- <img src="img/navbar-logo2.png> -->
             </div>
             <div class="inner-box-2">
                 <p class="branding-1">SYNPROTECH</p>
@@ -190,7 +190,8 @@
                         <h1 class="w3-text-shadow">Contact us</h1>
                         <p class="w3-margin-top"><b>SYNPROTECH</b> ENGINEERING LLC</p>
                         <p>Phone: +38 044 3717890</p>
-                        <p>Email: office@synproeng.com</p>
+                        <a href="#" onclick="sendMail()" style="color:black"><p>Email: office@synproeng.com</p></a>
+                        
                         <p>Ukraine, 02121, Kyiv</p>    
                         <p>Kharkivske avenue 175, office 1</p>    
                         <p>BC "Crystal"</p>    
@@ -306,6 +307,12 @@
               x[slideIndex-1].style.display = "block";  
               dots[slideIndex-1].className += " w3-white";
             }
+            </script>
+
+            <script>
+                function sendMail() {
+                    location.href = "mailto:office@synproeng.com";
+                }
             </script>
 </body>
 </html>

@@ -61,11 +61,6 @@ h1 {
  .inner-box-1 img {
     display: block;
     justify-content: left;
-    /* width: 100%; */
-    /* margin: 0px; */
-    /* flex: 1; */
-    /* flex-basis: 50%; */
-    /* padding: 0px 0px; */
 }  
 
 
@@ -168,8 +163,8 @@ h1 {
 
 
 .showcase {
-    background: url('../img/main_background.png') no-repeat;
-    /* background-size: 100% auto; */
+    background: url('../img/SAM_3310.JPG') no-repeat;
+    background-size: 100% auto;
     background-size: cover;
     background-color: lightgray;
     background-position: center center;
@@ -177,6 +172,7 @@ h1 {
     padding: 100px 50px;
     margin-top: auto;
     opacity: 0.9;
+    color: #fff;
   
 }
 
@@ -185,7 +181,7 @@ h1 {
 }
 
 .showcase p{
-    color: black;
+    color: #fff;
     padding-bottom: 20px; 
     font-size: 16px;
 }
