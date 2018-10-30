@@ -158,7 +158,10 @@ h1 {
 
 .branding-2{
     font-size: 30px;
-    color: rgb(113, 124, 125)
+    color: rgb(113, 124, 125);
+    margin-top: 0px;
+    padding-top: 0px
+    
 }
 
 
@@ -338,14 +341,15 @@ h1 {
 
     p.branding-1 {
         font-size:20px;
-        padding-top: 19px;
+        padding-top: 22px;
         
     }
-    
+
     p.branding-2 {
         font-size: 15px;
-        padding-top: 10px;
+        padding-top: 15px;
     }   
+    
     
     .inner-box-2 p {
         flex: 1;
