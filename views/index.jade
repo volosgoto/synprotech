@@ -3,11 +3,11 @@ html(lang='en')
   head
     meta(charset='UTF-8')
     meta(name='viewport', content='width=device-width, initial-scale=1')
-    link(rel='stylesheet', href='https://www.w3schools.com/lib/w3.css')
     // Bootstrap CSS
-    link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css', integrity='sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO', crossorigin='anonymous')
-    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
-    link(rel='stylesheet', href='stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/font-awesome.css')
+    link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+    link(rel='stylesheet', href='/stylesheets/w3.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
     link(rel='shortcut icon', href='/public/img/favicon_synprotech.png', type='image/x-icon')
     title Main page
   body
@@ -215,5 +215,7 @@ html(lang='en')
                     i.fa.fa-instagram.fa-2x
                   p Instagram
       // footer  ENDS
-      | script(src="/public/js/app.js")
-      | script(src="/public/js/slider.js")
+   script.
+      include 'app.js'
+      include 'bootstrap.min.js'
+      include 'slider.js'
