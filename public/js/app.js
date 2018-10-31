@@ -9,7 +9,12 @@ function accondionFunction(id) {
 }
 
 
-// Send Mail
-function sendMail() {
-    location.href = "mailto:office@synproeng.com";
-}
+
+// function dropdownToggle() {
+//     var x = document.getElementById("toggle-menu");
+//     if (x.className.indexOf("w3-show") == -1) {
+//         x.className += " w3-show";
+//     } else { 
+//         x.className = x.className.replace(" w3-show", "");
+//     }
+// }
