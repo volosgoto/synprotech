@@ -31,17 +31,13 @@ h1:hover{
 .reference-container{
   display: flex;
   align-items: center;
-  /* flex-wrap: wrap; pushes bottom container */
-  /* flex-wrap: wrap; pushes bottom container */
-  justify-content: left;
+  justify-content: center;
   flex-wrap: wrap;
   flex-flow: row wrap; 
-  padding: 0px 0px;
+  padding: 0px;
   margin: 0px;
-  flex-basis: 80%;
-  /* height: 155px; */
-  height: auto;
-  border: 1px solid red
+  flex-basis: 100%;
+  /* border: 1px solid red */
 }
 
 
@@ -49,16 +45,15 @@ h1:hover{
   position: relative;
   display: flex;
   flex-direction: column;
-  /* flex-direction: column;
-  justify-content: center;
-  align-items: center; */
+ 
   justify-content: center;
   align-items: center;
   width: 80%;
-  /* height: 842; */
-  padding-top: 10px;
-  margin: 20px 0px; 
-  word-wrap: break-word; 
+  
+  padding: 0px;
+  margin: 20px 5px; 
+  
+  /* border: 2px solid yellow; */
 }
 
 
