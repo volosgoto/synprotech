@@ -28,11 +28,65 @@ h1:hover{
 }
 
 
-.section-reference-table {
-  padding: 10px 10px; 
+.reference-container{
   display: flex;
   align-items: center;
-  justify-content: center;
+  /* flex-wrap: wrap; pushes bottom container */
+  /* flex-wrap: wrap; pushes bottom container */
+  justify-content: left;
   flex-wrap: wrap;
   flex-flow: row wrap; 
+  padding: 0px 0px;
+  margin: 0px;
+  flex-basis: 80%;
+  /* height: 155px; */
+  height: auto;
+  border: 1px solid red
 }
+
+
+.style-container{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  /* flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  /* height: 842; */
+  padding-top: 10px;
+  margin: 20px 0px; 
+  word-wrap: break-word; 
+}
+
+
+
+.style-box-1 {
+  display: block;
+  /* border: 3px solid red; */
+  width: 100%;
+  text-align: center;
+
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  .container{
+   width: 100%;
+ }
+
+  .style-container{
+     width: 100%;
+     padding-top: 10px;
+     margin: 10px 0px; 
+   }
+   
+  .style-box-1 {
+     width: 100%;
+   } 
+
+}
+
