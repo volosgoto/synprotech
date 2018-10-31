@@ -45,11 +45,9 @@ h1:hover{
   position: relative;
   display: flex;
   flex-direction: column;
- 
   justify-content: center;
   align-items: center;
   width: 80%;
-  
   padding: 0px;
   margin: 20px 5px; 
   
@@ -75,13 +73,12 @@ h1:hover{
 
   .style-container{
      width: 100%;
-     padding-top: 10px;
-     margin: 10px 0px; 
+     padding-top: 5px 5px;
+     margin: 5px 2px;
+     word-wrap: break-word; 
+     font-size: 12px;
    }
    
-  .style-box-1 {
-     width: 100%;
-   } 
 
 }
 
