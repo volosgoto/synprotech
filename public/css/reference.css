@@ -17,6 +17,10 @@ th {
   color: rgb(113, 124, 125);
 }
 
+td {
+  vertical-align: center;
+}
+
 
 h1{
   color: rgb(113, 124, 125);
@@ -30,8 +34,8 @@ h1:hover{
 
 .reference-container{
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   flex-flow: row wrap; 
   padding: 0px;
