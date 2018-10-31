@@ -203,7 +203,13 @@ h1 {
 .section, .section-what{
     padding: 20px 10px; 
     
-    
+}
+
+.section-contact-form{
+    padding: 20px 10px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
