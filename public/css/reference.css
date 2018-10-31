@@ -1,11 +1,14 @@
 tr td{
   text-align: justify;
+  vertical-align: center;
+  padding: 10px 10px;
 }
 
 
 tr>td:nth-child(odd) {
   color:  rgb(0, 173, 230);
   font-weight: bold;
+  vertical-align: center;
 }
 
 tr>td:nth-child(3) {
@@ -17,9 +20,6 @@ th {
   color: rgb(113, 124, 125);
 }
 
-td {
-  vertical-align: center;
-}
 
 
 h1{
@@ -86,3 +86,7 @@ h1:hover{
 
 }
 
+td {
+  text-align: center;
+  vertical-align: middle;
+}
