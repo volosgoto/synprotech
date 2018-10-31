@@ -1,0 +1,38 @@
+tr td{
+  text-align: justify;
+}
+
+
+tr>td:nth-child(odd) {
+  color:  rgb(0, 173, 230);
+  font-weight: bold;
+}
+
+tr>td:nth-child(3) {
+  color:  rgb(0, 173, 230);
+  font-weight: normal;
+}
+
+th {
+  color: rgb(113, 124, 125);
+}
+
+
+h1{
+  color: rgb(113, 124, 125);
+}
+
+
+h1:hover{
+  opacity: 0.8;
+}
+
+
+.section-reference-table {
+  padding: 10px 10px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-flow: row wrap; 
+}
