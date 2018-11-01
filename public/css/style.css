@@ -93,6 +93,7 @@ form:hover {
     flex-direction: column;
     height: auto;
     align-items: stretch;
+    align-content: flex-end;
     width: auto;
     margin: 0px;
     padding-top: 6px;
@@ -142,7 +143,7 @@ p.header-email:hover {
     width: auto;
     height: auto;
 
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
 }
 
 
@@ -302,80 +303,9 @@ p.header-email:hover {
 }
 
 
+
+
 @media only screen and (max-width: 479px) {
-    .navbar {
-        padding: 0px 4px;
-        margin: 0;
-    }
-    
-    .inner-box-1 {
-        display: block;
-        background: url('../img/navbar-logo2.png') no-repeat;
-        background-size: 65% auto;
-        background-position: left center;
-        padding-top: 0px;
-        padding-left: 0px;
-        margin-left: 8px;
-        margin-top: 10px;
-        flex: 1 1 50px;
-        flex-basis: 100px;
-        height: 100px;
-        order:1;
-    }
-
-
-    p.branding-1 {
-        font-size:1.0em;
-    }
-    
-
-    p.branding-2 {
-        font-size: 1.0em;
-    }   
-    
-
-    .inner-box-2 p {
-        flex: 1;
-        padding-top: 0px;
-        height: 25px;
-        width: 100%;
-        margin-left: -25px;
-        padding-left: 0px;
-        width: 100%;
-    }
-
-
-    p.header-phone, 
-    p.header-email {
-        display: block;
-        font-size: 1.0em;
-        /* border: 1px solid blue; */
-    }
-
-
-    .header-branding {
-        flex-direction: column;
-        margin: 0px 0px;
-        margin-left: 0px;
-        padding: 0px 0px;
-        width: 80%;
-        height: auto;
-
-        /* border: 1px solid yellow; */
-    }
-
-}
-
-
-
-
-
-
-
-/* 
-
-
-@media only screen and (max-width: 400px) {
     .navbar {
         padding: 0px 4px;
         margin: 0;
@@ -405,11 +335,27 @@ p.header-email:hover {
     
     .inner-box-2 p {
         flex: 1;
-        padding-top: 24px;
-        height: 36px;
-        margin-left: -25px;
+        padding-top: 10px;
+        height: 26px;
+        margin-left: -40px;
         padding-left: 0px;
     }
+
+
+    .header-contacts
+    {
+        /* display: none; */
+    }
+
+
+    .contacts-inner
+    {
+        display: none;
+    }
+
+
+
+
 }
 
 
