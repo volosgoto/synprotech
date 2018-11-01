@@ -287,52 +287,7 @@ p.header-email:hover {
     padding-top: 10px;
  }
 
- 
-
- @media only screen and (max-width: 600px) {
-    .navbar {
-        padding: 0px 4px;
-        margin: 0;
-    }
-    
-    .inner-box-1 {
-        display: block;
-        background: url('../img/navbar-logo2.png') no-repeat;
-        background-size: 65% auto;
-        background-position: left center;
-        padding-top: 0px;
-        padding-left: 0px;
-        margin-left: 8px;
-        flex: 1 1 50px;
-        flex-basis: 100px;
-        height: 100px;
-        order:1;
-    }
-
-    p.branding-1 {
-        font-size:1.8em;
-        padding-top: 0px;
-        flex: 1;
-        padding-top: 12px;
-        margin-left: -35px;
-    }
-    
-    p.branding-2 {
-        font-size: 1.3em;
-        padding-top: px;
-        flex: 1;
-        padding-top: 5px;
-        margin-left: -35px;
-    }   
-    
-
-    .contacts-inner
-    {
-        /* display: none; */
-    }
-
-}
-
+  
 
 
 @media only screen and (max-width: 600px) {
@@ -402,6 +357,143 @@ p.header-email:hover {
   
 }
 
+@media only screen and (max-width: 498px) {
+    .navbar {
+        padding: 0px 4px;
+        margin: 0;
+    }
+    
+    .inner-box-1 {
+        display: block;
+        background: url('../img/navbar-logo2.png') no-repeat;
+        background-size: 60% auto;
+        background-position: left center;
+        padding-top: 0px;
+        padding-left: 0px;
+        margin-left: 8px;
+        flex: 1 1 50px;
+        flex-basis: 100px;
+        height: 100px;
+        order:1;
+    }
+
+    p.branding-1 {
+        font-size:1.9em;
+        padding-top: 0px;
+        flex: 1;
+        padding-top: 0px;
+        margin-left: -40px;
+    }
+    
+    p.branding-2 {
+        font-size: 1.2em;
+        padding-top: px;
+        flex: 1;
+        padding-top: 0px;
+        margin-left: -40px;
+    }   
+    
+    .header-contacts
+    {
+      
+        padding-top: 1px;
+
+/*         border: 1px solid green; */
+    }
+
+
+    .contacts-inner
+    {
+        
+        width: 300px;
+        margin-left: -40px;
+        padding-top: 0px;
+        
+/*         border: 1px solid red; */
+    }
+
+
+    p.header-phone, 
+    p.header-email {
+        display: block;
+        font-size: 11px;
+        color: rgb(0, 173, 230);
+        margin: 0px;
+        padding: 0px;
+       }
+  
+}
+
+
+@media only screen and (max-width: 483px) {
+    .navbar {
+        padding: 0px 4px;
+        margin: 0;
+    }
+    
+    .inner-box-1 {
+        display: block;
+        background: url('../img/navbar-logo2.png') no-repeat;
+        background-size: 60% auto;
+        background-position: left center;
+        padding-top: 0px;
+        padding-left: 0px;
+        margin-left: 8px;
+        flex: 1 1 50px;
+        flex-basis: 100px;
+        height: 100px;
+        order:1;
+    }
+
+    p.branding-1 {
+        font-size:1.9em;
+        padding-top: 0px;
+        flex: 1;
+        padding-top: 0px;
+        margin-left: -40px;
+    }
+    
+    p.branding-2 {
+        font-size: 1.2em;
+        padding-top: px;
+        flex: 1;
+        padding-top: 0px;
+        margin-left: -40px;
+    }   
+    
+    .header-contacts
+    {
+      
+        padding-top: 1px;
+
+/*         border: 1px solid green; */
+    }
+
+
+    .contacts-inner
+    {
+        
+        width: 300px;
+        margin-left: -40px;
+        padding-top: 0px;
+        
+/*         border: 1px solid red; */
+    }
+
+
+    p.header-phone, 
+    p.header-email {
+        display: block;
+        font-size: 11px;
+        color: rgb(0, 173, 230);
+        margin: 0px;
+        padding: 0px;
+       }
+  
+}
+
+
+
 
 
 @media only screen and (max-width: 479px) {
@@ -428,7 +520,7 @@ p.header-email:hover {
         font-size:1.8em;
         padding-top: 0px;
         flex: 1;
-        padding-top: 12px;
+        padding-top: 18px;
         margin-left: -35px;
     }
     
@@ -447,6 +539,7 @@ p.header-email:hover {
     }
 
 }
+
 
 
 @media only screen and (max-width: 372px) {
