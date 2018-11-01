@@ -34,7 +34,7 @@ form:hover {
     color: black;
     padding: 10px;
     margin: 0;
-    border: 2px solid black
+    /* border: 2px solid violet */
     
 }
 
@@ -53,7 +53,7 @@ form:hover {
     margin: 0px;
     flex-basis: 100%;
     height: auto;
-    border: 2px solid yellow
+    /* border: 2px solid yellow */
                     
 }
 
@@ -70,45 +70,57 @@ form:hover {
     flex-basis: 100px;
     height: 134px;
     order:1;
-    border: 1px solid blue
+    /* border: 1px solid blue */
 }
-
-
- /* .inner-box-1 img {
-    display: block;
-    justify-content: left;
-}   */
 
 
 .inner-box-2 {
-    display: block;
+    display: flex;
+    flex-direction: column;
     flex-basis: 150px;
     flex: 40;
     justify-content: left;
-    align-items: center;
+    align-items: left;
     order:2;
     margin-left: 0px;
-    border: 1px solid red
+    /* border: 1px solid red */
 }
 
 
-p.header-phone, 
-p.header-email
+.header-contacts
 {
-    color: rgb(0, 173, 230);
-    font-size: 12px;
-    display: inline-block;
-    text-align: left;
-    margin: 0px;
-    padding: 0px
 
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    width: auto;
+    border: 2px solid yellow;
+    align-items: flex-end;
+    /* 
+    justify-content: left;
+    align-items: left
+    border: 5px solid blue */
     
 }
+
+p.header-phone, 
+p.header-email {
+    display: block;
+    font-size: 12px;
+    /* margin: 0px 0px;
+    padding: 0px 0px; */
+    height: 70px;
+    color: rgb(0, 173, 230);
+    align-items: flex-end;
+    text-align: center;
+    border: 2px solid blueviolet
+}
+
 
 
 .inner-box-2 p {
     flex: 1;
-    padding-top: 20px;
+    padding-top: 0px;
     height: 48px;
     margin-left: 8px;
     padding-left: 0px;
@@ -123,7 +135,7 @@ p.header-email
     flex-basis: 400px;
     flex: 150;
     order:3;
-    border: 1px solid green
+    /* border: 1px solid green */
 }
 
 
