@@ -79,8 +79,8 @@ form:hover {
     flex-direction: column;
     flex-basis: 150px;
     flex: 40;
-    justify-content: left;
-    align-items: left;
+    justify-content: space-between;
+    align-items: center;
     order:2;
     margin-left: 0px;
     /* border: 1px solid red */
@@ -89,44 +89,79 @@ form:hover {
 
 .header-contacts
 {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    align-items: stretch;
+    width: auto;
+    margin: 0px;
+    padding-top: 6px;
 
+    /* border: 1px solid green; */
+}
+
+
+.contacts-inner
+{
     display: flex;
     flex-direction: row;
-    height: 100px;
+    justify-content: space-around;
     width: auto;
-    border: 2px solid yellow;
-    align-items: flex-end;
-    /* 
-    justify-content: left;
-    align-items: left
-    border: 5px solid blue */
-    
+    margin: 0px;
+    padding: 0px;
+    /* border: 1px solid red; */
 }
+
+
 
 p.header-phone, 
 p.header-email {
     display: block;
     font-size: 12px;
-    /* margin: 0px 0px;
-    padding: 0px 0px; */
-    height: 70px;
     color: rgb(0, 173, 230);
-    align-items: flex-end;
-    text-align: center;
-    border: 2px solid blueviolet
+    margin: 0px;
+    padding: 0px;
+    /* border: 1px solid blue; */
+}
+
+
+p.header-email:hover {
+    color: rgb(113, 124, 125);
 }
 
 
 
-.inner-box-2 p {
-    flex: 1;
-    padding-top: 0px;
-    height: 48px;
+
+
+.header-branding {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 0px;
     margin-left: 8px;
-    padding-left: 0px;
+    padding: 0px 0px;
+    width: auto;
+    height: auto;
+
+    border: 1px solid yellow;
 }
 
 
+.branding-1{
+    display: block;
+    font-size: 44px;
+    margin: 0px 0px;
+    padding: 0px 0px;
+    color: rgb(113, 124, 125);
+    font-weight: bold;
+}
+
+.branding-2{
+    display: block;
+    font-size: 29px;
+    margin: 0px 0px;
+    padding: 0px 0px;
+    color: rgb(113, 124, 125)
+}
 
 .inner-box-3 {
     display: block;
@@ -182,18 +217,6 @@ p.header-email {
 .inner-box-footer img
 {
     margin-top: 20px;
-}
-
-
-.branding-1{
-    font-size: 46px;
-    color: rgb(113, 124, 125);
-    font-weight: bold;
-}
-
-.branding-2{
-    font-size: 30px;
-    color: rgb(113, 124, 125)
 }
 
 
@@ -278,11 +301,6 @@ p.header-email {
 
 }
 
-/* .inner-box-1, .inner-box-2, .inner-box-3 {
-    border: 1px red solid;
-    padding: 10px;
-  }  */
-
 
 @media only screen and (max-width: 479px) {
     .navbar {
@@ -305,23 +323,56 @@ p.header-email {
         order:1;
     }
 
+
     p.branding-1 {
-        font-size:35px;
+        font-size:1.0em;
     }
     
+
     p.branding-2 {
-        font-size: 21px;
+        font-size: 1.0em;
     }   
     
+
     .inner-box-2 p {
         flex: 1;
-        padding-top: 24px;
-        height: 36px;
+        padding-top: 0px;
+        height: 25px;
+        width: 100%;
         margin-left: -25px;
         padding-left: 0px;
+        width: 100%;
     }
+
+
+    p.header-phone, 
+    p.header-email {
+        display: block;
+        font-size: 1.0em;
+        /* border: 1px solid blue; */
+    }
+
+
+    .header-branding {
+        flex-direction: column;
+        margin: 0px 0px;
+        margin-left: 0px;
+        padding: 0px 0px;
+        width: 80%;
+        height: auto;
+
+        /* border: 1px solid yellow; */
+    }
+
 }
 
+
+
+
+
+
+
+/* 
 
 
 @media only screen and (max-width: 400px) {
@@ -403,4 +454,4 @@ p.header-email {
 }
 
 
-
+ */
