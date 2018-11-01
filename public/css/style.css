@@ -27,12 +27,14 @@ form:hover {
 
 .navbar {
     position: relative;
+    display: flex;
     width: 100%;
     background-color: #fff;
     border-bottom: 1px solid rgb(0, 173, 230);
-    color: white;
+    color: black;
     padding: 10px;
     margin: 0;
+    border: 2px solid black
     
 }
 
@@ -42,17 +44,16 @@ form:hover {
 
 .outer-box{
     display: flex;
+    flex-direction: column;
     align-items: center;
-    /* flex-wrap: wrap; pushes bottom container */
-    /* flex-wrap: wrap; pushes bottom container */
     justify-content: left;
     flex-wrap: wrap;
     flex-flow: row wrap; 
     padding: 0px 0px;
     margin: 0px;
     flex-basis: 100%;
-    /* height: 155px; */
     height: auto;
+    border: 2px solid yellow
                     
 }
 
@@ -69,18 +70,14 @@ form:hover {
     flex-basis: 100px;
     height: 134px;
     order:1;
+    border: 1px solid blue
 }
 
 
- .inner-box-1 img {
+ /* .inner-box-1 img {
     display: block;
     justify-content: left;
-    /* width: 100%; */
-    /* margin: 0px; */
-    /* flex: 1; */
-    /* flex-basis: 50%; */
-    /* padding: 0px 0px; */
-}  
+}   */
 
 
 .inner-box-2 {
@@ -91,9 +88,23 @@ form:hover {
     align-items: center;
     order:2;
     margin-left: 0px;
-
-
+    border: 1px solid red
 }
+
+
+p.header-phone, 
+p.header-email
+{
+    color: rgb(0, 173, 230);
+    font-size: 12px;
+    display: inline-block;
+    text-align: left;
+    margin: 0px;
+    padding: 0px
+
+    
+}
+
 
 .inner-box-2 p {
     flex: 1;
@@ -104,6 +115,7 @@ form:hover {
 }
 
 
+
 .inner-box-3 {
     display: block;
     align-items: center;
@@ -111,14 +123,8 @@ form:hover {
     flex-basis: 400px;
     flex: 150;
     order:3;
+    border: 1px solid green
 }
-
-
-/* .inner-box-1, .inner-box-2, .inner-box-3 {
-    border: 1px red solid;
-    padding: 10px;
-  }  */
-
 
 
 .outer-box-footer{
@@ -126,7 +132,6 @@ form:hover {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap; 
-    /* flex-flow: row wrap;  */
     padding: 0px;
     margin: 0;
     flex-basis: 100%;
@@ -170,7 +175,6 @@ form:hover {
 
 .branding-1{
     font-size: 46px;
-    /* font-size: fit-height-precise; */
     color: rgb(113, 124, 125);
     font-weight: bold;
 }
@@ -261,6 +265,11 @@ form:hover {
     }
 
 }
+
+/* .inner-box-1, .inner-box-2, .inner-box-3 {
+    border: 1px red solid;
+    padding: 10px;
+  }  */
 
 
 @media only screen and (max-width: 479px) {
