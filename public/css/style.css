@@ -1,9 +1,8 @@
 body {
-    /* font-family: 'Verdana, Tehoma, sans-serif'; */
     font-family: Verdana, Tahoma, Geneva, sans-serif;
     font-size: 16px;
+    background-color:#eceff1 ;
 }
-
 
 a {
     font-size: 16px;
@@ -24,18 +23,16 @@ form:hover {
     opacity: 0.8;
 }
 
-
 .navbar {
     position: relative;
     display: flex;
     width: 100%;
     background-color: #fff;
-    border-bottom: 1px solid rgb(0, 173, 230);
+    border-bottom: 2px solid rgb(0, 173, 230);
     color: black;
     padding: 10px;
     margin: 0;
     /* border: 2px solid violet */
-    
 }
 
 .w3-hover-blue:hover{
@@ -57,10 +54,9 @@ form:hover {
                     
 }
 
-
 .inner-box-1 {
     display: block;
-    background: url('../img/navbar-logo2.png') no-repeat;
+    background: url('/public/img/navbar-logo2.png') no-repeat;
     background-size: 90px auto;
     background-position: center center;
     padding-top: 0px;
@@ -72,7 +68,6 @@ form:hover {
     order:1;
     /* border: 1px solid blue */
 }
-
 
 .inner-box-2 {
     display: flex;
@@ -86,7 +81,6 @@ form:hover {
     /* border: 1px solid red */
 }
 
-
 .header-contacts
 {
     display: flex;
@@ -97,10 +91,8 @@ form:hover {
     width: auto;
     margin: 0px;
     padding-top: 6px;
-
     /* border: 1px solid green; */
 }
-
 
 .contacts-inner
 {
@@ -113,8 +105,6 @@ form:hover {
     /* border: 1px solid red; */
 }
 
-
-
 p.header-phone, 
 p.header-email {
     display: block;
@@ -125,14 +115,9 @@ p.header-email {
     /* border: 1px solid blue; */
 }
 
-
 p.header-email:hover {
     color: rgb(113, 124, 125);
 }
-
-
-
-
 
 .header-branding {
     display: flex;
@@ -142,10 +127,8 @@ p.header-email:hover {
     padding: 0px 0px;
     width: auto;
     height: auto;
-
     /* border: 1px solid yellow; */
 }
-
 
 .branding-1{
     display: block;
@@ -174,7 +157,6 @@ p.header-email:hover {
     /* border: 1px solid green */
 }
 
-
 .outer-box-footer{
     display: flex;
     justify-content: center;
@@ -187,14 +169,12 @@ p.header-email:hover {
                     
 }
 
-
 .inner-box-footer {
     display: block;
     flex: 1;
     flex-basis: 27%;
     height: auto; 
 }
-
 
 .inner-box-footer-social {
     display: block;
@@ -203,9 +183,7 @@ p.header-email:hover {
     height: auto; 
 }
 
-
-.inner-box-footer p
-{
+.inner-box-footer p {
     color:white;
     font-size: 12px;
 }
@@ -214,15 +192,12 @@ p.header-email:hover {
     display: block;
 }
 
-
-.inner-box-footer img
-{
+.inner-box-footer img {
     margin-top: 20px;
 }
 
-
 .showcase {
-    background: url('../img/main_background.png') no-repeat;
+    background: url('/public/img/main_background.png') no-repeat;
     /* background-size: 100% auto; */
     background-size: cover;
     background-color: lightgray;
@@ -231,8 +206,7 @@ p.header-email:hover {
     padding: 100px 50px;
     margin-top: auto;
     opacity: 0.9;
-  
-}
+  }
 
 .showcase:hover {
    opacity: 0.8;
@@ -253,7 +227,6 @@ p.header-email:hover {
     padding: 0;
 }
 
-
 .section, .section-what{
     padding: 20px 10px; 
     
@@ -266,18 +239,14 @@ p.header-email:hover {
     justify-content: center;
 }
 
-
-
 .section h2, .section-what h2{
     margin: 0; 
     padding: 0; 
 }
 
-
 .section .fa, .section-what .fa{
     font-size: 40px; 
 }
-
 
 .section-what button{
    background: #616161;
@@ -286,9 +255,7 @@ p.header-email:hover {
 .section-what h3{
     padding-top: 10px;
  }
-
-  
-
+ 
 
  @media only screen and (max-width: 611px) {
     .navbar {
@@ -326,25 +293,15 @@ p.header-email:hover {
         margin-left: -40px;
     }   
     
-    .header-contacts
-    {
-      
+    .header-contacts {
         padding-top: 1px;
-
-/*         border: 1px solid green; */
     }
 
-
-    .contacts-inner
-    {
-        
+    .contacts-inner{
         width: 350px;
         margin-left: -52px;
         padding-top: 0px;
-        
-/*         border: 1px solid red; */
     }
-
 
     p.header-phone, 
     p.header-email {
@@ -356,7 +313,6 @@ p.header-email:hover {
        }
   
 }
-
 
 
 @media only screen and (max-width: 600px) {
@@ -395,23 +351,15 @@ p.header-email:hover {
         margin-left: -40px;
     }   
     
-    .header-contacts
-    {
-      
+    .header-contacts {
         padding-top: 1px;
-
-/*         border: 1px solid green; */
     }
 
 
-    .contacts-inner
-    {
-        
+    .contacts-inner {
         width: 350px;
         margin-left: -52px;
         padding-top: 0px;
-        
-/*         border: 1px solid red; */
     }
 
 
@@ -462,23 +410,15 @@ p.header-email:hover {
         margin-left: -40px;
     }   
     
-    .header-contacts
-    {
-      
+    .header-contacts {
         padding-top: 1px;
-
-/*         border: 1px solid green; */
     }
 
 
-    .contacts-inner
-    {
-        
+    .contacts-inner {
         width: 300px;
         margin-left: -40px;
         padding-top: 0px;
-        
-/*         border: 1px solid red; */
     }
 
 
@@ -530,23 +470,15 @@ p.header-email:hover {
         margin-left: -40px;
     }   
     
-    .header-contacts
-    {
-      
+    .header-contacts {
         padding-top: 1px;
-
-/*         border: 1px solid green; */
     }
 
 
-    .contacts-inner
-    {
-        
+    .contacts-inner {
         width: 300px;
         margin-left: -40px;
         padding-top: 0px;
-        
-/*         border: 1px solid red; */
     }
 
 
@@ -560,9 +492,6 @@ p.header-email:hover {
        }
   
 }
-
-
-
 
 
 @media only screen and (max-width: 479px) {
@@ -602,8 +531,7 @@ p.header-email:hover {
     }   
     
 
-    .contacts-inner
-    {
+    .contacts-inner {
         display: none;
     }
 
@@ -646,8 +574,7 @@ p.header-email:hover {
     }   
     
 
-    .contacts-inner
-    {
+    .contacts-inner {
         display: none;
     }
 
@@ -691,8 +618,7 @@ p.header-email:hover {
     }   
     
 
-    .contacts-inner
-    {
+    .contacts-inner {
         display: none;
     }
 
@@ -736,8 +662,7 @@ p.header-email:hover {
     }   
     
 
-    .contacts-inner
-    {
+    .contacts-inner {
         display: none;
     }
 
@@ -788,8 +713,6 @@ p.header-email:hover {
 
 }
  
- 
-
 
 @media only screen and (max-width: 345px) {
     .navbar {
@@ -828,13 +751,11 @@ p.header-email:hover {
     }   
     
 
-    .contacts-inner
-    {
+    .contacts-inner {
         display: none;
     }
 
 }
-
 
 
 @media only screen and (max-width: 345px) {
@@ -846,7 +767,6 @@ p.header-email:hover {
     p.branding-1 {
         font-size:1.4em;
     }
-
 }
 
 
@@ -888,8 +808,7 @@ p.header-email:hover {
     }   
     
 
-    .contacts-inner
-    {
+    .contacts-inner {
         display: none;
     }
 
@@ -933,8 +852,7 @@ p.header-email:hover {
     }   
     
 
-    .contacts-inner
-    {
+    .contacts-inner {
         display: none;
     }
 
@@ -978,8 +896,7 @@ p.header-email:hover {
     }   
     
 
-    .contacts-inner
-    {
+    .contacts-inner {
         display: none;
     }
 
@@ -1068,9 +985,7 @@ p.header-email:hover {
     }   
     
 
-    .contacts-inner
-    {
+    .contacts-inner {
         display: none;
     }
-
 }
