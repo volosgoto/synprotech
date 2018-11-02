@@ -15,11 +15,9 @@ function accondionFunction(id) {
 }
 
 //  document.querySelector('button').addEventListener('click', function (e) {
-
 //         console.log('BTN', 'Clicked' );
         
 //     })
-
 
 
 function sendMail() {

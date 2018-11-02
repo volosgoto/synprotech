@@ -46,6 +46,14 @@ ul.w3-ul.w3-small > li {
 }
 
 
+div.w3-col.m3  h5 {
+    margin-top: 10px;
+}
+
+div.servises-icons {
+    margin-top: 20px;
+}
+
 .outer-box{
     display: flex;
     flex-direction: column;
