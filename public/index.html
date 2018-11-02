@@ -34,9 +34,9 @@
     <div class="inner-box-3">
       <span class="w3-mobile w3-right w3-margin-right w3-text-gray">
                 <a href="/public/" class="w3-bar-item w3-button w3-hide-small w3-hover-blue-gray"><b>Home</b></a>
-                <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-blue-gray"><b>Services</b></a>
+                <a href="#services" class="w3-bar-item w3-button w3-hide-small w3-hover-blue-gray"><b>Services</b></a>
                 <a href="partners.html" class="w3-bar-item w3-button w3-hide-small w3-hover-blue-gray"><b>Partners</b></a>
-                <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-blue-gray"><b>Contact us</b></a>
+                <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-blue-gray"><b>Contact us</b></a>
                 <a href="reference.html" class="w3-bar-item w3-button w3-hide-small w3-hover-blue-gray"><b>Reference
                         list</b></a>
                 <a class="w3-bar-item w3-button w3-hide-small w3-hover-blue-gray" href="/assets/booklet/Booklet_Synprotech_ LLC_nov_2018.pdf"
@@ -48,9 +48,9 @@
   </div>
   <div id="toggle-menu" class="w3-bar-block w3-blue-gray w3-hide w3-hide-large w3-hide-medium w3-center">
     <a href="#" class="w3-bar-item w3-button">Home</a>
-    <a href="#" class="w3-bar-item w3-button">Services</a>
+    <a href="#services" class="w3-bar-item w3-button">Services</a>
     <a href="partners.html" class="w3-bar-item w3-button">Partners</a>
-    <a href="#" class="w3-bar-item w3-button">Contact us</a>
+    <a href="#contact" class="w3-bar-item w3-button">Contact us</a>
     <a href="reference.html" class="w3-bar-item w3-button">Reference list</a>
     <a class="w3-bar-item w3-button" href="/assets/booklet/Booklet_Synprotech_ LLC_nov_2018.pdf" download>Download</a>
   </div>
@@ -100,15 +100,15 @@
           padding: 0
         }
       </style>
-      <div class="w3-content w3-display-container" style="max-width:800px">
+      <div class="w3-content w3-display-container" style="max-width:100%; height: auto;">
         <img class="mySlides w3-round" src="img/carousel/1.jpg" style="width:100%" alt="carousel_image">
         <img class="mySlides w3-round" src="img/carousel/2.jpg" style="width:100%" alt="carousel_image">
         <img class="mySlides w3-round" src="img/carousel/3.png" style="width:100%" alt="carousel_image">
         <img class="mySlides w3-round" src="img/carousel/4.jpg" style="width:100%" alt="carousel_image">
         <img class="mySlides " src="img/carousel/5.jpg" style="width:100%" alt="carousel_btn">
         <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
-          <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
-          <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+          <div class="w3-button w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+          <div class="w3-button w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
           <span class="demo w3-badge w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
           <span class="demo w3-badge w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
           <span class="demo w3-badge w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
@@ -122,7 +122,7 @@
   <!-- section 2 END-->
 
   <!-- SERVICES heading -->
-  <section id="SERVICES" class="section w3-blue w3-hover-opacity">
+  <section id="services" class="section w3-blue w3-hover-opacity">
     <div class="w3-container w3-center">
       <h1 class="w3-text-shadow">SERVICES</h1>
       <p></p>
@@ -306,8 +306,7 @@
           </ul>
         </div>
 
-        <button onclick="accondionFunction('construction')" class="w3-btn-block w3-left-align">
-                    CONSTRUCTION AND INSTALLATION SUPERVISION</button>
+        <button onclick="accondionFunction('construction')" class="w3-btn-block w3-left-align">                    CONSTRUCTION AND INSTALLATION SUPERVISION</button>
         <div id="construction" class="w3-container w3-hide w3-padding-12">
           <ul class="w3-ul w3-small">
             <li>Consulting services during approval with inspecting bodies of questions connected with testing and registration of process equipment and pipelines, gas, steam and hot water pipelines, lifting facilities</li>
