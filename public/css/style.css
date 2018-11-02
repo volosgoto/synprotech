@@ -8,9 +8,10 @@ a {
     font-size: 16px;
 }
 
-h1 {
+h1, h6 {
     margin-top: 10px;
 }
+
 
 p.email:hover {
     opacity: 0.8;
@@ -38,6 +39,12 @@ form:hover {
 .w3-hover-blue:hover{
     box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.3);
 }
+
+ul.w3-ul.w3-small > li {
+    font-size: 14px;
+    color:  #424242 ; 
+}
+
 
 .outer-box{
     display: flex;
@@ -813,6 +820,22 @@ p.header-email:hover {
     }
 
 }
+
+
+#consulting,
+#design,
+#operation,
+#construction {
+    opacity: 1;
+    transition: 2s;
+ }
+   
+.active{ 
+    opacity: 0,5;
+    color: red;
+                
+}
+
 
 
 @media only screen and (max-width: 314px) {
