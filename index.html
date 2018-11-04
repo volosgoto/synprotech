@@ -43,7 +43,12 @@
         <h2>You will be redirected to development version of synproeng.com</h2>
         <h2>after <span id="timer"></span> seconds</h2>
       </div>
+      <br>
 
+      <div class="w3-light-grey">
+        <div id="myBar" class="w3-container w3-green w3-center" style="width:0%">0%</div>
+      </div>
+      <br>
 
       <button class="w3-btn w3-round-large w3-card-4 w3-green" onclick="window.location.href='http://synproeng.com/public/index.html'">Or click here if you can't wait</button>
     </div>
@@ -59,8 +64,6 @@
 </body>
 
 
-
-
 <script>
   let meta = document.querySelector('#meta-content');
   let str = meta.getAttribute('content');
@@ -74,5 +77,27 @@
   }, 1000);
 </script>
 
+
+<script>
+  window.onload = function move() {
+    var elem = document.getElementById("myBar");
+    var width = 0;
+    var id = setInterval(frame, timeLeft * 10);
+
+    function frame() {
+      if (width >= 100) {
+        clearInterval(id);
+      } else {
+        width++;
+        elem.style.width = width + '%';
+        if (width >= 10) {
+          elem.innerHTML = 'Loading ' + width * 1 + '%';
+        } else {
+          elem.innerHTML = width * 1 + '%';
+        }
+      }
+    }
+  }
+</script>
 
 </html>
