@@ -80,7 +80,7 @@
 
 
 <script>
-  window.onload = function move() {
+  window.onload = () => {
     var elem = document.getElementById("myBar");
     var width = 0;
     var id = setInterval(frame, timeLeft * 10);
@@ -91,11 +91,7 @@
       } else {
         width++;
         elem.style.width = width + '%';
-        if (width >= 10) {
-          elem.innerHTML = 'Loading ' + width * 1 + '%';
-        } else {
-          elem.innerHTML = width * 1 + '%';
-        }
+        (width >= 10) ? elem.innerHTML = 'Loading ' + width * 1 + '%': elem.innerHTML = width * 1 + '%';
       }
     }
   }
