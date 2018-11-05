@@ -251,6 +251,10 @@ p.header-email:hover {
   height: auto;
 }
 
+.section-carousel{
+  padding: 20px 0px;
+}
+
 .section-contact-form {
   padding: 20px 10px;
   display: flex;
