@@ -86,6 +86,10 @@ div.servises-icons {
   /* border: 1px solid blue */
 }
 
+div.inner-box-1:hover {
+   cursor:pointer;
+}
+
 .inner-box-2 {
   display: flex;
   flex-direction: column;
