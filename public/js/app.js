@@ -25,9 +25,8 @@ file.addEventListener('click', (e) => {
   let result = confirm(confirmMsg);
   if (result) {
     setTimeout(() => {
-      // let url = 'http://synproeng.com/assets/booklet/Booklet_Synprotech_ LLC_nov_2018.pdf';
       let url = '/assets/booklet/Booklet_Synprotech_ LLC_nov_2018.pdf';
-      window.open(url, '_self')
+      window.open(url, '_self');
     }, 2000);
   } else {
     let alertMsg = 'Downloading canceled';
