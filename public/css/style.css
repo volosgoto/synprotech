@@ -4,6 +4,9 @@ body {
   background-color: #eceff1;
 }
 
+.animate {
+  transition: height 0.4s, opacity 0.5s
+}
 
 a {
   font-size: 16px;
@@ -15,9 +18,8 @@ h6 {
 }
 
 h1.reference-list {
-    color: white;
+  color: white;
 }
-
 
 p.email:hover {
   opacity: 0.8;
@@ -88,7 +90,7 @@ div.servises-icons {
 }
 
 div.inner-box-1:hover {
-   cursor:pointer;
+  cursor: pointer;
 }
 
 .inner-box-2 {
@@ -252,7 +254,7 @@ p.header-email:hover {
   height: auto;
 }
 
-.section-carousel{
+.section-carousel {
   padding: 20px 0px;
 }
 
