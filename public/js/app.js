@@ -29,7 +29,7 @@ file.addEventListener('click', (e) => {
       window.open(url, '_self');
     }, 2000);
   } else {
-    let alertMsg = 'Downloading canceled';
+    let alertMsg = 'Downloading canceled!';
     alert(alertMsg);
   }
 });
