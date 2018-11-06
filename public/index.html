@@ -40,13 +40,8 @@
                 <a href="#services" class="w3-bar-item w3-button w3-hide-small w3-hover-blue-gray"><b>Services</b></a>
                 <a href="partners.html" class="w3-bar-item w3-button w3-hide-small w3-hover-blue-gray"><b>Partners</b></a>
                 <a href="contacts.html" class="w3-bar-item w3-button w3-hide-small w3-hover-blue-gray"><b>Contact us</b></a>
-                <a href="reference.html" class="w3-bar-item w3-button w3-hide-small w3-hover-blue-gray"><b>Reference
-                        list</b></a>
-                <!-- <a class="booklet-download w3-bar-item w3-button w3-hide-small w3-hover-blue-gray" href="/assets/booklet/Booklet_Synprotech_ LLC_nov_2018.pdf"
-                    download><b>Download</b></a> -->
-
-                    <a class="booklet-download w3-bar-item w3-button w3-hide-small w3-hover-blue-gray" href=""
-                    ><b>Download</b></a>
+                <a href="reference.html" class="w3-bar-item w3-button w3-hide-small w3-hover-blue-gray"><b>Reference list</b></a>
+                <a class="booklet-download w3-bar-item w3-button w3-hide-small w3-hover-blue-gray" href=""><b>Download</b></a>
                 <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
                     onclick="accondionFunction('toggle-menu')"><i class="fa fa-bars"></i></a>
             </span>
@@ -91,7 +86,7 @@
   <!-- section 2 END-->
 
   <!-- SERVICES heading -->
-  <section class="section w3-blue w3-hover-opacity" style="">
+  <section class="section w3-blue w3-hover-opacity">
     <div class="w3-container w3-center">
       <h1 class="reference-list w3-text-shadow">SERVICES</h1>
       <p></p>
@@ -102,7 +97,7 @@
   <!-- SERVICES -->
   <section class="section w3-light-grey">
     <div class="w3-container w3-center">
-      <div class="w3-row SERVICES-icons">
+      <div id="services" class="w3-row SERVICES-icons">
         <div class="w3-col m3">
           <i class="fa fa-area-chart w3-blue w3-padding-small w3-round-xlarge"></i>
           <h5>Strategic consulting for investment project management</h5>
@@ -171,8 +166,7 @@
         </div>
       </div>
       <div class="w3-mobile w3-col m8 w3-padding-small">
-        <button onclick="accondionFunction('consulting')" class="w3-btn-block w3-left-align">
-                    CONSULTING</button>
+        <button onclick="accondionFunction('consulting')" class="w3-btn-block w3-left-align">CONSULTING</button>
         <div id="consulting" class="w3-container w3-show w3-padding-12">
           <h6>Strategic consulting for investment project management</h6>
 
@@ -209,9 +203,8 @@
 
         </div>
         <button onclick="accondionFunction('design')" class="w3-btn-block w3-left-align">
-                    DESIGN AND ENGINEERING</button>
-        <div id="design" class="w3-container w3-hide w3-padding-12 w3-animate-top">
-          <!-- <div id="design" class="w3-container w3-hide w3-padding-12 animate fadeOutUp"> -->
+          <i style="font-size:18px" class="fa">&#xf107;</i>&nbsp;DESIGN AND ENGINEERING</button>
+        <div id="design" class="w3-container w3-hide w3-padding-12 w3-animate-opacity">
           <h6>Pre-design preparation</h6>
           <ul class="w3-ul w3-small">
             <li>Inspection of technical conditions of buildings and facilities, engineering networks</li>
@@ -262,9 +255,8 @@
           <h6>Implementation functions</h6>
         </div>
         <button onclick="accondionFunction('operation')" class="w3-btn-block w3-left-align">
-                    OPERATION MANUALS</button>
-        <div id="operation" class="w3-container w3-hide w3-padding-12 w3-animate-top">
-
+          <i style="font-size:18px" class="fa">&#xf107;</i>&nbsp;OPERATION MANUALS</button>
+        <div id="operation" class="w3-container w3-hide w3-padding-12 w3-animate-opacity">
           <ul class="w3-ul w3-small">
             <li>Process manufacturing</li>
             <li>Start-up/shut (instruction)</li>
@@ -277,23 +269,24 @@
           </ul>
         </div>
 
-        <button onclick="accondionFunction('construction')" class="w3-btn-block w3-left-align">CONSTRUCTION SUPERVISION
-          </button>
-        <div id="construction" class="animate w3-container w3-hide w3-padding-12">
-          <ul class="w3-ul w3-small">
-            <li>Consulting services during approval with inspecting bodies of questions connected with testing and registration of process equipment and pipelines, gas, steam and hot water pipelines, lifting facilities</li>
-            <li>Check for availability of documents certifying quality of equipment and materials used during construction of structures, equipment or/and supplied by General Contractor. Acts preparation. Participation in committees of incident investigation</li>
-            <li>Monitoring during construction</li>
-            <li>Issue of instruction, punch lists</li>
-            <li>Control of elimination of found defects</li>
-            <li>Technical assistance during settlement of matters connected with introduction of necessary amendments into design</li>
-            <li>Control of Contactor’s work logs and preparation of as-built and installation documentation</li>
-            <li>Control of organization of instrumental and visual conformance of work quality and preparation of relevant documents</li>
-            <li>Control of fulfillment of orders and instruct ions issued by design supervision, state construction supervision authorities as well as requirements of Customer’s Technical supervision Service relating the quality of construction/installation
-              and that of used structures, devices, materials, equipment</li>
-            <li>Submission of required reports, analytical conclusions and recommendation while work implementation
-            </li>
-          </ul>
+        <button onclick="accondionFunction('construction')" class="w3-btn-block w3-left-align"><i style="font-size:18px" class="fa">&#xf107;</i>&nbsp;CONSTRUCTION SUPERVISION
+        </button>
+      <div id="construction" class="animate w3-container w3-hide w3-padding-12 w3-animate-opacity">
+        <ul class="w3-ul w3-small">
+          <li>Consulting services during approval with inspecting bodies of questions connected with testing and registration of process equipment and pipelines, gas, steam and hot water pipelines, lifting facilities</li>
+          <li>Check for availability of documents certifying quality of equipment and materials used during construction of structures, equipment or/and supplied by General Contractor. Acts preparation. Participation in committees of incident investigation</li>
+          <li>Monitoring during construction</li>
+          <li>Issue of instruction, punch lists</li>
+          <li>Control of elimination of found defects</li>
+          <li>Technical assistance during settlement of matters connected with introduction of necessary amendments into design</li>
+          <li>Control of Contactor’s work logs and preparation of as-built and installation documentation</li>
+          <li>Control of organization of instrumental and visual conformance of work quality and preparation of relevant documents</li>
+          <li>Control of fulfillment of orders and instruct ions issued by design supervision, state construction supervision authorities as well as requirements of Customer’s Technical supervision Service relating the quality of construction/installation
+            and that of used structures, devices, materials, equipment</li>
+          <li>Submission of required reports, analytical conclusions and recommendation while work implementation
+          </li>
+        </ul>
+</div>
         </div>
       </div>
     </div>
