@@ -762,9 +762,8 @@ section.section.w3-blue.w3-hover-opacity {
 #operation,
 #constructing {
   opacity: 1;
-  transition: 2s;
-  /* &#xf106; */
 }
+
 
 .active {
   opacity: 0, 5;
