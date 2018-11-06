@@ -2,14 +2,23 @@
 function accondionFunction(id) {
   var x = document.getElementById(id);
 
-  // console.log('x', x.previousElementSibling.firstChild.nextElementSibling.textContent);
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-    x.previousElementSibling.firstChild.nextElementSibling.innerHTML = "&#xf106;";
-  } else {
-    x.className = x.className.replace(" w3-show", "");
-    x.previousElementSibling.firstChild.nextElementSibling.innerHTML = "&#xf107;";
+
+  if (id == 'consulting' || id == 'design' || id == 'operation' || id == 'constructing') {
+    // console.log('x', x.previousElementSibling.firstChild.nextElementSibling.textContent);
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+      x.previousElementSibling.firstChild.nextElementSibling.innerHTML = "&#xf106;";
+    } else {
+      x.className = x.className.replace(" w3-show", "");
+      x.previousElementSibling.firstChild.nextElementSibling.innerHTML = "&#xf107;";
+    }
+      } else {
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+        } else {
+          x.className = x.className.replace(" w3-show", "");
   }
+ }
 }
 
 
