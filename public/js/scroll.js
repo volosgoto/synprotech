@@ -1,7 +1,15 @@
-window.onscroll = function() {scrollFunction()};
+window.onscroll = ()=> { scrollFunction() };
 
 function scrollFunction() {
-    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+
+let html = document.documentElement;
+let body = document.body;
+
+let scrollTop = html.scrollTop || body && body.scrollTop || 0;
+scrollTop -= html.clientTop; // в IE7- <html> смещён относительно (0,0)
+let height = document.body.clientHeight;
+
+    if (scrollTop > height / 5) {
         document.getElementById("scrollBtn").style.display = "block";
     } else {
         document.getElementById("scrollBtn").style.display = "none";
@@ -9,7 +17,6 @@ function scrollFunction() {
 }
 
 function topFunction() {
-
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
