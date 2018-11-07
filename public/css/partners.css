@@ -1,0 +1,13 @@
+
+.partners-desc {
+  margin: 0px;
+  padding: 0px 10px;
+  text-align: justify;
+
+}
+
+@media only screen and (max-width: 600px) {
+  .partners-desc {
+    margin-top: 10px;
+  }
+}
