@@ -1,7 +1,6 @@
 // Accordion handling
 function accondionFunction(id) {
   var x = document.getElementById(id);
-
   if (id == 'consulting' || id == 'design' || id == 'operation' || id == 'constructing') {
     // console.log('x', x.previousElementSibling.firstChild.nextElementSibling.textContent);
     if (x.className.indexOf("w3-show") == -1) {
