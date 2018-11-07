@@ -4,12 +4,12 @@ body {
   background-color: #eceff1;
 }
 
-
 a {
   font-size: 16px;
 }
 
-input, textarea {
+input,
+textarea {
   background-color: #eceff1;
   color: black;
 }
@@ -60,6 +60,14 @@ div.w3-col.m3 h5 {
 
 div.services-icons {
   margin-top: 20px;
+}
+
+#btn-lang.w3-display-topright {
+  color: white;
+  background-color: black;
+  position: absolute;
+  right: 10;
+  top: 0;
 }
 
 .outer-box {
@@ -765,7 +773,6 @@ section.section.w3-blue.w3-hover-opacity {
 #constructing {
   opacity: 1;
 }
-
 
 .active {
   opacity: 0, 5;
