@@ -62,12 +62,19 @@ div.services-icons {
   margin-top: 20px;
 }
 
-#btn-lang.w3-display-topright {
-  color: white;
-  background-color: black;
-  position: absolute;
-  right: 10;
-  top: 0;
+.w3-tiny {
+  font-size: 12px !important;
+}
+
+#btn-lang {
+  display: block;
+  color: #fff;
+  background-color: #00adef;
+  /* width: 15px;
+  height: 15px; */
+  margin-top: 8px;
+  padding: 4px 8px;
+  font-size: 15px;
 }
 
 .outer-box {
