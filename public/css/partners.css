@@ -9,6 +9,10 @@ h2{
 
 }
 
+section>div.w3-card-4{
+  padding: 20px;
+}
+
 
 @media only screen and (max-width: 600px) {
   img {
@@ -17,6 +21,11 @@ h2{
   
   .partners-desc {
     margin-top: 10px;
+    padding: 10px 5px;
+  }
+
+  section>div.w3-card-4{
+    padding: 10px;
   }
 
 
