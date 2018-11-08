@@ -41,7 +41,7 @@ form:hover {
   border-bottom: 2px solid rgb(0, 173, 230);
   color: black;
   padding: 10px;
-  margin: 0;
+  margin: 10px;
   /* border: 2px solid violet */
 }
 
@@ -66,16 +66,25 @@ div.services-icons {
   font-size: 12px !important;
 }
 
-#btn-lang {
+
+/* Lang*/
+ /* #btn-lang {
   display: block;
   color: #fff;
   background-color: #00adef;
-  /* width: 15px;
-  height: 15px; */
-  margin-top: 8px;
-  padding: 4px 8px;
-  font-size: 15px;
-}
+  width: 20px;
+  height: 20px; 
+  margin-top: 0px;
+  padding: 0px 0px;
+  font-size: 12px;
+}  */
+
+#btn-lang {
+  color: #fff;
+  /* background-color: #00adef; */
+  color:  #00adef;
+} 
+
 
 .outer-box {
   display: flex;
@@ -188,7 +197,7 @@ p.header-email:hover {
 
 .inner-box-3 {
   display: block;
-  align-items: center;
+  align-items: left;
   padding-left: 8px;
   flex-basis: 400px;
   flex: 150;
@@ -355,10 +364,20 @@ section.section.w3-blue.w3-hover-opacity {
   }
 }
 
+
+
+@media only screen and (max-width: 790px) {
+  .inner-box-3 {
+    margin-bottom: 5px;
+  }
+}
+
+
+
 @media only screen and (max-width: 600px) {
   .navbar {
     padding: 0px 4px;
-    margin: 0;
+    margin: 0px;
   }
   .inner-box-1 {
     display: block;
@@ -403,6 +422,8 @@ section.section.w3-blue.w3-hover-opacity {
     margin: 0px;
     padding: 0px;
   }
+
+
 }
 
 @media only screen and (max-width: 498px) {
