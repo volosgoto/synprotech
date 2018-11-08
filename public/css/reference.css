@@ -3,6 +3,9 @@ body {
   background-color:  #eceff1;
   
 }
+table {
+  background-color: white;
+}
 
 
 tr td{
