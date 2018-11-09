@@ -347,22 +347,22 @@
         </div>
         <form id="email-form" action="../app/sendform.php" class="w3-container w3-padding-xlarge" method="POST">
           <label class="w3-input ">Name</label>
-          <input id="name" class="w3-input" type="text">
+          <input id="name" name="name" class="w3-input" type="text">
           <div class="invalid-feedback">
             Enter name
           </div>
           <label class="w3-input">Email</label>
-          <input id="email" class="w3-input" type="text">
+          <input id="email" name="email" class="w3-input" type="text">
           <div class="invalid-feedback">
             Enter a valid Email
           </div>
           <label class="w3-input">Phone</label>
-          <input id="phone" class="w3-input" type="text">
+          <input id="phone" name="phone" class="w3-input" type="text">
           <div class="invalid-feedback">
             Enter a valid phone
           </div>
           <label class="w3-input">Message</label>
-          <textarea id="message" class="w3-input" style="resize:none"></textarea>
+          <textarea id="message" name="message" class="w3-input" style="resize:none"></textarea>
           <div class="invalid-feedback">
             Enter text message
           </div>
@@ -420,6 +420,7 @@
   <script src="/public/js/app.js"></script>
   <script src="/public/js/carousel.js"></script>
   <script src="/public/js/scroll.js"></script>
+
 </body>
 
 </html>
