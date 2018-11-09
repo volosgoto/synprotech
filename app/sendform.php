@@ -18,22 +18,20 @@ $email = trim($email);
 $phone = trim($phone);
 $message = trim($message);
 
-
-
   if ($_SERVER['REQUEST_METHOD']=="POST" && !empty($_POST)) {
-      $to = 'office@synproeng.com ';
-      $subject = 'Test';
-      $body = wordwrap($message, 70);
+    $to = 'office@synproeng.com ';
+    $subject = 'Test';
+    $body = wordwrap($message, 70);
 
-      $headers = "From:abc@somedomain.com \r\n";
-      $headers .= "Cc:afgh@somedomain.com \r\n";
-      $headers .= "MIME-Version: 1.0\r\n";
-      $headers .= "Content-type: text/html\r\n";
+    $headers = "From:abc@somedomain.com \r\n";
+    $headers .= "Cc:afgh@somedomain.com \r\n";
+    $headers .= "MIME-Version: 1.0\r\n";
+    $headers .= "Content-type: text/html\r\n";
 
 
     require_once "Mail.php";
 
-    $from = '<synproenginfo@gmail.com>';
+    $from = $email;
     $to = '<office@synproeng.com>';
     $subject = 'Hi!';
     $body = "Hi,\n\nHow are you?";
@@ -60,7 +58,9 @@ $message = trim($message);
         echo('<p>Message successfully sent!</p>');
     }
 
-      }
+} else {
+  echo 'Error send message';
+}
 
 ?>
 
