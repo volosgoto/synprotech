@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="259fdfea-6095-40eb-b2d9-7f702f317548" name="Default" comment="">
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/sendform.php" afterPath="$PROJECT_DIR$/oldapp/sendform.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/booklet/Booklet_Synprotech_ LLC_nov_2018.pdf" afterPath="$PROJECT_DIR$/oldassets/booklet/Booklet_Synprotech_ LLC_nov_2018.pdf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/font-awesome-4.7.0/HELP-US-OUT.txt" afterPath="$PROJECT_DIR$/oldassets/font-awesome-4.7.0/HELP-US-OUT.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/font-awesome-4.7.0/css/font-awesome.css" afterPath="$PROJECT_DIR$/oldassets/font-awesome-4.7.0/css/font-awesome.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/font-awesome-4.7.0/css/font-awesome.min.css" afterPath="$PROJECT_DIR$/oldassets/font-awesome-4.7.0/css/font-awesome.min.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/font-awesome-4.7.0/fonts/FontAwesome.otf" afterPath="$PROJECT_DIR$/oldassets/font-awesome-4.7.0/fonts/FontAwesome.otf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/font-awesome-4.7.0/fonts/fontawesome-webfont.eot" afterPath="$PROJECT_DIR$/oldassets/font-awesome-4.7.0/fonts/fontawesome-webfont.eot" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/font-awesome-4.7.0/fonts/fontawesome-webfont.svg" afterPath="$PROJECT_DIR$/oldassets/font-awesome-4.7.0/fonts/fontawesome-webfont.svg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/font-awesome-4.7.0/fonts/fontawesome-webfont.ttf" afterPath="$PROJECT_DIR$/oldassets/font-awesome-4.7.0/fonts/fontawesome-webfont.ttf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/font-awesome-4.7.0/fonts/fontawesome-webfont.woff" afterPath="$PROJECT_DIR$/oldassets/font-awesome-4.7.0/fonts/fontawesome-webfont.woff" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2" afterPath="$PROJECT_DIR$/oldassets/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/font-awesome-4.7.0/less/animated.less" afterPath="$PROJECT_DIR$/oldassets/font-awesome-4.7.0/less/animated.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/font-awesome-4.7.0/less/bordered-pulled.less" afterPath="$PROJECT_DIR$/oldassets/font-awesome-4.7.0/less/bordered-pulled.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/font-awesome-4.7.0/less/core.less" afterPath="$PROJECT_DIR$/oldassets/font-awesome-4.7.0/less/core.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/font-awesome-4.7.0/less/fixed-width.less" afterPath="$PROJECT_DIR$/oldassets/font-awesome-4.7.0/less/fixed-width.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/font-awesome-4.7.0/less/font-awesome.less" afterPath="$PROJECT_DIR$/oldassets/font-awesome-4.7.0/less/font-awesome.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/font-awesome-4.7.0/less/icons.less" afterPath="$PROJECT_DIR$/oldassets/font-awesome-4.7.0/less/icons.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/font-awesome-4.7.0/less/larger.less" afterPath="$PROJECT_DIR$/oldassets/font-awesome-4.7.0/less/larger.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/font-awesome-4.7.0/less/list.less" afterPath="$PROJECT_DIR$/oldassets/font-awesome-4.7.0/less/list.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/font-awesome-4.7.0/less/mixins.less" afterPath="$PROJECT_DIR$/oldassets/font-awesome-4.7.0/less/mixins.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/font-awesome-4.7.0/less/path.less" afterPath="$PROJECT_DIR$/oldassets/font-awesome-4.7.0/less/path.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/font-awesome-4.7.0/less/rotated-flipped.less" afterPath="$PROJECT_DIR$/oldassets/font-awesome-4.7.0/less/rotated-flipped.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/font-awesome-4.7.0/less/screen-reader.less" afterPath="$PROJECT_DIR$/oldassets/font-awesome-4.7.0/less/screen-reader.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/font-awesome-4.7.0/less/stacked.less" afterPath="$PROJECT_DIR$/oldassets/font-awesome-4.7.0/less/stacked.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/font-awesome-4.7.0/less/variables.less" afterPath="$PROJECT_DIR$/oldassets/font-awesome-4.7.0/less/variables.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/font-awesome-4.7.0/scss/_animated.scss" afterPath="$PROJECT_DIR$/oldassets/font-awesome-4.7.0/scss/_animated.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/font-awesome-4.7.0/scss/_bordered-pulled.scss" afterPath="$PROJECT_DIR$/oldassets/font-awesome-4.7.0/scss/_bordered-pulled.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/font-awesome-4.7.0/scss/_core.scss" afterPath="$PROJECT_DIR$/oldassets/font-awesome-4.7.0/scss/_core.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/font-awesome-4.7.0/scss/_fixed-width.scss" afterPath="$PROJECT_DIR$/oldassets/font-awesome-4.7.0/scss/_fixed-width.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/font-awesome-4.7.0/scss/_icons.scss" afterPath="$PROJECT_DIR$/oldassets/font-awesome-4.7.0/scss/_icons.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/font-awesome-4.7.0/scss/_larger.scss" afterPath="$PROJECT_DIR$/oldassets/font-awesome-4.7.0/scss/_larger.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/font-awesome-4.7.0/scss/_list.scss" afterPath="$PROJECT_DIR$/oldassets/font-awesome-4.7.0/scss/_list.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/font-awesome-4.7.0/scss/_mixins.scss" afterPath="$PROJECT_DIR$/oldassets/font-awesome-4.7.0/scss/_mixins.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/font-awesome-4.7.0/scss/_path.scss" afterPath="$PROJECT_DIR$/oldassets/font-awesome-4.7.0/scss/_path.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/font-awesome-4.7.0/scss/_rotated-flipped.scss" afterPath="$PROJECT_DIR$/oldassets/font-awesome-4.7.0/scss/_rotated-flipped.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/font-awesome-4.7.0/scss/_screen-reader.scss" afterPath="$PROJECT_DIR$/oldassets/font-awesome-4.7.0/scss/_screen-reader.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/font-awesome-4.7.0/scss/_stacked.scss" afterPath="$PROJECT_DIR$/oldassets/font-awesome-4.7.0/scss/_stacked.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/font-awesome-4.7.0/scss/_variables.scss" afterPath="$PROJECT_DIR$/oldassets/font-awesome-4.7.0/scss/_variables.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/font-awesome-4.7.0/scss/font-awesome.scss" afterPath="$PROJECT_DIR$/oldassets/font-awesome-4.7.0/scss/font-awesome.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/paranoid.mp3" afterPath="$PROJECT_DIR$/oldassets/paranoid.mp3" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/contacts.html" afterPath="$PROJECT_DIR$/oldpublic/contacts.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/oldpublic/css/bootstrap.min.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/css/font-awesome.min.css" afterPath="$PROJECT_DIR$/oldpublic/css/font-awesome.min.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/css/fontawesome5.css" afterPath="$PROJECT_DIR$/oldpublic/css/fontawesome5.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/css/partners.css" afterPath="$PROJECT_DIR$/oldpublic/css/partners.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/css/reference.css" afterPath="$PROJECT_DIR$/oldpublic/css/reference.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/css/scroll.css" afterPath="$PROJECT_DIR$/oldpublic/css/scroll.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/css/style.css" afterPath="$PROJECT_DIR$/oldpublic/css/style.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/css/w3.css" afterPath="$PROJECT_DIR$/oldpublic/css/w3.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/img/baran_group_logo.jpg" afterPath="$PROJECT_DIR$/oldpublic/img/baran_group_logo.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/img/carousel/1.jpg" afterPath="$PROJECT_DIR$/oldpublic/img/carousel/1.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/img/carousel/2.jpg" afterPath="$PROJECT_DIR$/oldpublic/img/carousel/2.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/img/carousel/3.png" afterPath="$PROJECT_DIR$/oldpublic/img/carousel/3.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/img/carousel/4.jpg" afterPath="$PROJECT_DIR$/oldpublic/img/carousel/4.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/img/carousel/5.jpg" afterPath="$PROJECT_DIR$/oldpublic/img/carousel/5.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/img/cngs_logo.jpg" afterPath="$PROJECT_DIR$/oldpublic/img/cngs_logo.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/img/favicon_synprotech.png" afterPath="$PROJECT_DIR$/oldpublic/img/favicon_synprotech.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/img/inprogress.jpg" afterPath="$PROJECT_DIR$/oldpublic/img/inprogress.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/img/logo.png" afterPath="$PROJECT_DIR$/oldpublic/img/logo.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/img/main_background.png" afterPath="$PROJECT_DIR$/oldpublic/img/main_background.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/img/navbar-logo.png" afterPath="$PROJECT_DIR$/oldpublic/img/navbar-logo.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/img/navbar-logo2.png" afterPath="$PROJECT_DIR$/oldpublic/img/navbar-logo2.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/img/partners/brand-pick1.jpg" afterPath="$PROJECT_DIR$/oldpublic/img/partners/brand-pick1.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/img/partners/brand-pick10.jpg" afterPath="$PROJECT_DIR$/oldpublic/img/partners/brand-pick10.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/img/partners/brand-pick11.jpg" afterPath="$PROJECT_DIR$/oldpublic/img/partners/brand-pick11.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/img/partners/brand-pick12.jpg" afterPath="$PROJECT_DIR$/oldpublic/img/partners/brand-pick12.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/img/partners/brand-pick13.jpg" afterPath="$PROJECT_DIR$/oldpublic/img/partners/brand-pick13.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/img/partners/brand-pick14.jpg" afterPath="$PROJECT_DIR$/oldpublic/img/partners/brand-pick14.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/img/partners/brand-pick15.jpg" afterPath="$PROJECT_DIR$/oldpublic/img/partners/brand-pick15.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/img/partners/brand-pick16.jpg" afterPath="$PROJECT_DIR$/oldpublic/img/partners/brand-pick16.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/img/partners/brand-pick17.jpg" afterPath="$PROJECT_DIR$/oldpublic/img/partners/brand-pick17.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/img/partners/brand-pick18.jpg" afterPath="$PROJECT_DIR$/oldpublic/img/partners/brand-pick18.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/img/partners/brand-pick19.jpg" afterPath="$PROJECT_DIR$/oldpublic/img/partners/brand-pick19.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/img/partners/brand-pick2.jpg" afterPath="$PROJECT_DIR$/oldpublic/img/partners/brand-pick2.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/img/partners/brand-pick20.jpg" afterPath="$PROJECT_DIR$/oldpublic/img/partners/brand-pick20.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/img/partners/brand-pick21.jpg" afterPath="$PROJECT_DIR$/oldpublic/img/partners/brand-pick21.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/img/partners/brand-pick22.jpg" afterPath="$PROJECT_DIR$/oldpublic/img/partners/brand-pick22.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/img/partners/brand-pick23.jpg" afterPath="$PROJECT_DIR$/oldpublic/img/partners/brand-pick23.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/img/partners/brand-pick24.jpg" afterPath="$PROJECT_DIR$/oldpublic/img/partners/brand-pick24.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/img/partners/brand-pick25.jpg" afterPath="$PROJECT_DIR$/oldpublic/img/partners/brand-pick25.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/img/partners/brand-pick26.jpg" afterPath="$PROJECT_DIR$/oldpublic/img/partners/brand-pick26.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/img/partners/brand-pick27.jpg" afterPath="$PROJECT_DIR$/oldpublic/img/partners/brand-pick27.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/img/partners/brand-pick28.jpg" afterPath="$PROJECT_DIR$/oldpublic/img/partners/brand-pick28.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/img/partners/brand-pick29.jpg" afterPath="$PROJECT_DIR$/oldpublic/img/partners/brand-pick29.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/img/partners/brand-pick3.jpg" afterPath="$PROJECT_DIR$/oldpublic/img/partners/brand-pick3.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/img/partners/brand-pick30.jpg" afterPath="$PROJECT_DIR$/oldpublic/img/partners/brand-pick30.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/img/partners/brand-pick31.jpg" afterPath="$PROJECT_DIR$/oldpublic/img/partners/brand-pick31.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/img/partners/brand-pick32.jpg" afterPath="$PROJECT_DIR$/oldpublic/img/partners/brand-pick32.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/img/partners/brand-pick33.jpg" afterPath="$PROJECT_DIR$/oldpublic/img/partners/brand-pick33.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/img/partners/brand-pick34.jpg" afterPath="$PROJECT_DIR$/oldpublic/img/partners/brand-pick34.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/img/partners/brand-pick35.jpg" afterPath="$PROJECT_DIR$/oldpublic/img/partners/brand-pick35.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/img/partners/brand-pick36.jpg" afterPath="$PROJECT_DIR$/oldpublic/img/partners/brand-pick36.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/img/partners/brand-pick37.jpg" afterPath="$PROJECT_DIR$/oldpublic/img/partners/brand-pick37.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/img/partners/brand-pick38.jpg" afterPath="$PROJECT_DIR$/oldpublic/img/partners/brand-pick38.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/img/partners/brand-pick39.jpg" afterPath="$PROJECT_DIR$/oldpublic/img/partners/brand-pick39.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/img/partners/brand-pick4.jpg" afterPath="$PROJECT_DIR$/oldpublic/img/partners/brand-pick4.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/img/partners/brand-pick40.jpg" afterPath="$PROJECT_DIR$/oldpublic/img/partners/brand-pick40.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/img/partners/brand-pick41.jpg" afterPath="$PROJECT_DIR$/oldpublic/img/partners/brand-pick41.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/img/partners/brand-pick42.jpg" afterPath="$PROJECT_DIR$/oldpublic/img/partners/brand-pick42.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/img/partners/brand-pick43.jpg" afterPath="$PROJECT_DIR$/oldpublic/img/partners/brand-pick43.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/img/partners/brand-pick5.jpg" afterPath="$PROJECT_DIR$/oldpublic/img/partners/brand-pick5.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/img/partners/brand-pick6.jpg" afterPath="$PROJECT_DIR$/oldpublic/img/partners/brand-pick6.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/img/partners/brand-pick7.jpg" afterPath="$PROJECT_DIR$/oldpublic/img/partners/brand-pick7.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/img/partners/brand-pick8.jpg" afterPath="$PROJECT_DIR$/oldpublic/img/partners/brand-pick8.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/img/partners/brand-pick9.jpg" afterPath="$PROJECT_DIR$/oldpublic/img/partners/brand-pick9.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/img/qr-150-m.png" afterPath="$PROJECT_DIR$/oldpublic/img/qr-150-m.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/img/synprotech32x32.png" afterPath="$PROJECT_DIR$/oldpublic/img/synprotech32x32.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/img/technicaldirector-400px.jpg" afterPath="$PROJECT_DIR$/oldpublic/img/technicaldirector-400px.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/img/technicaldirector.jpg" afterPath="$PROJECT_DIR$/oldpublic/img/technicaldirector.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/img/technicaldirector2.jpg" afterPath="$PROJECT_DIR$/oldpublic/img/technicaldirector2.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/img/technicaldirector3.jpg" afterPath="$PROJECT_DIR$/oldpublic/img/technicaldirector3.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/img/Рисунок3.png" afterPath="$PROJECT_DIR$/oldpublic/img/Рисунок3.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/oldpublic/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/js/app.js" afterPath="$PROJECT_DIR$/oldpublic/js/app.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/js/carousel.js" afterPath="$PROJECT_DIR$/oldpublic/js/carousel.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/js/scroll.js" afterPath="$PROJECT_DIR$/oldpublic/js/scroll.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/partners.html" afterPath="$PROJECT_DIR$/oldpublic/partners.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/reference.html" afterPath="$PROJECT_DIR$/oldpublic/reference.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="27" />
+    <option name="width" value="1680" />
+    <option name="height" value="974" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="synprotech.loc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="synprotech.loc" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.PHP" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="259fdfea-6095-40eb-b2d9-7f702f317548" name="Default" comment="" />
+      <created>1541794301537</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1541794301537</updated>
+      <workItem from="1541794303162" duration="293000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="293000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="27" width="1680" height="974" extended-state="6" />
+    <layout>
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17319462" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292232" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+</project>
