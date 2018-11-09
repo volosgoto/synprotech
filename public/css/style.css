@@ -62,13 +62,15 @@ div.services-icons {
   margin-top: 20px;
 }
 
-.w3-tiny {
-  font-size: 12px !important;
+.synprotech-logo {
+  width: 32px;
 }
 
 
 /* Lang*/
- /* #btn-lang {
+
+
+/* #btn-lang {
   display: block;
   color: #fff;
   background-color: #00adef;
@@ -82,9 +84,8 @@ div.services-icons {
 #btn-lang {
   color: #fff;
   /* background-color: #00adef; */
-  color:  #00adef;
-} 
-
+  color: #00adef;
+}
 
 .outer-box {
   display: flex;
@@ -364,15 +365,11 @@ section.section.w3-blue.w3-hover-opacity {
   }
 }
 
-
-
 @media only screen and (max-width: 790px) {
   .inner-box-3 {
     margin-bottom: 5px;
   }
 }
-
-
 
 @media only screen and (max-width: 600px) {
   .navbar {
@@ -422,8 +419,6 @@ section.section.w3-blue.w3-hover-opacity {
     margin: 0px;
     padding: 0px;
   }
-
-
 }
 
 @media only screen and (max-width: 498px) {
