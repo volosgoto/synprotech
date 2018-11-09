@@ -29,7 +29,8 @@ $message = trim($message);
     $headers .= "Content-type: text/html\r\n";
 
 
-    require_once "Mail.php";
+    require_once "../assets/Mail-1.4.1/Mail-1.4.1/Mail.php";
+
 
     $from = $email;
     $to = '<office@synproeng.com>';
