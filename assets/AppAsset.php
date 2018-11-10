@@ -9,23 +9,28 @@ namespace app\assets;
 
 use yii\web\AssetBundle;
 
-/**
- * Main application asset bundle.
- *
- * @author Qiang Xue <qiang.xue@gmail.com>
- * @since 2.0
- */
+
 class AppAsset extends AssetBundle
 {
     public $basePath = '@webroot';
     public $baseUrl = '@web';
     public $css = [
-        'css/site.css',
+    'css/site.css',
+    'css/w3.css',
+    'css/font-awesome.min.css',
+    'css/font-awesome.css',
+    'css/style.css',
+    'css/partners.css',
+    'css/scroll.css',
+     'css/site.css',
     ];
     public $js = [
+        'js/app.js',
+        'js/carousel.js',
+        'js/scroll.js',
     ];
     public $depends = [
         'yii\web\YiiAsset',
-        'yii\bootstrap\BootstrapAsset',
+        'yii\bootstrap\BootstrapPluginAsset',
     ];
 }
