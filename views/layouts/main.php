@@ -97,7 +97,7 @@ AppAsset::register($this);
 <section class="w3-lightgray">
     <div id="more-information" class="section w3-container w3-center w3-hide">
         <!-- <i class="fa fa-cog"></i> -->
-        <img class="synprotech-logo w3-image w3-hover-opacity" src="img/synprotech32x32.png" alt="synprotech_logo">
+        <img class="synprotech-logo w3-image w3-hover-opacity" src="images/synprotech32x32.png" alt="synprotech_logo">
         <h1>Synprotech engineering</h1>
         <p>Limited Liability Company SYNPROTECH Engineering is an engineering and consulting design company of the CNGS Group. The company specializes in the oil and gas chemical market segment and provides business development in this area in its regions
             of presence. Objective: Development of an effective modern projects, optimized for economics and technological specifications, in the new petrochemical industry sector of CNGS Group activity. The company has a highly qualified staff and state-of-the-art
@@ -183,7 +183,7 @@ AppAsset::register($this);
 <section id="about" class="section-what">
     <div class="w3-container w3-animate-opacity">
         <div class="w3-col m4 w3-center w3-padding-small">
-            <img class="w3-image w3-round w3-hover-opacity " src="img/technicaldirector-400px.jpg" width="400px" alt="about_img">
+            <img class="w3-image w3-round w3-hover-opacity " src="images/technicaldirector-400px.jpg" width="400px" alt="about_img">
             <div class="w3-container w3-center w3-padding-12">
                 <h5>Technical director</h5>
                 <h5>Andrii Kryvolap</h5>
@@ -332,11 +332,11 @@ AppAsset::register($this);
             }
         </style>
         <div class="w3-content w3-display-container" style="max-width:100%; height: auto;">
-            <img class="mySlides w3-round" src="img/carousel/1.jpg" style="width:100%" alt="carousel_image">
-            <img class="mySlides w3-round" src="img/carousel/2.jpg" style="width:100%" alt="carousel_image">
-            <img class="mySlides w3-round" src="img/carousel/3.png" style="width:100%" alt="carousel_image">
-            <img class="mySlides w3-round" src="img/carousel/4.jpg" style="width:100%" alt="carousel_image">
-            <img class="mySlides " src="img/carousel/5.jpg" style="width:100%" alt="carousel_btn">
+            <img class="mySlides w3-round" src="images/carousel/1.jpg" style="width:100%" alt="carousel_image">
+            <img class="mySlides w3-round" src="images/carousel/2.jpg" style="width:100%" alt="carousel_image">
+            <img class="mySlides w3-round" src="images/carousel/3.png" style="width:100%" alt="carousel_image">
+            <img class="mySlides w3-round" src="images/carousel/4.jpg" style="width:100%" alt="carousel_image">
+            <img class="mySlides " src="images/carousel/5.jpg" style="width:100%" alt="carousel_btn">
             <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
                 <div class="w3-button w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
                 <div class="w3-button w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
@@ -396,14 +396,14 @@ AppAsset::register($this);
     <!-- scroll btn END -->
     <div class="outer-box-footer w3-black w3-center">
         <div class="inner-box-footer">
-            <img class="synprotech-logo w3-image w3-hover-opacity" src="img/synprotech32x32.png" alt="synprotech_logo">
+            <img class="synprotech-logo w3-image w3-hover-opacity" src="images/synprotech32x32.png" alt="synprotech_logo">
             <p class="w3-margin-top"><b>SYNPROTECH</b> ENGINEERING LLC</p>
             <p><span><i style="font-size:12px" class="fa">&#xf095;</i> +38 044 3717890</span></p>
             <p onclick="sendMail()" class="email"><i style="font-size:12px" class="fa">&#xf003;</i> office@synproeng.com
             </p>
         </div>
         <div class="inner-box-footer">
-            <img class="w3-image" src="img/qr-150-m.png" alt="qr_code">
+            <img class="w3-image" src="images/qr-150-m.png" alt="qr_code">
             <p class="w3-margin w3-pading">Synprotech &copy; 2018</p>
         </div>
         <div class="inner-box-footer">

@@ -15,14 +15,12 @@ class AppAsset extends AssetBundle
     public $basePath = '@webroot';
     public $baseUrl = '@web';
     public $css = [
-    'css/site.css',
-    'css/w3.css',
-    'css/font-awesome.min.css',
-    'css/font-awesome.css',
+        'css/w3.css',
+        'css/font-awesome.min.css',
     'css/style.css',
     'css/partners.css',
     'css/scroll.css',
-     'css/site.css',
+    
     ];
     public $js = [
         'js/app.js',
