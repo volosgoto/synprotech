@@ -245,7 +245,7 @@ p.header-email:hover {
 }
 
 .showcase {
-  background: url('/oldpublic/img/main_background.png') no-repeat;
+  background: url('/images/main_background.png') no-repeat;
   /* background-size: 100% auto; */
   background-size: cover;
   background-color: lightgray;
@@ -322,7 +322,7 @@ section.section.w3-blue.w3-hover-opacity {
   }
   .inner-box-1 {
     display: block;
-    background: url('../images/navbar-logo2.png') no-repeat;
+    background: url('/images/navbar-logo2.png') no-repeat;
     background-size: 60% auto;
     background-position: left center;
     padding-top: 0px;
