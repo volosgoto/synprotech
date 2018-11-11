@@ -6,7 +6,7 @@
 <!-- contact heading -->
 <section class="section w3-blue w3-hover-opacity">
     <div class="w3-container w3-center">
-        <h1 class="w3-text-shadow">CONTACTS</h1>
+        <h1 class="reference-list w3-text-shadow">CONTACTS</h1>
         <p></p>
     </div>
 </section>
