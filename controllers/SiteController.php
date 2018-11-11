@@ -15,6 +15,9 @@ class SiteController extends Controller {
     /**
      * {@inheritdoc}
      */
+
+
+
     public function behaviors() {
         return [
             'access' => [
@@ -59,7 +62,9 @@ class SiteController extends Controller {
      */
     public function actionIndex() {
         $title = 'Home Page';
-        return $this->render('index', compact('title'));
+        $w = Yii::getAlias('@web');
+
+        return $this->render('index', compact('title', 'w'));
     }
 
 

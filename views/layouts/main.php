@@ -117,7 +117,6 @@ AppAsset::register($this);
             </form>
         </div>
 </section>
-</section>
 <!-- main contact form ENDS-->
 
 <!-- footer -->
@@ -127,16 +126,15 @@ AppAsset::register($this);
     <!-- scroll btn END -->
     <div class="outer-box-footer w3-black w3-center">
         <div class="inner-box-footer">
-            <img class="synprotech-logo w3-image w3-hover-opacity" src="<?= Html::img('@web/images/synprotech32x32.png', ['alt' => 'synprotech_logo']) ?>" alt="synprotech_logo">
-<!--            <img class="synprotech-logo w3-image w3-hover-opacity" src="images/synprotech32x32.png" alt="synprotech_logo">-->
+            <?= Html::img('@web/images/synprotech32x32.png', ['class'=>'synprotech-logo w3-image w3-hover-opacity', 'alt' => 'synprotech_logo'])?>
             <p class="w3-margin-top"><b>SYNPROTECH</b> ENGINEERING LLC</p>
             <p><span><i style="font-size:12px" class="fa">&#xf095;</i> +38 044 3717890</span></p>
             <p onclick="sendMail()" class="email"><i style="font-size:12px" class="fa">&#xf003;</i> office@synproeng.com
             </p>
         </div>
         <div class="inner-box-footer">
-<!--            <img class="w3-image" src="images/qr-150-m.png" alt="qr_code">-->
-            <img class="w3-image" src="<?= Html::img('@web/images/qr-150-m.png')?>" alt="qr_code">
+<!--            <img class="w3-image" src="/images/qr-150-m.png" alt="qr_code">-->
+            <img class="w3-image" src="<?=Yii::getAlias('@web'); ?>/images/qr-150-m.png" alt="qr_code">
             <p class="w3-margin w3-pading">Synprotech &copy; 2018</p>
         </div>
         <div class="inner-box-footer">
