@@ -56,7 +56,7 @@ AppAsset::register($this);
 
         <div class="w3-mobile w3-right w3-margin-right w3-text-gray">
             <a href="<?= Url::home()?>" class="w3-bar-item w3-button w3-hide-small w3-hover-blue-gray"><b>Home</b></a>
-            <a href="<?= Url::toRoute(['site/services']);?>" class="w3-bar-item w3-button w3-hide-small w3-hover-blue-gray"><b>Services</b></a>
+            <a href="<?= Url::toRoute(['site/services', 'id' => 'services']);?>" class="w3-bar-item w3-button w3-hide-small w3-hover-blue-gray"><b>Services</b></a>
             <a href="<?= Url::toRoute(['site/partners']);?>" class="w3-bar-item w3-button w3-hide-small w3-hover-blue-gray"><b>Partners</b></a>
             <a href="<?= Url::toRoute(['site/contact']);?>" class="w3-bar-item w3-button w3-hide-small w3-hover-blue-gray"><b>Contact us</b></a>
             <a href="<?= Url::toRoute(['site/reference']);?>" class="w3-bar-item w3-button w3-hide-small w3-hover-blue-gray"><b>Reference list</b></a>
@@ -127,14 +127,16 @@ AppAsset::register($this);
     <!-- scroll btn END -->
     <div class="outer-box-footer w3-black w3-center">
         <div class="inner-box-footer">
-            <img class="synprotech-logo w3-image w3-hover-opacity" src="images/synprotech32x32.png" alt="synprotech_logo">
+            <img class="synprotech-logo w3-image w3-hover-opacity" src="<?= Html::img('@web/images/synprotech32x32.png', ['alt' => 'synprotech_logo']) ?>" alt="synprotech_logo">
+<!--            <img class="synprotech-logo w3-image w3-hover-opacity" src="images/synprotech32x32.png" alt="synprotech_logo">-->
             <p class="w3-margin-top"><b>SYNPROTECH</b> ENGINEERING LLC</p>
             <p><span><i style="font-size:12px" class="fa">&#xf095;</i> +38 044 3717890</span></p>
             <p onclick="sendMail()" class="email"><i style="font-size:12px" class="fa">&#xf003;</i> office@synproeng.com
             </p>
         </div>
         <div class="inner-box-footer">
-            <img class="w3-image" src="images/qr-150-m.png" alt="qr_code">
+<!--            <img class="w3-image" src="images/qr-150-m.png" alt="qr_code">-->
+            <img class="w3-image" src="<?= Html::img('@web/images/qr-150-m.png')?>" alt="qr_code">
             <p class="w3-margin w3-pading">Synprotech &copy; 2018</p>
         </div>
         <div class="inner-box-footer">

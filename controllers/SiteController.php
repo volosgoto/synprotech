@@ -64,9 +64,21 @@ class SiteController extends Controller {
 
 
     public function actionServices() {
-        $title = 'Home Page';
-        return $this->render('services', compact('title'));
+        return $this->render('index', compact('title'));
     }
+
+    public function actionPartners() {
+        $title = 'Partners';
+        return $this->render('partners', compact('title'));
+    }
+
+    public function actionReference() {
+        $title = 'Reference';
+        return $this->render('reference', compact('title'));
+    }
+
+
+
 
 
 

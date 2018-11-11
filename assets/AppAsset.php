@@ -17,10 +17,11 @@ class AppAsset extends AssetBundle
     public $css = [
         'css/w3.css',
         'css/font-awesome.min.css',
-    'css/style.css',
-    'css/partners.css',
-    'css/scroll.css',
-    
+        'css/style.css',
+        'css/partners.css',
+        'css/reference.css',
+        'css/scroll.css',
+
     ];
     public $js = [
         'js/app.js',
