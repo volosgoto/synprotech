@@ -64,9 +64,22 @@ class SiteController extends MainController {
     public function actionIndex() {
         $title = 'Home Page';
 
-        return $this->render('index', compact('title', 'w'));
+        return $this->render('index', compact('title'));
     }
 
+
+
+    public function actionDownload(){
+        $url= $_GET["url"];
+        $path = Yii::getAlias('@webroot') . "/$url";
+
+        $file = $path;
+
+        if (file_exists($file)) {
+
+            Yii::$app->response->xSendFile($file);
+        }
+    }
 
 
     /**

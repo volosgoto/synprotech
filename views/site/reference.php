@@ -9,11 +9,7 @@
 
 <!-- content -->
 <div class="reference-container">
-    <!-- <div class="style-container">
-      <h1 class="w3-animate-opacity w3-margin-top w3-padding-24">REFERENCE LIST</h1>
-    </div> -->
     <div class="style-container w3-card-4">
-        <!-- <table class="w3-table w3-striped w3-bordered w3-padding w3-hoverable w3-border"> -->
         <table class="w3-striped w3-bordered w3-hoverable w3-border">
             <tr>
                 <th class="w3-center">Year</th>

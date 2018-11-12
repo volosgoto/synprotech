@@ -6,17 +6,13 @@ $this->title = 'Synprotech Engineering';
 ?>
 
 <!-- showcase -->
-<h1>Site/Index</h1>
 <section class="showcase">
-
     <div class="w3-container w3-center">
-
         <h1 class="w3-text-shadow w3-animate-opacity w3-margin-top">About Us</h1>
         <hr>
         <p class="w3-animate-opacity">The advisor across all aspects of the hydrocarbon industry. Our clientele ranges from major oil, gas and chemical companies, investors, and financial institutions to regulators, development agencies, and law firms. Our purpose is to deliver subject
             matter expertise that underlies the clear perspective and visionary thinking.
         </p>
-        <!-- <button class="w3-button w3-black w3-large w3-opacity">More</button> -->
         <button onclick="accondionFunction('more-information')" class="w3-button w3-black w3-large w3-hover-blue-gray">More</button>
     </div>
 </section>

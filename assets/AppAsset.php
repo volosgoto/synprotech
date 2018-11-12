@@ -21,6 +21,7 @@ class AppAsset extends AssetBundle
         'css/partners.css',
         'css/reference.css',
         'css/scroll.css',
+        'css/style.css',
 
     ];
     public $js = [

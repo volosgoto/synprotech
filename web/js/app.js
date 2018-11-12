@@ -30,15 +30,15 @@ function sendMail() {
 }
 
 
-// let file = document.querySelector('.booklet-download');
-// file.addEventListener('click', (e) => {
-//   e.preventDefault();
-//   let confirmMsg = 'Do you want to download Booklet Synprotech_LLC?';
-//   let result = confirm(confirmMsg);
-//   if (result) {
-//     setTimeout(() => {
-//       let url = '/web/download/Booklet_Synprotech_ LLC_nov_2018.pdf';
-//       window.open(url, '_blank');
-//     }, 100);
-//   }
-// });
+let file = document.querySelector('.booklet-download');
+file.addEventListener('click', (e) => {
+  e.preventDefault();
+  let confirmMsg = 'Do you want to download Booklet Synprotech_LLC?';
+  let result = confirm(confirmMsg);
+  if (result) {
+    setTimeout(() => {
+      let url = '/downloads/Booklet_Synprotech_ LLC_nov_2018.pdf';
+      window.open(url, '_blank');
+    }, 100);
+  }
+});
