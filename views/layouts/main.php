@@ -11,6 +11,7 @@ use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
 use app\assets\AppAsset;
 use app\components\NavbarWidget;
+use app\components\ContactFormWidget;
 
 AppAsset::register($this);
 ?>
@@ -45,12 +46,7 @@ AppAsset::register($this);
 
 <!--main contact form-->
 <?php
-
-if (Yii::$app->response->statusCode == 200)
-{
-    require_once '../views/site/contact-form.php';
-}
-
+    if (Yii::$app->response->statusCode == 200) echo ContactFormWidget::widget()
 ?>
 <!--main contact form ENDS-->
 
