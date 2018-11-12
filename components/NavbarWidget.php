@@ -12,15 +12,14 @@ namespace app\components;
 use yii\base\Widget;
 
 class NavbarWidget extends Widget {
-    public $name;
+    public $userName;
 
     public function init() {
         parent::init();
-        if ($this->name === null) $this->name = 'Guest';
+        if ($this->userName === null) $this->userName = 'Guest';
     }
 
     public function run() {
-//       return '<h1>NavbarWidget</h1>';
         return $this->render('navbar');
     }
 
