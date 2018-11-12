@@ -12,17 +12,16 @@ use yii\helpers\Html;
 <!-- partners heading ENDS-->
 
 <!-- content -->
-<div class="container w3-section">
-    <div class="w3-row w3-center w3-margin w3-section">
+<div class="w3-container w3-section" >
+    <div class="w3-row w3-center w3-margin w3-section" >
         <h1 class="">Synprotech and partners are interested to cooperation!</h1>
         <h2 class="">Partners</h2>
     </div>
     <div class="w3-row w3-margin">
-        <div class="w3-container w3-third">
+        <div class="w3-container w3-third w3-center">
             <?= Html::img('@web/images/cngs_logo.jpg', ['class'=>'w3-image w3-card-4', 'alt' => 'synprotech_logo'])?>
-
         </div>
-        <div class="partners-desc w3-container w3-twothird">
+        <div class="partners-desc w3-container w3-twothird" >
             <p>CNGS Group is an international EPC/EPIC General Contractor – provider
                 of proven tailor-made and cost-effective solutions for a wide range of engineering,
                 construction and installations services, offshore and onshore, in certain parts of
@@ -36,7 +35,7 @@ use yii\helpers\Html;
         </div>
     </div>
     <div class="w3-row w3-margin">
-        <div class="w3-container w3-third">
+        <div class="w3-container w3-third w3-center">
             <?= Html::img('@web/images/baran_group_logo.jpg', ['class'=>'w3-image w3-card-4', 'alt' => 'synprotech_logo'])?>
         </div>
         <div class="w3-container w3-twothird partners-desc">
