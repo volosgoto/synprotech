@@ -56,7 +56,7 @@ AppAsset::register($this);
 
         <div class="w3-mobile w3-right w3-margin-right w3-text-gray">
             <a href="<?= Url::home()?>" class="w3-bar-item w3-button w3-hide-small w3-hover-blue-gray"><b>Home</b></a>
-            <a href="<?= Url::toRoute(['site/services', 'id' => 'services']);?>" class="w3-bar-item w3-button w3-hide-small w3-hover-blue-gray"><b>Services</b></a>
+            <a href="<?= Url::to(['site/services', 'id' => 'services']);?>" class="w3-bar-item w3-button w3-hide-small w3-hover-blue-gray"><b>Services</b></a>
             <a href="<?= Url::toRoute(['site/partners']);?>" class="w3-bar-item w3-button w3-hide-small w3-hover-blue-gray"><b>Partners</b></a>
             <a href="<?= Url::toRoute(['site/contact']);?>" class="w3-bar-item w3-button w3-hide-small w3-hover-blue-gray"><b>Contact us</b></a>
             <a href="<?= Url::toRoute(['site/reference']);?>" class="w3-bar-item w3-button w3-hide-small w3-hover-blue-gray"><b>Reference list</b></a>
