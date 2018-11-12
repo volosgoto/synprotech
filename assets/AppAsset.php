@@ -18,10 +18,9 @@ class AppAsset extends AssetBundle
         'css/w3.css',
         'css/font-awesome.min.css',
         'css/style.css',
-        'css/style.css',
-        'css/reference.css',
+//        'css/reference.css',
         'css/scroll.css',
-        'css/partners.css',
+//        'css/partners.css',
 
 
     ];

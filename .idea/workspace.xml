@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="259fdfea-6095-40eb-b2d9-7f702f317548" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/AppAsset.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/AppAsset.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/partners/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/partners/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/reference/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/reference/index.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,14 +29,14 @@
           <entry key="css" value="7" />
           <entry key="htaccess" value="3" />
           <entry key="js" value="2" />
-          <entry key="php" value="65" />
+          <entry key="php" value="66" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="7" />
           <entry key="JavaScript" value="2" />
-          <entry key="PHP" value="65" />
+          <entry key="PHP" value="66" />
           <entry key="htaccess" value="3" />
         </counts>
       </usages-collector>
@@ -50,14 +51,14 @@
           <entry key="dummy" value="28" />
           <entry key="htaccess" value="19" />
           <entry key="js" value="12" />
-          <entry key="php" value="1500" />
+          <entry key="php" value="1573" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="104" />
           <entry key="JavaScript" value="12" />
-          <entry key="PHP" value="1500" />
+          <entry key="PHP" value="1573" />
           <entry key="PLAIN_TEXT" value="28" />
           <entry key="htaccess" value="19" />
         </counts>
@@ -66,20 +67,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/AppAsset.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="35" column="6" selection-start-line="35" selection-start-column="6" selection-end-line="35" selection-end-column="6" />
+            <state relative-caret-position="378">
+              <caret line="34" column="6" lean-forward="true" selection-start-line="34" selection-start-column="6" selection-end-line="34" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/partners/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="37" column="51" selection-start-line="37" selection-start-column="51" selection-end-line="37" selection-end-column="51" />
+            <state relative-caret-position="18">
+              <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/reference/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="4" column="49" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -147,7 +157,6 @@
         <option value="$PROJECT_DIR$/views/main/index.php" />
         <option value="$PROJECT_DIR$/web/js/app.js" />
         <option value="$PROJECT_DIR$/controllers/SiteController.php" />
-        <option value="$PROJECT_DIR$/views/reference/index.php" />
         <option value="$PROJECT_DIR$/views/site/reference.php" />
         <option value="$PROJECT_DIR$/.htaccess" />
         <option value="$PROJECT_DIR$/web/css/style.css" />
@@ -155,9 +164,10 @@
         <option value="$PROJECT_DIR$/views/site/contat-form.php" />
         <option value="$PROJECT_DIR$/views/layouts/main.php" />
         <option value="$PROJECT_DIR$/views/site/error.php" />
-        <option value="$PROJECT_DIR$/assets/AppAsset.php" />
         <option value="$PROJECT_DIR$/web/css/partners.css" />
+        <option value="$PROJECT_DIR$/views/reference/index.php" />
         <option value="$PROJECT_DIR$/views/partners/index.php" />
+        <option value="$PROJECT_DIR$/assets/AppAsset.php" />
       </list>
     </option>
   </component>
@@ -349,12 +359,12 @@
       <workItem from="1541938564039" duration="10201000" />
       <workItem from="1541966931983" duration="25000" />
       <workItem from="1542006356117" duration="13271000" />
-      <workItem from="1542023798106" duration="7426000" />
+      <workItem from="1542023798106" duration="8413000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39795000" />
+    <option name="totallyTimeSpent" value="40782000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-10" width="1366" height="729" extended-state="6" />
@@ -467,13 +477,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/reference/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="479">
-          <caret line="223" column="30" selection-start-line="223" selection-start-column="30" selection-end-line="223" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/site/reference.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
@@ -564,13 +567,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/AppAsset.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="35" column="6" selection-start-line="35" selection-start-column="6" selection-end-line="35" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/css/partners.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -578,10 +574,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/views/reference/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="49" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/views/partners/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="37" column="51" selection-start-line="37" selection-start-column="51" selection-end-line="37" selection-end-column="51" />
+        <state relative-caret-position="18">
+          <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/AppAsset.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="34" column="6" lean-forward="true" selection-start-line="34" selection-start-column="6" selection-end-line="34" selection-end-column="6" />
         </state>
       </provider>
     </entry>

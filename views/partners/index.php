@@ -1,5 +1,6 @@
 <?php
 use yii\helpers\Html;
+yii\web\View::registerCssFile('@web/css/partners.css');
 ?>
 <!-- partners heading -->
 <section class="section w3-blue w3-hover-opacity">

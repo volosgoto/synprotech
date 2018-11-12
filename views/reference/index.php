@@ -1,3 +1,10 @@
+
+<?php
+use yii\helpers\Html;
+
+yii\web\View::registerCssFile('@web/css/reference.css');
+?>
+
 <!-- reference heading -->
 <section class="section w3-blue w3-hover-opacity" style="">
     <div class="w3-container w3-center">
