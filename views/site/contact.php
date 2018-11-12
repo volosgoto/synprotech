@@ -1,3 +1,8 @@
+<?php
+use yii\helpers\Html;
+
+?>
+
 <noscript>
     You need to enable JavaScript to run this app.
 </noscript>
@@ -13,7 +18,9 @@
 <br>
 <section id="contact" class="section w3-dark-grey">
     <div class="w3-container w3-center">
-        <img class=" w3-hover-opacity" src="img/synprotech32x32.png" alt="synprotech_logo">
+
+        <?= Html::img('@web/images/synprotech32x32.png', ['class'=>'w3-hover-opacity', 'alt' => 'synprotech'])?>
+
         <p class="w3-margin-top"><b>SYNPROTECH</b> ENGINEERING LLC</p>
         <p><i style="font-size:16px" class="fa">&#xf095;</i> +38 044 3717890</p>
         <p onclick="sendMail()" class="email"><i style="font-size:16px" class="fa">&#xf003;</i> office@synproeng.com

@@ -14,7 +14,8 @@ yii\web\View::registerCssFile('@web/css/partners.css');
 <!-- partners heading ENDS-->
 
 <!-- content -->
-<div class="w3-container w3-section " style="margin: 0px 40px">
+
+<div class="w3-container w3-section">
     <div class="w3-row w3-center w3-margin w3-section" >
         <h1 class="">Synprotech and partners are interested to cooperation!</h1>
         <h2 class="">Partners</h2>
@@ -48,12 +49,15 @@ yii\web\View::registerCssFile('@web/css/partners.css');
                 industry, telecommunication and infrastructure, in several parts of the world.</p>
         </div>
     </div>
+
+
+
     <div class="w3-row w3-center w3-margin w3-section">
         <h2 class="">Customers</h2>
     </div>
 
 
-    <section id="partners">
+
         <div class="w3-card-4 partners-background">
             <div class="w3-row w3-center">
                 <div class="w3-col s3"><img class="w3-image" src="/oldpublic/img/partners/brand-pick1.jpg" alt=""></div>
@@ -116,9 +120,6 @@ yii\web\View::registerCssFile('@web/css/partners.css');
                 <div class="w3-col s3"><img class="w3-image" src="/oldpublic/img/partners/brand-pick43.jpg" alt="" ></div>
             </div>
         </div>
-
-    </section>
-
 </div>
-<br>
+
 <!-- content ENDS -->

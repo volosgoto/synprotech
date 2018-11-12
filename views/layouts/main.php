@@ -63,12 +63,6 @@ AppAsset::register($this);
 <!--            <a class="booklet-download w3-bar-item w3-button w3-hide-small w3-hover-blue-gray" href=""><b>Download</b></a>-->
 
             <a class="booklet-download w3-bar-item w3-button w3-hide-small w3-hover-blue-gray" href="download?url=download/Booklet_Synprotech_ LLC_nov_2018.pdf"><b>Download</b></a>
-<!--            <a href="download?url=download/notes/trIssues5850f5ae5cd6.docx">DOWNLOAD</a>-->
-<!--            <a href="--><?//= Url::to('@web/downloads/Booklet_Synprotech_ LLC_nov_2018.pdf');?><!--" class="w3-bar-item w3-button w3-hide-small w3-hover-blue-gray"><b>Download</b></a>-->
-
-            <!--            --><?//= Html::a('<b>Download</b>', '', ['target' => '_blank', 'class' => 'booklet-download w3-bar-item w3-button w3-hide-small w3-hover-blue-gray']) ?>
-
-
             <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="accondionFunction('toggle-menu')"><i class="fa fa-bars"></i></a>
             <a id="btn-lang" class="w3-bar-item w3-button w3-hide-small w3-hover-blue-gray" href=""><i class="fa fa-angle-right"></i>Ru</a>
             <!-- <a id="btn-lang" href="" class= "w3-bar-item w3-hide-small w3-hover-blue-gray">ru</a> -->
@@ -116,8 +110,7 @@ if (Yii::$app->response->statusCode == 200)
             </p>
         </div>
         <div class="inner-box-footer">
-<!--            <img class="w3-image" src="/images/qr-150-m.png" alt="qr_code">-->
-            <img class="w3-image" src="<?=Yii::getAlias('@web'); ?>/images/qr-150-m.png" alt="qr_code">
+            <?= Html::img('@web/images/qr-150-m.png', ['class'=>'w3-image', 'alt' => 'qr_code'])?>
             <p class="w3-margin w3-pading">Synprotech &copy; 2018</p>
         </div>
         <div class="inner-box-footer">

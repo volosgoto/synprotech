@@ -1,36 +1,44 @@
-h2{
-  margin: 20px 0px;
+/*h2{*/
+  /*margin: 20px 0px;*/
+/*}*/
+
+
+div.w3-row.w3-center.w3-margin.w3-section h1,
+div.w3-row.w3-center.w3-margin.w3-section h2
+ {
+  color: #424242;
 }
 
 
 
-/* IN PARTNERS FILE ONLY*/
-div.w3-card-4.partners-background{ 
-  background-color: white;
-}
+/*!* IN PARTNERS FILE ONLY*!*/
+/*div.w3-card-4.partners-background{ */
+  /*background-color: white;*/
+/*}*/
 
 
-.partners-desc {
-  margin: 0px;
-  padding: 0px 10px;
-  text-align: justify;
+/*.partners-desc {*/
+  /*margin: 0px;*/
+  /*padding: 0px 40px;*/
+  /*text-align: justify;*/
 
-}
+/*}*/
 
 
-section>div.w3-card-4{
-  padding: 20px;
-}
+/*section>div.w3-card-4{*/
+  /*padding: 20px;*/
+/*}*/
 
 
 @media only screen and (max-width: 600px) {
   img {
     width: 100%
   }
-  
-  .partners-desc {
+
+
+.partners-desc {
     margin-top: 10px;
-    padding: 10px 5px;
+    padding: 10px 20px;
   }
 
   section>div.w3-card-4{
