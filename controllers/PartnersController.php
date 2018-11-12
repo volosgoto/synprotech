@@ -7,9 +7,6 @@
  */
 
 namespace app\controllers;
-
-
-
 use Yii;
 use yii\filters\AccessControl;
 use yii\web\Controller;
@@ -24,5 +21,9 @@ use app\models\ContactForm;
 class PartnersController extends MainController {
     public function actionIndex(){
         return $this->render('index');
+    }
+
+    public function actionView(){
+        return $this->render('view');
     }
 }

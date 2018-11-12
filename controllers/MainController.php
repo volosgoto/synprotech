@@ -1,10 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: andrey
- * Date: 12.11.18
- * Time: 9:08
- */
+/** Front contoller */
 
 namespace app\controllers;
 

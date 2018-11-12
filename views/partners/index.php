@@ -1,3 +1,1 @@
-<h1>Parrners/Index</h1>
-
-<?= $test ?>
+<h1>Partners/Index</h1>
