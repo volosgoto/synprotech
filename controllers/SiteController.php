@@ -11,6 +11,7 @@ use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
 
+
 class SiteController extends MainController {
     /**
      * {@inheritdoc}
@@ -62,28 +63,9 @@ class SiteController extends MainController {
      */
     public function actionIndex() {
         $title = 'Home Page';
-        $w = Yii::getAlias('@web');
 
         return $this->render('index', compact('title', 'w'));
     }
-
-
-    public function actionServices() {
-        return $this->render('index', compact('title'));
-    }
-
-    public function actionPartners() {
-        $title = 'Partners';
-        return $this->render('partners', compact('title'));
-    }
-
-    public function actionReference() {
-        $title = 'Reference';
-        return $this->render('reference', compact('title'));
-    }
-
-
-
 
 
 

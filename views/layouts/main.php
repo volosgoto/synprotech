@@ -56,13 +56,16 @@ AppAsset::register($this);
 
         <div class="w3-mobile w3-right w3-margin-right w3-text-gray">
             <a href="<?= Url::home()?>" class="w3-bar-item w3-button w3-hide-small w3-hover-blue-gray"><b>Home</b></a>
-            <a href="<?= Url::to(['site/services', 'id' => 'services']);?>" class="w3-bar-item w3-button w3-hide-small w3-hover-blue-gray"><b>Services</b></a>
-            <a href="<?= Url::toRoute(['site/partners']);?>" class="w3-bar-item w3-button w3-hide-small w3-hover-blue-gray"><b>Partners</b></a>
-            <a href="<?= Url::toRoute(['site/contact']);?>" class="w3-bar-item w3-button w3-hide-small w3-hover-blue-gray"><b>Contact us</b></a>
-            <a href="<?= Url::toRoute(['site/reference']);?>" class="w3-bar-item w3-button w3-hide-small w3-hover-blue-gray"><b>Reference list</b></a>
-            <a class="booklet-download w3-bar-item w3-button w3-hide-small w3-hover-blue-gray" href=""><b>Download</b></a>
-            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="accondionFunction('toggle-menu')"><i class="fa fa-bars"></i></a>
+            <a href="<?= Url::toRoute('site/#services');?>" class="w3-bar-item w3-button w3-hide-small w3-hover-blue-gray"><b>Services</b></a>
+            <a href="<?= Url::toRoute('partners/index');?>" class="w3-bar-item w3-button w3-hide-small w3-hover-blue-gray"><b>Partners</b></a>
+            <a href="<?= Url::toRoute('site/contact');?>" class="w3-bar-item w3-button w3-hide-small w3-hover-blue-gray"><b>Contact us</b></a>
+            <a href="<?= Url::toRoute('reference/index');?>" class="w3-bar-item w3-button w3-hide-small w3-hover-blue-gray"><b>Reference list</b></a>
+<!--            <a class="booklet-download w3-bar-item w3-button w3-hide-small w3-hover-blue-gray" href=""><b>Download</b></a>-->
 
+            <?= Html::a('<b>Download</b>', '/downloads/Booklet_Synprotech_ LLC_nov_2018.pdf', ['target' => '_blank', 'class' => 'booklet-download w3-bar-item w3-button w3-hide-small w3-hover-blue-gray']) ?>
+
+
+            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="accondionFunction('toggle-menu')"><i class="fa fa-bars"></i></a>
             <a id="btn-lang" class="w3-bar-item w3-button w3-hide-small w3-hover-blue-gray" href=""><i class="fa fa-angle-right"></i>Ru</a>
             <!-- <a id="btn-lang" href="" class= "w3-bar-item w3-hide-small w3-hover-blue-gray">ru</a> -->
         </div>
@@ -71,10 +74,10 @@ AppAsset::register($this);
 </div>
 <div id="toggle-menu" class="w3-bar-block w3-blue-gray w3-hide w3-hide-large w3-hide-medium w3-center">
     <a href="<?= Url::home()?>" class="w3-bar-item w3-button">Home</a>
-    <a href="<?= Url::toRoute(['site/services']);?>" class="w3-bar-item w3-button">Services</a>
-    <a href="<?= Url::toRoute(['site/partners']);?>" class="w3-bar-item w3-button">Partners</a>
+    <a href="<?= Url::toRoute(['site/#services']);?>" class="w3-bar-item w3-button">Services</a>
+    <a href="<?= Url::toRoute(['partners/index']);?>" class="w3-bar-item w3-button">Partners</a>
     <a href="<?= Url::toRoute(['site/contact']);?>" class="w3-bar-item w3-button">Contact us</a>
-    <a href="reference.html" class="w3-bar-item w3-button">Reference list</a>
+    <a href="<?= Url::toRoute(['reference/index']);?>" class="w3-bar-item w3-button">Reference list</a>
     <a class="w3-bar-item w3-button" href="/oldassets/booklet/Booklet_Synprotech_ LLC_nov_2018.pdf" download>Download</a>
     <a href="" class="w3-bar-item w3-button"><i class="fa fa-angle-right" style="font-size:14px"></i>Ru</a>
 </div>

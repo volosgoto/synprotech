@@ -6,6 +6,7 @@ $this->title = 'Synprotech Engineering';
 ?>
 
 <!-- showcase -->
+<h1>Site/Index</h1>
 <section class="showcase">
 
     <div class="w3-container w3-center">
