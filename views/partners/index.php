@@ -2,6 +2,7 @@
 use yii\helpers\Html;
 yii\web\View::registerCssFile('@web/css/partners.css');
 ?>
+
 <!-- partners heading -->
 <section class="section w3-blue w3-hover-opacity">
     <div class="w3-container w3-center">
@@ -13,7 +14,7 @@ yii\web\View::registerCssFile('@web/css/partners.css');
 <!-- partners heading ENDS-->
 
 <!-- content -->
-<div class="w3-container w3-section" >
+<div class="w3-container w3-section " style="margin: 0px 40px">
     <div class="w3-row w3-center w3-margin w3-section" >
         <h1 class="">Synprotech and partners are interested to cooperation!</h1>
         <h2 class="">Partners</h2>
