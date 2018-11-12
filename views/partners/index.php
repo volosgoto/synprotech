@@ -1,3 +1,6 @@
+<?php
+use yii\helpers\Html;
+?>
 <!-- partners heading -->
 <section class="section w3-blue w3-hover-opacity">
     <div class="w3-container w3-center">
@@ -16,7 +19,8 @@
     </div>
     <div class="w3-row w3-margin">
         <div class="w3-container w3-third">
-            <img class="w3-image w3-card-4" src="/oldpublic/img/cngs_logo.jpg" alt="cngs_logo" >
+            <?= Html::img('@web/images/cngs_logo.jpg', ['class'=>'w3-image w3-card-4', 'alt' => 'synprotech_logo'])?>
+
         </div>
         <div class="partners-desc w3-container w3-twothird">
             <p>CNGS Group is an international EPC/EPIC General Contractor – provider
@@ -33,7 +37,7 @@
     </div>
     <div class="w3-row w3-margin">
         <div class="w3-container w3-third">
-            <img class="w3-image w3-card-4" src="/oldpublic/img/baran_group_logo.jpg" alt="baran_group_logo">
+            <?= Html::img('@web/images/baran_group_logo.jpg', ['class'=>'w3-image w3-card-4', 'alt' => 'synprotech_logo'])?>
         </div>
         <div class="w3-container w3-twothird partners-desc">
             <p>Our reliable and proven partner is the Israeli company Baran Israel Ltd.

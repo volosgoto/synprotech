@@ -229,6 +229,7 @@ p.header-email:hover {
   flex: 1;
   flex-basis: 17%;
   height: auto;
+  color: #007bff;
 }
 
 .inner-box-footer p {
