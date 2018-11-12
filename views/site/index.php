@@ -3,7 +3,9 @@
 /* @var $this yii\web\View */
 
 $this->title = 'Synprotech Engineering';
+use app\components\NavbarWidget;
 ?>
+
 
 <!-- showcase -->
 <section class="showcase">
