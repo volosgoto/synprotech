@@ -23,19 +23,19 @@ use app\components\ContactFormWidget;
 
 
 class IndexController extends MainController {
-    public function actionContact() {
-        $formLayout = new ContactFormWidget();
-        $this->layout($formLayout->run());
-
-        $model = new ContactForm();
-
-        if ($model->load(Yii::$app->request->post()) && $model->contact(Yii::$app->params['emailto'])) {
-            Yii::$app->session->setFlash('contactFormSubmitted');
-            return $this->refresh();
-        } else {
-            return $this->render($formLayout->run(), [
-                'model' => $model,
-            ]);
-        }
-    }
+//    public function actionContact() {
+//        $formLayout = new ContactFormWidget();
+//        $this->layout($formLayout->run());
+//
+//        $model = new ContactForm();
+//
+//        if ($model->load(Yii::$app->request->post()) && $model->contact(Yii::$app->params['emailto'])) {
+//            Yii::$app->session->setFlash('contactFormSubmitted');
+//            return $this->refresh();
+//        } else {
+//            return $this->render($formLayout->run(), [
+//                'model' => $model,
+//            ]);
+//        }
+//    }
 }

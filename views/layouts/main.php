@@ -47,7 +47,7 @@ AppAsset::register($this);
 
 <!--main contact form-->
 <?php
-    if (Yii::$app->response->statusCode == 200) echo ContactFormWidget::widget()
+    if (Yii::$app->response->statusCode == 200) echo ContactFormWidget::widget();
 ?>
 <!--main contact form ENDS-->
 

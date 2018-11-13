@@ -10,6 +10,7 @@ use yii\web\Response;
 use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
+use app\components\ContactFormWidget;
 
 
 class SiteController extends MainController {
@@ -62,10 +63,24 @@ class SiteController extends MainController {
      * @return string
      */
     public function actionIndex() {
-        $title = 'Home Page';
 
+        $model = new ContactForm();
+
+        if ($model->load(Yii::$app->request->post()) && $model->contact(Yii::$app->params['emailto'])) {
+            Yii::$app->session->setFlash('contactFormSubmitted');
+            return $this->refresh();
+        } else {
+            return $this->render('index', [
+                'model' => $model,
+            ]);
+        }
+
+
+
+        $title = 'Home Page';
         return $this->render('index', compact('title'));
     }
+
 
 
 
@@ -80,6 +95,8 @@ class SiteController extends MainController {
             Yii::$app->response->xSendFile($file);
         }
     }
+
+
 
 
     /**
@@ -119,17 +136,17 @@ class SiteController extends MainController {
      *
      * @return Response|string
      */
-    public function actionContact() {
-        $model = new ContactForm();
-        if ($model->load(Yii::$app->request->post()) && $model->contact(Yii::$app->params['adminEmail'])) {
-            Yii::$app->session->setFlash('contactFormSubmitted');
-
-            return $this->refresh();
-        }
-        return $this->render('contact', [
-            'model' => $model,
-        ]);
-    }
+//    public function actionContact() {
+//        $model = new ContactForm();
+//        if ($model->load(Yii::$app->request->post()) && $model->contact(Yii::$app->params['adminEmail'])) {
+//            Yii::$app->session->setFlash('contactFormSubmitted');
+//
+//            return $this->refresh();
+//        }
+//        return $this->render('contact', [
+//            'model' => $model,
+//        ]);
+//    }
 
     /**
      * Displays about page.
