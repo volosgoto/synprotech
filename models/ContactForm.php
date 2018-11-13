@@ -58,9 +58,6 @@ class ContactForm extends Model
                 ->setSubject($this->subject)
                 ->setTextBody($this->body)
                 ->send();
-
-            Yii::$app->session->setFlash('contactFormSubmitted', 'Message has been send');
-
             return true;
         }
         return false;

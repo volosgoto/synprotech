@@ -3,7 +3,6 @@
 /* @var $this \yii\web\View */
 /* @var $content string */
 
-use app\widgets\Alert;
 use yii\helpers\Html;
 use yii\helpers\Url;
 use yii\bootstrap\Nav;
@@ -13,6 +12,8 @@ use app\assets\AppAsset;
 use app\components\NavbarWidget;
 use app\components\ContactFormWidget;
 use \app\components\FooterWidget;
+use app\widgets\Alert;
+
 
 AppAsset::register($this);
 ?>
@@ -42,7 +43,18 @@ AppAsset::register($this);
 <?= NavbarWidget::widget()?>
 
 
+<!-- Flash msg-->
+<div class="w3-container w3-center">
+    <?= Alert::widget(); ?>
+</div>
+
+
+
+<!--Content-->
 <?= $content ?>
+
+
+
 
 
 <!--main contact form-->

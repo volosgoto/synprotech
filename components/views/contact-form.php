@@ -16,21 +16,14 @@ AppAsset::register($this);
 ?>
 
 <section class="section-contact-form">
-    <div id="contact" class="w3-dark-gray w3-twothird w3-center">
+    <div id="contact" class="w3-gray w3-twothird w3-center">
         <div class="w3-card-4">
             <div class="w3-container w3-dark-gray">
                 <h2 class="w3-margin-top"><?= Html::encode($this->title) ?></h2>
             </div>
 
 
-        <?php if( Yii::$app->session->hasFlash('contactFormSubmitted') ): ?>
-            <div class="alert alert-success alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <?php echo Yii::$app->session->getFlash('contactFormSubmitted'); ?>
-            </div>
 
-
-        <?php else: ?>
         <?php $form = ActiveForm::begin([
             'id' => 'email-form',
             'options' => ['class' => 'w3-container w3-padding-xlarge'], /* класс формы */
@@ -49,7 +42,7 @@ AppAsset::register($this);
         </div>
         <?php ActiveForm::end(); ?>
 
-        <?php endif; ?>
+
         </div>
     </div>
 </section>
