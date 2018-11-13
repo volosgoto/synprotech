@@ -34,22 +34,17 @@ AppAsset::register($this);
 
         <?php else: ?>
         <?php $form = ActiveForm::begin([
-        'id' => 'email-form',
-        'options' => ['class' => 'w3-container w3-padding-xlarge'], /* класс формы */
-        'action' => Url::home(),
-        'method' => 'post',
-        'fieldConfig' => [],
+            'id' => 'email-form',
+            'options' => ['class' => 'w3-container w3-padding-xlarge'], /* класс формы */
+            'action' => Url::home(),
+            'method' => 'post',
+            'fieldConfig' => [],
         ]); ?>
         <?= $form->field($model, 'name') ?>
         <?= $form->field($model, 'email') ?>
         <?= $form->field($model, 'subject') ?>
         <?= $form->field($model, 'body')->textArea(['rows' => 6]) ?>
-<!--        --><?//= $form->field($model, 'verifyCode', ['options' => ['class' => 'w3-image']])->widget(Captcha::className(), [
-//            'captchaAction' => '/site/captcha',
-//            'template' => '<div class="w3-container w3-padding-xlarge">
-//                                <div class="w3-input">{input}</div>
-//                            </div>',
-//        ]) ?>
+
 
         <div class="form-group">
             <?= Html::submitButton('Submit', ['class' => 'w3-button w3-black w3-large w3-hover-blue-gray', 'name' => 'contact-button']) ?>
@@ -60,5 +55,6 @@ AppAsset::register($this);
         </div>
     </div>
 </section>
+
 
 
