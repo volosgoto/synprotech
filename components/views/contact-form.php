@@ -16,9 +16,9 @@ AppAsset::register($this);
 ?>
 
 <section class="section-contact-form">
-    <div class="w3-dark-gray w3-twothird w3-center">
+    <div id="contact" class="w3-dark-gray w3-twothird w3-center">
         <div class="w3-card-4">
-            <div class="w3-container w3-dark-gray ">
+            <div class="w3-container w3-dark-gray">
                 <h2 class="w3-margin-top"><?= Html::encode($this->title) ?></h2>
             </div>
         <?php if (Yii::$app->session->hasFlash('contactFormSubmitted')): ?>
