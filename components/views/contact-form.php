@@ -16,11 +16,12 @@ AppAsset::register($this);
 ?>
 
 <section class="section-contact-form">
-     <div class="w3-container w3-dark-gray w3-twothird w3-center">
+<!--     <div class="w3-container w3-dark-gray w3-twothird w3-center">-->
     <div class="w3-dark-gray w3-twothird w3-center">
-
-    // Заголовок
-    <h1><?= Html::encode($this->title) ?></h1>
+        <div class="w3-card-4">
+            <div class="w3-container w3-dark-gray ">
+                <h2 class="w3-margin-top"><?= Html::encode($this->title) ?></h2>
+            </div>
 
     <?php if (Yii::$app->session->hasFlash('contactFormSubmitted')): ?>
 
@@ -29,42 +30,37 @@ AppAsset::register($this);
     </div>
 
     <?php else: ?>
-
-
-
     <?php $form = ActiveForm::begin([
-        'id' => 'contact-form', /* Идентификатор формы */
-        'options' => ['class' => 'form-horizontal'], /* класс формы */
+        'id' => 'email-form',
+        'options' => ['class' => 'w3-container w3-padding-xlarge'], /* класс формы */
         'action' => Url::home(),
         'method' => 'post',
         'fieldConfig' => [ /* классы полей формы */
-            'template' => "<div class=\"col-lg-3\">{label}</div>\n<div class=\"col-lg-9\">{input}</div>\n<div class=\"col-lg-12 col-lg-offset-3 \">{error}</div>"
+//            'template' => "<div class=\"col-lg-3\">{label}</div>\n<div class=\"col-lg-9\">{input}</div>\n<div class=\"col-lg-12 col-lg-offset-3 \">{error}</div>"
 
         ],
     ]); ?>
-        /* Поля формы и капча */
         <?= $form->field($model, 'name') ?>
         <?= $form->field($model, 'email') ?>
         <?= $form->field($model, 'subject') ?>
-
         <?= $form->field($model, 'body')->textArea(['rows' => 6]) ?>
         <?= $form->field($model, 'verifyCode')->widget(Captcha::className(), [
             'captchaAction' => '/index/captcha',
-            'template' => '<div class="row"><div class="col-lg-4">{image}</div><div class="col-lg-7">{input}</div></div>',
+            'template' => '<div class="w3-container w3-padding-xlarge">
+                                <div class="w3-input">{input}</div>
+                            </div>',
         ]) ?>
 
         <div class="form-group">
-            <?= Html::submitButton('Отправить сообщение', ['class' => 'btn btn-default waves-effect btn-color-orange btn-color-orange-long', 'name' => 'contact-button']) ?>
+            <?= Html::submitButton('Submit', ['id' => 'submit', 'class' => 'w3-button w3-black w3-large w3-hover-blue-gray', 'name' => 'contact-button']) ?>
         </div>
-
         <?php ActiveForm::end(); ?>
 
     <?php endif; ?>
     </div>
 
-</div>
+    </div>
 </section>
-
 
     <!-- main contact form -->
 <!--<section class="section-contact-form">-->
