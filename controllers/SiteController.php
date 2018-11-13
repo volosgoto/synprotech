@@ -63,11 +63,11 @@ class SiteController extends MainController {
      * @return string
      */
     public function actionIndex() {
-
+//         Send form
         $model = new ContactForm();
-
         if ($model->load(Yii::$app->request->post()) && $model->contact(Yii::$app->params['emailto'])) {
             Yii::$app->session->setFlash('contactFormSubmitted');
+            $this->sendMail();
             return $this->refresh();
         } else {
             return $this->render('index', [
@@ -81,6 +81,17 @@ class SiteController extends MainController {
         return $this->render('index', compact('title'));
     }
 
+
+
+    public function sendMail(){
+        Yii::$app->mailer->compose()
+            ->setFrom('from@domain.com')
+            ->setTo('to@domain.com')
+            ->setSubject('Тема сообщения')
+            ->setTextBody('Текст сообщения')
+            ->setHtmlBody('<b>текст сообщения в формате HTML</b>')
+            ->send();
+    }
 
 
 
