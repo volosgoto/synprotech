@@ -1,8 +1,5 @@
 <?php
 
-/* @var $this \yii\web\View */
-/* @var $content string */
-
 use app\widgets\Alert;
 use yii\helpers\Html;
 use yii\helpers\Url;
@@ -10,7 +7,10 @@ use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
 use app\assets\AppAsset;
-use app\components\NavbarWidget;
+use yii\bootstrap\ActiveForm;
+use yii\captcha\Captcha;
+
+$this->title = 'Contact Us';
 
 AppAsset::register($this);
 ?>
@@ -51,3 +51,5 @@ AppAsset::register($this);
         </div>
 </section>
 <!-- main contact form ENDS-->
+
+
