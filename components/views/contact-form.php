@@ -41,11 +41,12 @@ AppAsset::register($this);
         <?= $form->field($model, 'subject') ?>
         <?= $form->field($model, 'body')->textArea(['rows' => 6]) ?>
         <?= $form->field($model, 'verifyCode')->widget(Captcha::className(), [
-            'captchaAction' => '/index/captcha',
-            'template' => '<div class="w3-container w3-padding-xlarge">
-                                <div class="w3-input">{input}</div>
-                            </div>',
+//            'captchaAction' => '/index/captcha',
+//            'template' => '<div class="w3-container w3-padding-xlarge">
+//                                <div class="w3-input">{input}</div>
+//                            </div>',
         ]) ?>
+
         <div class="form-group">
             <?= Html::submitButton('Submit', ['id' => 'submit', 'class' => 'w3-button w3-black w3-large w3-hover-blue-gray', 'name' => 'contact-button']) ?>
         </div>
