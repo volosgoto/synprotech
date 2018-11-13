@@ -21,15 +21,13 @@ AppAsset::register($this);
             <div class="w3-container w3-dark-gray">
                 <h2 class="w3-margin-top"><?= Html::encode($this->title) ?></h2>
             </div>
-        <?php if (Yii::$app->session->hasFlash('contactFormSubmitted')): ?>
-        <div class="alert alert-success">
-        Message has been send.
-        </div>
-        <?php
-            $page = $_SERVER['PHP_SELF'];
-            $sec = "5";
-            header("Refresh: $sec; url=$page")
-         ?>
+
+
+        <?php if( Yii::$app->session->hasFlash('contactFormSubmitted') ): ?>
+            <div class="alert alert-success alert-dismissible" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <?php echo Yii::$app->session->getFlash('contactFormSubmitted'); ?>
+            </div>
 
 
         <?php else: ?>

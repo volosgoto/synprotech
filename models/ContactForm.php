@@ -40,7 +40,7 @@ class ContactForm extends Model
             'email' => 'Email',
             'subject' => 'Subject',
             'body' => 'Text Message',
-            'verifyCode' => 'Verification Code',
+//            'verifyCode' => 'Verification Code',
         ];
     }
 
@@ -58,6 +58,8 @@ class ContactForm extends Model
                 ->setSubject($this->subject)
                 ->setTextBody($this->body)
                 ->send();
+
+            Yii::$app->session->setFlash('contactFormSubmitted', 'Message has been send');
 
             return true;
         }
