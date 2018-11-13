@@ -4,6 +4,11 @@ body {
   background-color: #eceff1;
 }
 
+#contactform-verifycode-image{
+  margin-bottom: 15px;
+}
+
+
 a {
   font-size: 16px;
 }
