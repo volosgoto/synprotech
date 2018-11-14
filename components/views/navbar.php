@@ -37,7 +37,7 @@ AppAsset::register($this);
 
         <div class="w3-mobile w3-right w3-margin-right w3-text-gray">
             <a href="<?= Url::home()?>" class="w3-bar-item w3-button w3-hide-small w3-hover-blue-gray"><b>Home</b></a>
-            <a href="<?= Url::toRoute('site/#services');?>" class="w3-bar-item w3-button w3-hide-small w3-hover-blue-gray"><b>Services</b></a>
+            <a href="<?= Url::toRoute('/#services');?>" class="w3-bar-item w3-button w3-hide-small w3-hover-blue-gray"><b>Services</b></a>
             <a href="<?= Url::toRoute('partners/index');?>" class="w3-bar-item w3-button w3-hide-small w3-hover-blue-gray"><b>Partners</b></a>
             <a href="<?= Url::toRoute('site/contact');?>" class="w3-bar-item w3-button w3-hide-small w3-hover-blue-gray"><b>Contact us</b></a>
             <a href="<?= Url::toRoute('reference/index');?>" class="w3-bar-item w3-button w3-hide-small w3-hover-blue-gray"><b>Reference list</b></a>
@@ -53,7 +53,7 @@ AppAsset::register($this);
 </div>
 <div id="toggle-menu" class="w3-bar-block w3-blue-gray w3-hide w3-hide-large w3-hide-medium w3-center">
     <a href="<?= Url::home()?>" class="w3-bar-item w3-button">Home</a>
-    <a href="<?= Url::toRoute(['site/#services']);?>" class="w3-bar-item w3-button">Services</a>
+    <a href="<?= Url::toRoute(['/#services']);?>" class="w3-bar-item w3-button">Services</a>
     <a href="<?= Url::toRoute(['partners/index']);?>" class="w3-bar-item w3-button">Partners</a>
     <a href="<?= Url::toRoute(['site/contact']);?>" class="w3-bar-item w3-button">Contact us</a>
     <a href="<?= Url::toRoute(['reference/index']);?>" class="w3-bar-item w3-button">Reference list</a>

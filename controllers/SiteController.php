@@ -63,20 +63,8 @@ class SiteController extends MainController {
      * @return string
      */
     public function actionIndex() {
-//         Send form
-        $model = new ContactForm();
-        if ($model->load(Yii::$app->request->post()) && $model->contact(Yii::$app->params['emailto'])) {
-            Yii::$app->session->setFlash('success', 'Message has been send');
 
-            return $this->refresh();
-
-        } else {
-            return $this->render('index', [
-                'model' => $model,
-            ]);
-        }
-
-
+        $this->actionContact();
 
         $title = 'Home Page';
         return $this->render('index', compact('title'));
@@ -140,15 +128,19 @@ class SiteController extends MainController {
      */
     public function actionContact() {
         $model = new ContactForm();
-        if ($model->load(Yii::$app->request->post()) && $model->contact(Yii::$app->params['adminEmail'])) {
-            Yii::$app->session->setFlash('contactFormSubmitted');
+        if ($model->load(Yii::$app->request->post()) && $model->contact(Yii::$app->params['emailto'])) {
+            Yii::$app->session->setFlash('success', 'Message has been send');
 
-            return $this->refresh();
+//            return $this->refresh();
+            return true;
+
+        } else {
+            return $this->render('contact', [
+                'model' => $model,
+            ]);
         }
-        return $this->render('contact', [
-            'model' => $model,
-        ]);
     }
+
 
     /**
      * Displays about page.
@@ -158,8 +150,6 @@ class SiteController extends MainController {
     public function actionAbout() {
         return $this->render('about');
     }
-
-
 
 }
 
