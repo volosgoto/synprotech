@@ -127,9 +127,12 @@ class SiteController extends MainController {
     public function actionContact() {
         $model = new ContactForm();
         if ($model->load(Yii::$app->request->post()) && $model->contact(Yii::$app->params['emailto'])) {
-            Yii::$app->session->setFlash('success', 'Message has been send');
+//          mail(Yii::$app->params['emailto']), $model->subject, $model->body, $headers);
+//          return $this->refresh();
+//          $headers = 'Contact form: synproenginfo@gmail.com' . 'Reply-To: office@synproeng.com';
 
-//            return $this->refresh();
+            mail('synproenginfo@gmail.com', 'Test from http://synproeng.com/', 'Test msg');
+            Yii::$app->session->setFlash('success', 'Message has been send');
             return true;
         } else {
             return $this->render('contact', [
