@@ -72,8 +72,6 @@ class SiteController extends MainController {
 
 
 
-
-
     public function actionDownload(){
         $url= $_GET["url"];
         $path = Yii::getAlias('@webroot') . "/$url";

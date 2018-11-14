@@ -3,24 +3,20 @@
 $params = require __DIR__ . '/params.php';
 $db = require __DIR__ . '/db.php';
 
-
 $config = [
     'id' => 'basic',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
-    'name'=>'Synprotech',
-//    'language' => 'ru-Ru',
     'language' => 'en',
     'aliases' => [
         '@bower' => '@vendor/bower-asset',
         '@npm'   => '@vendor/npm-asset',
-
     ],
     'components' => [
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
-            'cookieValidationKey' => 'lGuqU84QphVnsfZXyNl-2NwnkC5DNPf7',
-            'baseUrl' => ''
+            'cookieValidationKey' => 'jm2xGSfAoyT4J4W1kSt9CHQAEFwrrqyP',
+            'baseUrl' => '',
         ],
         'cache' => [
             'class' => 'yii\caching\FileCache',
@@ -37,15 +33,7 @@ $config = [
             // send all mails to a file by default. You have to set
             // 'useFileTransport' to false and configure a transport
             // for the mailer to send real emails.
-            'useFileTransport' => false,
-            'transport' => [
-                'class' => 'Swift_SmtpTransport',
-                'host' => 'smtp.gmail.com',
-                'username' => 'synproenginfo@gmail.com',
-                'password' => '04072018',
-                'port' => '465',
-                'encryption' => 'ssl',
-            ],
+            'useFileTransport' => true,
         ],
         'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,
@@ -67,7 +55,6 @@ $config = [
 
     ],
     'params' => $params,
-
 ];
 
 if (YII_ENV_DEV) {
@@ -86,7 +73,5 @@ if (YII_ENV_DEV) {
         //'allowedIPs' => ['127.0.0.1', '::1'],
     ];
 }
-
-
 
 return $config;
