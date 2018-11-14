@@ -131,7 +131,9 @@ class SiteController extends MainController {
         if ($model->load(Yii::$app->request->post()) && $model->contact(Yii::$app->params['emailto'])) {
             Yii::$app->session->setFlash('success', 'Message has been send');
 
-//            return $this->refresh();
+            $sendEmail = new ContactForm();
+            $sendEmail->contact();
+
             return true;
 
         } else {
