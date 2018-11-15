@@ -9,6 +9,11 @@ body {
 }
 
 
+#аlert-widget {
+  margin-top: 20px;
+
+}
+
 a {
   font-size: 16px;
 }

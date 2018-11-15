@@ -43,15 +43,17 @@ AppAsset::register($this);
 <?= NavbarWidget::widget()?>
 
 
-<!-- Flash msg-->
-<div class="w3-container w3-center">
-    <?= Alert::widget();  ?>
-</div>
-
 
 <!--Content-->
 <?= $content ?>
 
+
+<!-- Flash msg-->
+<div id="аlert-widget" class="w3-container w3-center">
+    <div class="w3-row">
+        <?= Alert::widget();  ?>
+    </div>
+</div>
 
 <!--main contact form-->
 <?php

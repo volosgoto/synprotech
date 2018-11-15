@@ -21,7 +21,7 @@ function accondionFunction(id) {
 
 
 function homeLink() {
-  window.location.href = '/oldpublic';
+  window.location.href = '/';
 }
 
 
@@ -42,3 +42,5 @@ file.addEventListener('click', (e) => {
     }, 100);
   }
 });
+
+
