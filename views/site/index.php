@@ -6,7 +6,6 @@ $this->title = 'Synprotech Engineering';
 use app\components\NavbarWidget;
 ?>
 
-
 <!-- showcase -->
 <section class="showcase">
     <div class="w3-container w3-center">

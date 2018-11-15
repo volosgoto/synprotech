@@ -45,7 +45,7 @@ AppAsset::register($this);
 
 <!-- Flash msg-->
 <div class="w3-container w3-center">
-    <?= Alert::widget(); ?>
+    <?= Alert::widget();  ?>
 </div>
 
 

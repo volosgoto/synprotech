@@ -63,7 +63,7 @@ class SiteController extends MainController {
      * @return string
      */
     public function actionIndex() {
-        $this->actionContact();
+
 
 
         $title = 'Home Page';
@@ -126,26 +126,21 @@ class SiteController extends MainController {
      */
     public function actionContact() {
         $model = new ContactForm();
-//        $flashMsg =  Yii::$app->session->setFlash('success', '!Message has been send');
-
         if ($model->load(Yii::$app->request->post()) && $model->contact(Yii::$app->params['emailto'])) {
-
 
             // TODO Change on hosting pay-plan. Uncommetn next string to send emails
 //            $headers = 'Contact form: synproenginfo@gmail.com' . 'Reply-To: office@synproeng.com';
 //            mail(Yii::$app->params['emailto'], $model->subject, $model->body);
 
-          Yii::$app->session->setFlash('success', 'Message has been send');
-
+            Yii::$app->session->setFlash('success', 'Message has been send');
 
             // Go Back
             if(Yii::$app->user->returnUrl != '/') {
-                $this->goBack();
+                return $this->goBack();
             } else {
-                Yii::$app->request->referrer ? $this->redirect(Yii::$app->request->referrer) : $this->goHome();
+                return Yii::$app->request->referrer ? $this->redirect(Yii::$app->request->referrer) : $this->goHome();
             }
 
-        return true;
 
         } else {
             return $this->render('contact', [

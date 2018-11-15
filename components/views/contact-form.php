@@ -27,7 +27,7 @@ AppAsset::register($this);
         <?php $form = ActiveForm::begin([
             'id' => 'email-form',
             'options' => ['class' => 'w3-container w3-padding-xlarge'], /* класс формы */
-            'action' => Url::home(),
+            'action' => Url::to(['site/contact']),
             'method' => 'post',
             'fieldConfig' => [],
         ]); ?>
