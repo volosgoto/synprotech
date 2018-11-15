@@ -49,12 +49,8 @@ AppAsset::register($this);
 </div>
 
 
-
 <!--Content-->
 <?= $content ?>
-
-
-
 
 
 <!--main contact form-->

@@ -127,19 +127,20 @@ class SiteController extends MainController {
     public function actionContact() {
         $model = new ContactForm();
         if ($model->load(Yii::$app->request->post()) && $model->contact(Yii::$app->params['emailto'])) {
-//          return $this->refresh();
-//          $headers = 'Contact form: synproenginfo@gmail.com' . 'Reply-To: office@synproeng.com';
 
             // TODO Change on hosting pay-plan. Uncommetn next string to send emails
+//            $headers = 'Contact form: synproenginfo@gmail.com' . 'Reply-To: office@synproeng.com';
 //            mail(Yii::$app->params['emailto'], $model->subject, $model->body);
-            Yii::$app->session->setFlash('success', 'Message has been send');
+          $flashMsg =  Yii::$app->session->setFlash('success', 'Message has been send');
 
 
             // Go Back
             if(Yii::$app->user->returnUrl != '/') {
-                return $this->goBack();
+                $this->goBack();
+                return $flashMsg;
             } else {
                 Yii::$app->request->referrer ? $this->redirect(Yii::$app->request->referrer) : $this->goHome();
+                return $flashMsg;
             }
 
         } else {
