@@ -63,8 +63,8 @@ class SiteController extends MainController {
      * @return string
      */
     public function actionIndex() {
-
         $this->actionContact();
+
 
         $title = 'Home Page';
         return $this->render('index', compact('title'));
@@ -83,8 +83,6 @@ class SiteController extends MainController {
             Yii::$app->response->xSendFile($file);
         }
     }
-
-
 
 
     /**
@@ -108,6 +106,7 @@ class SiteController extends MainController {
         ]);
     }
 
+
     /**
      * Logout action.
      *
@@ -119,6 +118,7 @@ class SiteController extends MainController {
         return $this->goHome();
     }
 
+
     /**
      * Displays contact page.
      *
@@ -126,22 +126,26 @@ class SiteController extends MainController {
      */
     public function actionContact() {
         $model = new ContactForm();
+//        $flashMsg =  Yii::$app->session->setFlash('success', '!Message has been send');
+
         if ($model->load(Yii::$app->request->post()) && $model->contact(Yii::$app->params['emailto'])) {
+
 
             // TODO Change on hosting pay-plan. Uncommetn next string to send emails
 //            $headers = 'Contact form: synproenginfo@gmail.com' . 'Reply-To: office@synproeng.com';
 //            mail(Yii::$app->params['emailto'], $model->subject, $model->body);
-          $flashMsg =  Yii::$app->session->setFlash('success', 'Message has been send');
+
+          Yii::$app->session->setFlash('success', 'Message has been send');
 
 
             // Go Back
             if(Yii::$app->user->returnUrl != '/') {
                 $this->goBack();
-                return $flashMsg;
             } else {
                 Yii::$app->request->referrer ? $this->redirect(Yii::$app->request->referrer) : $this->goHome();
-                return $flashMsg;
             }
+
+        return true;
 
         } else {
             return $this->render('contact', [
