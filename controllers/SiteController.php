@@ -130,7 +130,7 @@ class SiteController extends MainController {
 
             // TODO Change on hosting pay-plan. Uncommetn next string to send emails
 //            $headers = 'Contact form: synproenginfo@gmail.com' . 'Reply-To: office@synproeng.com';
-            mail(Yii::$app->params['emailto'], $model->subject, $model->body);
+//            mail(Yii::$app->params['emailto'], $model->subject, $model->body);
 
             Yii::$app->session->setFlash('success', 'Message has been send');
 

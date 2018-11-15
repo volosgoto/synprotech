@@ -1,6 +1,6 @@
 <?php
 use yii\helpers\Html;
-yii\web\View::registerCssFile('@web/css/partners.css');
+$this->registerCssFile('@web/css/partners.css', ['depends' => ['app\assets\AppAsset']]);
 ?>
 
 <!-- partners heading -->

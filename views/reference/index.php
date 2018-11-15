@@ -1,8 +1,7 @@
 
 <?php
 use yii\helpers\Html;
-
-yii\web\View::registerCssFile('@web/css/reference.css');
+$this->registerCssFile('@web/css/reference.css', ['depends' => ['app\assets\AppAsset']]);
 ?>
 
 <!-- reference heading -->
