@@ -44,3 +44,20 @@ file.addEventListener('click', (e) => {
 });
 
 
+
+
+
+
+// Scroll on form submit
+window.onload = ()=> {
+    let successAlert = document.getElementById('w0-success-0');
+    successAlert.scrollIntoView();
+}
+
+
+
+
+
+
+
+
