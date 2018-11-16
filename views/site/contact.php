@@ -1,6 +1,7 @@
+
 <?php
 use yii\helpers\Html;
-
+$this->registerCssFile('@web/css/contacts.css', ['depends' => ['app\assets\AppAsset']]);
 ?>
 
 
@@ -18,7 +19,6 @@ use yii\helpers\Html;
         <p></p>
     </div>
 </section>
-<br>
 <section id="contact" class="section w3-dark-grey">
     <div class="w3-container w3-center">
 
