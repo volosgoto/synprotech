@@ -3,28 +3,29 @@
 use yii\db\Migration;
 
 /**
- * Class m181116_075222_categories_table_init
+ * Class m181116_202052_locales_table_init
  */
-class m181116_075222_categories_table_init extends Migration
+class m181116_202052_locales_table_init extends Migration
 {
     /**
      * {@inheritdoc}
      */
     public function safeUp()
     {
-        $this->createTable('categories', [
+        $this->createTable('locales', [
             'id' => $this->primaryKey(),
-            'publish_status' => $this->tinyInteger()->defaultValue(1),
+            'name' => $this->string('255'),
+            'code' => $this->string('10'),
         ]);
     }
+
 
     /**
      * {@inheritdoc}
      */
     public function safeDown()
     {
-        echo "m181116_075222_categories_table_init cannot be reverted.\n";
-        $this->dropTable('categories');
+        echo "m181116_202052_locales_table_init cannot be reverted.\n";
 
         return false;
     }
@@ -38,7 +39,7 @@ class m181116_075222_categories_table_init extends Migration
 
     public function down()
     {
-        echo "m181116_075222_categories_table_init cannot be reverted.\n";
+        echo "m181116_202052_locales_table_init cannot be reverted.\n";
 
         return false;
     }
