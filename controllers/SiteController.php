@@ -71,15 +71,12 @@ class SiteController extends MainController {
     }
 
 
-
     public function actionDownload(){
         $url= $_GET["url"];
-        $path = Yii::getAlias('@webroot') . "/$url";
+        $path = Yii::getAlias('@webroot') . "/$url" . '/download/Booklet_Synprotech_ LLC_nov_2018.pdf';
 
         $file = $path;
-
         if (file_exists($file)) {
-
             Yii::$app->response->xSendFile($file);
         }
     }

@@ -41,9 +41,8 @@ AppAsset::register($this);
             <a href="<?= Url::toRoute('partners/index');?>" class="w3-bar-item w3-button w3-hide-small w3-hover-blue-gray"><b>Partners</b></a>
             <a href="<?= Url::toRoute('site/contact');?>" class="w3-bar-item w3-button w3-hide-small w3-hover-blue-gray"><b>Contact us</b></a>
             <a href="<?= Url::toRoute('reference/index');?>" class="w3-bar-item w3-button w3-hide-small w3-hover-blue-gray"><b>Reference list</b></a>
-            <!--            <a class="booklet-download w3-bar-item w3-button w3-hide-small w3-hover-blue-gray" href=""><b>Download</b></a>-->
-
-            <a class="booklet-download w3-bar-item w3-button w3-hide-small w3-hover-blue-gray" href="download?url=download/Booklet_Synprotech_ LLC_nov_2018.pdf"><b>Download</b></a>
+            <a href="<?= Url::toRoute('site/download');?>" class="w3-bar-item w3-button w3-hide-small w3-hover-blue-gray"><b>Download</b></a>
+<!--            <a class="booklet-download w3-bar-item w3-button w3-hide-small w3-hover-blue-gray" href="download?url=download/Booklet_Synprotech_ LLC_nov_2018.pdf"><b>Download</b></a>-->
             <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="accondionFunction('toggle-menu')"><i class="fa fa-bars"></i></a>
             <a id="btn-lang" class="w3-bar-item w3-button w3-hide-small w3-hover-blue-gray" href=""><i class="fa fa-angle-right"></i>Ru</a>
             <!-- <a id="btn-lang" href="" class= "w3-bar-item w3-hide-small w3-hover-blue-gray">ru</a> -->
@@ -57,7 +56,8 @@ AppAsset::register($this);
     <a href="<?= Url::toRoute(['partners/index']);?>" class="w3-bar-item w3-button">Partners</a>
     <a href="<?= Url::toRoute(['site/contact']);?>" class="w3-bar-item w3-button">Contact us</a>
     <a href="<?= Url::toRoute(['reference/index']);?>" class="w3-bar-item w3-button">Reference list</a>
-    <a class="w3-bar-item w3-button" href="/downloads/Booklet_Synprotech_ LLC_nov_2018.pdf" download>Download</a>
+<!--    <a class="w3-bar-item w3-button" href="/downloads/Booklet_Synprotech_ LLC_nov_2018.pdf" download>Download</a>-->
+    <a href="<?= Url::toRoute('site/download');?>" class="w3-bar-item w3-button"><b>Download</b></a>
     <a href="" class="w3-bar-item w3-button"><i class="fa fa-angle-right" style="font-size:14px"></i>Ru</a>
 </div>
 <!-- navbar ENDS -->
