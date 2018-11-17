@@ -14,13 +14,13 @@ class m181117_122457_reference_translation_table extends Migration
     {
         $this->createTable('reference_translation', [
             'id' => $this->primaryKey(),
-            'locales_id' => $this->tinyInteger()->defaultValue(1),
-            'customers_id' => $this->tinyInteger(),
             'year' => $this->string()->notNull(),
+            'locale_id' => $this->tinyInteger()->defaultValue(1),
+            'customer_id' => $this->tinyInteger(),
             'project_image' => $this->string(),
             'project_title' => $this->string()->notNull(),
             'customer_image' => $this->string(),
-            'project_customer_title' => $this->string()->notNull(),
+            'customer_title' => $this->string()->notNull(),
             'project_body' => $this->text()->notNull(),
             'customer_body' => $this->text(),
         ]);

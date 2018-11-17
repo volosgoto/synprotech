@@ -15,7 +15,8 @@ class m181117_124657_about_translation_table extends Migration
         // This is for home page showcase
         $this->createTable('about_translation', [
             'id' => $this->primaryKey(),
-            'locales_id' => $this->tinyInteger()->defaultValue(1),
+            'about_id' => $this->tinyInteger(),
+            'locale_id' => $this->tinyInteger()->defaultValue(1),
             'image' => $this->string(),
             'title' => $this->string()->notNull(), // About Us, O нас
             'branding' => $this->string()->notNull(), // Company name

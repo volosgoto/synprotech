@@ -14,7 +14,8 @@ class m181117_122348_customers_translation_table extends Migration
     {
         $this->createTable('customers_translation', [
             'id' => $this->primaryKey(),
-            'locales_id' => $this->tinyInteger()->defaultValue(1),
+            'customer_id' => $this->tinyInteger(),
+            'locale_id' => $this->tinyInteger()->defaultValue(1),
             'image' => $this->string(),
             'title' => $this->string()->notNull(),
             'body' => $this->text()->notNull(),

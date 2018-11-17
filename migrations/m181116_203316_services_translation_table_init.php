@@ -13,8 +13,9 @@ class m181116_203316_services_translation_table_init extends Migration
     public function safeUp()
     {
         $this->createTable('services_translation', [
-            'id' => $this->tinyInteger()->defaultValue(1),
-            'locales_id' => $this->tinyInteger(),
+            'id' => $this->tinyInteger(),
+            'service_id' => $this->tinyInteger(),
+            'locale_id' => $this->tinyInteger()->defaultValue(1),
             'image' => $this->string(),
             'title' => $this->string()->notNull(),
             'body' => $this->text()->notNull(),

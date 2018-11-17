@@ -12,11 +12,12 @@ class m181117_122835_contacts_translation_table extends Migration
      */
     public function safeUp()
     {
-        $this->createTable('ontacts_translation', [
+        $this->createTable('сontacts_translation', [
             'id' => $this->primaryKey(),
-            'locales_id' => $this->tinyInteger()->defaultValue(1),
+            'сontact_id' => $this->tinyInteger(),
+            'locale_id' => $this->tinyInteger()->defaultValue(1),
             'company_title' => $this->string()->notNull(),
-            'contacts_image' => $this->string(),
+            'image' => $this->string(),
             'phone' => $this->string()->notNull(),
             'email' => $this->string()->notNull(),
             'country' => $this->string(),

@@ -14,7 +14,8 @@ class m181117_121945_partners_translation_table extends Migration
     {
         $this->createTable('partners_translation', [
             'id' => $this->primaryKey(),
-            'locales_id' => $this->tinyInteger()->defaultValue(1),
+            'partner_id' => $this->tinyInteger(),
+            'locale_id' => $this->tinyInteger()->defaultValue(1),
             'image' => $this->string(),
             'title' => $this->string()->notNull(),
             'body' => $this->text()->notNull(),

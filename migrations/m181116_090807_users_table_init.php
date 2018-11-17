@@ -14,7 +14,7 @@ class m181116_090807_users_table_init extends Migration
     {
         $this->createTable('users', [
             'id' => $this->primaryKey(),
-            'user_image' => $this->string(),
+            'image' => $this->string(),
             'email' => $this->string()->notNull(),
             'password' => $this->string(),
             'phone' => $this->string(),
