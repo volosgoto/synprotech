@@ -14,7 +14,7 @@ class m181116_202655_categories_translation_table_init extends Migration
     {
         $this->createTable('categories_translation', [
             'id' => $this->primaryKey(),
-            'locales_id' => $this->tinyInteger(),
+            'locales_id' => $this->tinyInteger()->defaultValue(1),
             'image' => $this->string(),
             'title' => $this->string()->notNull(),
         ]);

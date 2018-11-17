@@ -14,14 +14,6 @@ class m181116_083340_reference_table_init extends Migration
     {
         $this->createTable('reference', [
             'id' => $this->primaryKey(),
-            'year' => $this->string()->notNull(),
-            'project_image' => $this->string(),
-            'project_title' => $this->string()->notNull(),
-            'customer_image' => $this->string(),
-            'project_customer_title' => $this->string()->notNull(),
-            'project_body' => $this->text()->notNull(),
-            'customer_body' => $this->text(),
-            'language' => $this->string()->defaultValue('en'),
             'publish_status' => $this->tinyInteger()->defaultValue(1),
         ]);
     }

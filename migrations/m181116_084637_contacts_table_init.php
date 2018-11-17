@@ -14,17 +14,6 @@ class m181116_084637_contacts_table_init extends Migration
     {
         $this->createTable('contacts', [
             'id' => $this->primaryKey(),
-//            'contacts_id' => $this->tinyInteger(),
-            'company_title' => $this->string()->notNull(),
-            'contacts_image' => $this->string(),
-            'phone' => $this->string()->notNull(),
-            'email' => $this->string()->notNull(),
-            'country' => $this->string(),
-            'city' => $this->string(),
-            'region' => $this->string(),
-            'zip' => $this->tinyInteger(),
-            'adress' => $this->string(),
-            'language' => $this->string()->defaultValue('en'),
             'publish_status' => $this->tinyInteger()->defaultValue(1),
         ]);
     }

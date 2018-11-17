@@ -13,9 +13,12 @@ class m181116_202052_locales_table_init extends Migration
     public function safeUp()
     {
         $this->createTable('locales', [
+            // id = 1 default value English
+            // id = 2 default value Russian
+
             'id' => $this->primaryKey(),
-            'name' => $this->string('255'),
-            'code' => $this->string('10'),
+            'name' => $this->string('50'),
+            'code' => $this->string('5'),
         ]);
     }
 

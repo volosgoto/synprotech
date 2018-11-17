@@ -14,11 +14,6 @@ class m181116_083206_customers_table_init extends Migration
     {
         $this->createTable('customers', [
             'id' => $this->primaryKey(),
-//            'customers_id' => $this->tinyInteger(),
-            'customers_image' => $this->string(),
-            'title' => $this->string()->notNull(),
-            'body' => $this->text()->notNull(),
-            'language' => $this->string()->defaultValue('en'),
             'publish_status' => $this->tinyInteger()->defaultValue(1),
         ]);
     }

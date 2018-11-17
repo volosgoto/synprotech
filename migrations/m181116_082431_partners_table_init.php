@@ -14,11 +14,6 @@ class m181116_082431_partners_table_init extends Migration
     {
         $this->createTable('partners', [
             'id' => $this->primaryKey(),
-//            'partners_id' => $this->tinyInteger(),
-            'partners_image' => $this->string(),
-            'title' => $this->string()->notNull(),
-            'body' => $this->text()->notNull(),
-            'language' => $this->string()->defaultValue('en'),
             'publish_status' => $this->tinyInteger()->defaultValue(1),
         ]);
     }
