@@ -49,7 +49,6 @@ AppAsset::register($this);
         </div>
     </div>
 </div>
-</div>
 <div id="toggle-menu" class="w3-bar-block w3-blue-gray w3-hide w3-hide-large w3-hide-medium w3-center">
     <a href="<?= Url::home()?>" class="w3-bar-item w3-button">Home</a>
     <a href="<?= Url::toRoute(['/#services']);?>" class="w3-bar-item w3-button">Services</a>
@@ -61,3 +60,32 @@ AppAsset::register($this);
     <a href="" class="w3-bar-item w3-button"><i class="fa fa-angle-right" style="font-size:14px"></i>Ru</a>
 </div>
 <!-- navbar ENDS -->
+
+
+
+
+<!---->
+<?php
+//
+//echo NavbarWidget::widget([
+//    'options' => ['class' => 'navbar-nav navbar-right'],
+//    'items' => [
+//        ['label' => 'Home', 'url' => ['/site/index']],
+//        ['label' => 'About', 'url' => ['/site/about']],
+//        ['label' => 'Contact', 'url' => ['/site/contact']],
+//        Yii::$app->user->isGuest ? (
+//        ['label' => 'Login', 'url' => ['/site/login']]
+//        ) : (
+//            '<li>'
+//            . Html::beginForm(['/site/logout'], 'post')
+//            . Html::submitButton(
+//                'Logout (' . Yii::$app->user->identity->username . ')',
+//                ['class' => 'btn btn-link logout']
+//            )
+//            . Html::endForm()
+//            . '</li>'
+//        )
+//    ],
+//]);
+//
+//?>
