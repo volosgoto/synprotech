@@ -12,9 +12,10 @@ class m181117_122457_reference_translation_table extends Migration
      */
     public function safeUp()
     {
-        $this->createTable('eference_translation', [
+        $this->createTable('reference_translation', [
             'id' => $this->primaryKey(),
             'locales_id' => $this->tinyInteger()->defaultValue(1),
+            'customers_id' => $this->tinyInteger(),
             'year' => $this->string()->notNull(),
             'project_image' => $this->string(),
             'project_title' => $this->string()->notNull(),
