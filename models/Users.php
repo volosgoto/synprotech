@@ -2,31 +2,58 @@
 
 namespace app\models;
 
-class User extends \yii\base\BaseObject implements \yii\web\IdentityInterface
+use Yii;
+
+/**
+ * This is the model class for table "users".
+ *
+ * @property int $id
+ * @property string $image
+ * @property string $email
+ * @property string $password
+ * @property string $phone
+ * @property string $role
+ * @property int $is_admin
+ * @property int $active_status
+ */
+class Users extends \yii\db\ActiveRecord
 {
-    public $id;
-    public $username;
-    public $password;
-    public $authKey;
-    public $accessToken;
+    /**
+     * {@inheritdoc}
+     */
+    public static function tableName()
+    {
+        return 'users';
+    }
 
-    private static $users = [
-        '100' => [
-            'id' => '100',
-            'username' => 'admin',
-            'password' => 'admin',
-            'authKey' => 'test100key',
-            'accessToken' => '100-token',
-        ],
-        '101' => [
-            'id' => '101',
-            'username' => 'demo',
-            'password' => 'demo',
-            'authKey' => 'test101key',
-            'accessToken' => '101-token',
-        ],
-    ];
+    /**
+     * {@inheritdoc}
+     */
+    public function rules()
+    {
+        return [
+            [['email'], 'required'],
+            [['is_admin', 'active_status'], 'integer'],
+            [['image', 'email', 'password', 'phone', 'role'], 'string', 'max' => 255],
+        ];
+    }
 
+    /**
+     * {@inheritdoc}
+     */
+    public function attributeLabels()
+    {
+        return [
+            'id' => Yii::t('app', 'ID'),
+            'image' => Yii::t('app', 'Image'),
+            'email' => Yii::t('app', 'Email'),
+            'password' => Yii::t('app', 'Password'),
+            'phone' => Yii::t('app', 'Phone'),
+            'role' => Yii::t('app', 'Role'),
+            'is_admin' => Yii::t('app', 'Is Admin'),
+            'active_status' => Yii::t('app', 'Active Status'),
+        ];
+    }
 
     /**
      * {@inheritdoc}

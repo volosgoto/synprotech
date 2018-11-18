@@ -5,6 +5,12 @@ use yii\db\Migration;
 /**
  * Class m181117_124558_about_table_init
  */
+
+
+
+
+
+
 class m181117_124558_about_table_init extends Migration
 {
     /**

@@ -3,16 +3,16 @@
 use yii\db\Migration;
 
 /**
- * Class m181117_122835_contacts_translation_table
+ * Class m181118_132700_contactsTranslation
  */
-class m181117_122835_contacts_translation_table extends Migration
+class m181118_132700_contactsTranslation extends Migration
 {
     /**
      * {@inheritdoc}
      */
     public function safeUp()
     {
-        $this->createTable('сontacts_translation', [
+        $this->createTable('contactsTranslation', [
             'id' => $this->primaryKey(),
             'сontact_id' => $this->tinyInteger(),
             'locale_id' => $this->tinyInteger()->defaultValue(1),
@@ -33,7 +33,7 @@ class m181117_122835_contacts_translation_table extends Migration
      */
     public function safeDown()
     {
-        echo "m181117_122835_contacts_translation_table cannot be reverted.\n";
+        echo "m181118_132700_contactsTranslation cannot be reverted.\n";
 
         return false;
     }
@@ -47,7 +47,7 @@ class m181117_122835_contacts_translation_table extends Migration
 
     public function down()
     {
-        echo "m181117_122835_contacts_translation_table cannot be reverted.\n";
+        echo "m181118_132700_contactsTranslation cannot be reverted.\n";
 
         return false;
     }
