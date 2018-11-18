@@ -7,18 +7,20 @@
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
 
-$this->title = 'Регистрация';
+$this->title = 'Registration';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="site-login">
     <div class="container">
         <h1><?= Html::encode($this->title) ?></h1>
 
-        <p>Заполните поля:</p>
+        <p>Registration fields:</p>
 
         <?php $form = ActiveForm::begin([
             'id' => 'login-form',
+//            'options' => ['class' => 'w3-container w3-padding-xlarge'], /* класс формы */
             'layout' => 'horizontal',
+            'action' => Url::to(['auth/signup']),
             'fieldConfig' => [
                 'template' => "{label}\n<div class=\"col-lg-3\">{input}</div>\n<div class=\"col-lg-8\">{error}</div>",
                 'labelOptions' => ['class' => 'col-lg-1 control-label'],
@@ -26,10 +28,9 @@ $this->params['breadcrumbs'][] = $this->title;
         ]); ?>
 
         <?= $form->field($model, 'name')->textInput(['autofocus' => true]) ?>
-
         <?= $form->field($model, 'email')->textInput() ?>
-
         <?= $form->field($model, 'password')->passwordInput() ?>
+        <?= $form->field($model, 'password_repeat')->passwordInput() ?>
 
 
         <div class="form-group">
@@ -41,8 +42,6 @@ $this->params['breadcrumbs'][] = $this->title;
         <?php ActiveForm::end(); ?>
 
         <div class="col-lg-offset-1" style="color:#999;">
-            <!--            You may login with <strong>admin/admin</strong> or <strong>demo/demo</strong>.<br>-->
-            <!--            To modify the username/password, please check out the code <code>app\models\User::$users</code>.-->
         </div>
     </div>
 </div>

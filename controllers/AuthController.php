@@ -17,6 +17,7 @@ use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
 use app\components\ContactFormWidget;
+use app\models\SignupForm;
 
 
 
@@ -53,5 +54,36 @@ class AuthController extends MainController
         Yii::$app->user->logout();
 
         return $this->goHome();
+    }
+
+
+    public function actionSignup()
+    {
+        $model = new SignupForm();
+
+        if(Yii::$app->request->isPost)
+        {
+            $model->load(Yii::$app->request->post());
+            if($model->signup())
+            {
+                return $this->redirect(['auth/login']);
+            }
+        }
+
+        return $this->render('signup', ['model'=>$model]);
+    }
+
+
+    public function actionTest() {
+        $user = User::findOne(1);
+
+//        Yii::$app->user->logout();
+        Yii::$app->user->login($user);
+//        if (Yii::$app->user->isGuest) {
+//            echo 'Авторизирован';
+//        } else {
+//            echo 'Не авторизирован';
+//        }
+        debug (Yii::$app->user->identity->isAdmin);
     }
 }
