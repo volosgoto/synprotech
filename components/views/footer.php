@@ -33,6 +33,21 @@ AppAsset::register($this);
             <?= Html::img('@web/images/qr-150-m.png', ['class'=>'w3-image', 'alt' => 'qr_code'])?>
             <p class="w3-margin w3-pading">Synprotech &copy; 2018</p>
         </div>
+            <div class="">
+            <?php if (Yii::$app->user->isGuest): ?>
+                <ul class="w3-ul w3-small w3-center">
+                    <li><a href="<?= Url::toRoute(['auth/login']) ?>">Log in</a></li>
+                    <li><a href="<?= Url::toRoute(['auth/signup']) ?>">Sign up</a></li>
+                </ul>
+            <?php else: ?>
+                <?= Html::beginForm(['/auth/logout'], 'post')
+                . Html::submitButton(
+                    'Logout (' . Yii::$app->user->identity->name . ')',
+                    ['class' => 'btn btn-link logout', 'style' => "padding-top:10px;"]
+                )
+                . Html::endForm() ?>
+            <?php endif; ?>
+            </div>
         <div class="inner-box-footer">
             <div class="outer-box-footer">
                 <div class="inner-box-footer-social">
