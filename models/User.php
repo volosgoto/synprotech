@@ -5,9 +5,10 @@ namespace app\models;
 use Yii;
 
 /**
- * This is the model class for table "users".
+ * This is the model class for table "user".
  *
  * @property int $id
+ * @property string $name
  * @property string $image
  * @property string $email
  * @property string $password
@@ -16,14 +17,14 @@ use Yii;
  * @property int $is_admin
  * @property int $active_status
  */
-class Users extends \yii\db\ActiveRecord
+class User extends \yii\db\ActiveRecord
 {
     /**
      * {@inheritdoc}
      */
     public static function tableName()
     {
-        return 'users';
+        return 'user';
     }
 
     /**
@@ -34,6 +35,7 @@ class Users extends \yii\db\ActiveRecord
         return [
             [['email'], 'required'],
             [['is_admin', 'active_status'], 'integer'],
+            [['name'], 'string', 'max' => 100],
             [['image', 'email', 'password', 'phone', 'role'], 'string', 'max' => 255],
         ];
     }
@@ -45,6 +47,7 @@ class Users extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
+            'name' => 'Name',
             'image' => 'Image',
             'email' => 'Email',
             'password' => 'Password',

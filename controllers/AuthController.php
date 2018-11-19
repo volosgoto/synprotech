@@ -18,6 +18,7 @@ use app\models\LoginForm;
 use app\models\ContactForm;
 use app\components\ContactFormWidget;
 use app\models\SignupForm;
+use app\models\Users;
 
 
 
@@ -75,7 +76,7 @@ class AuthController extends MainController
 
 
     public function actionTest() {
-        $user = User::findOne(1);
+        $user = Users::findOne(1);
 
 //        Yii::$app->user->logout();
         Yii::$app->user->login($user);
