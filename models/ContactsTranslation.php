@@ -48,18 +48,18 @@ class ContactsTranslation extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'id' => Yii::t('app', 'ID'),
-            'сontact_id' => Yii::t('app', 'сontact ID'),
-            'locale_id' => Yii::t('app', 'Locale ID'),
-            'company_title' => Yii::t('app', 'Company Title'),
-            'image' => Yii::t('app', 'Image'),
-            'phone' => Yii::t('app', 'Phone'),
-            'email' => Yii::t('app', 'Email'),
-            'country' => Yii::t('app', 'Country'),
-            'city' => Yii::t('app', 'City'),
-            'region' => Yii::t('app', 'Region'),
-            'zip' => Yii::t('app', 'Zip'),
-            'adress' => Yii::t('app', 'Adress'),
+            'id' => 'ID',
+            'сontact_id' => 'сontact ID',
+            'locale_id' => 'Locale ID',
+            'company_title' => 'Company Title',
+            'image' => 'Image',
+            'phone' => 'Phone',
+            'email' => 'Email',
+            'country' => 'Country',
+            'city' => 'City',
+            'region' => 'Region',
+            'zip' => 'Zip',
+            'adress' => 'Adress',
         ];
     }
 }

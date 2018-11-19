@@ -5,7 +5,7 @@ namespace app\models;
 use Yii;
 
 /**
- * This is the model class for table "about_translation".
+ * This is the model class for table "aboutTranslation".
  *
  * @property int $id
  * @property int $about_id
@@ -23,7 +23,7 @@ class AboutTranslation extends \yii\db\ActiveRecord
      */
     public static function tableName()
     {
-        return 'about_translation';
+        return 'aboutTranslation';
     }
 
     /**
@@ -45,14 +45,14 @@ class AboutTranslation extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'id' => Yii::t('app', 'ID'),
-            'about_id' => Yii::t('app', 'About ID'),
-            'locale_id' => Yii::t('app', 'Locale ID'),
-            'image' => Yii::t('app', 'Image'),
-            'title' => Yii::t('app', 'Title'),
-            'branding' => Yii::t('app', 'Branding'),
-            'showcase_text' => Yii::t('app', 'Showcase Text'),
-            'body_text' => Yii::t('app', 'Body Text'),
+            'id' => 'ID',
+            'about_id' => 'About ID',
+            'locale_id' => 'Locale ID',
+            'image' => 'Image',
+            'title' => 'Title',
+            'branding' => 'Branding',
+            'showcase_text' => 'Showcase Text',
+            'body_text' => 'Body Text',
         ];
     }
 }

@@ -36,8 +36,8 @@ class Contacts extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'id' => Yii::t('app', 'ID'),
-            'publish_status' => Yii::t('app', 'Publish Status'),
+            'id' => 'ID',
+            'publish_status' => 'Publish Status',
         ];
     }
 }

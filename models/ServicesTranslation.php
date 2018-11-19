@@ -5,7 +5,7 @@ namespace app\models;
 use Yii;
 
 /**
- * This is the model class for table "services_translation".
+ * This is the model class for table "servicesTranslation".
  *
  * @property int $id
  * @property int $service_id
@@ -21,7 +21,7 @@ class ServicesTranslation extends \yii\db\ActiveRecord
      */
     public static function tableName()
     {
-        return 'services_translation';
+        return 'servicesTranslation';
     }
 
     /**
@@ -43,12 +43,12 @@ class ServicesTranslation extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'id' => Yii::t('app', 'ID'),
-            'service_id' => Yii::t('app', 'Service ID'),
-            'locale_id' => Yii::t('app', 'Locale ID'),
-            'image' => Yii::t('app', 'Image'),
-            'title' => Yii::t('app', 'Title'),
-            'body' => Yii::t('app', 'Body'),
+            'id' => 'ID',
+            'service_id' => 'Service ID',
+            'locale_id' => 'Locale ID',
+            'image' => 'Image',
+            'title' => 'Title',
+            'body' => 'Body',
         ];
     }
 }

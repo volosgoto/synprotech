@@ -47,16 +47,16 @@ class ReferencesTranslation extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'id' => Yii::t('app', 'ID'),
-            'year' => Yii::t('app', 'Year'),
-            'locale_id' => Yii::t('app', 'Locale ID'),
-            'customer_id' => Yii::t('app', 'Customer ID'),
-            'project_image' => Yii::t('app', 'Project Image'),
-            'project_title' => Yii::t('app', 'Project Title'),
-            'customer_image' => Yii::t('app', 'Customer Image'),
-            'customer_title' => Yii::t('app', 'Customer Title'),
-            'project_body' => Yii::t('app', 'Project Body'),
-            'customer_body' => Yii::t('app', 'Customer Body'),
+            'id' => 'ID',
+            'year' => 'Year',
+            'locale_id' => 'Locale ID',
+            'customer_id' => 'Customer ID',
+            'project_image' => 'Project Image',
+            'project_title' => 'Project Title',
+            'customer_image' => 'Customer Image',
+            'customer_title' => 'Customer Title',
+            'project_body' => 'Project Body',
+            'customer_body' => 'Customer Body',
         ];
     }
 }
