@@ -30,6 +30,8 @@ class ServicesTranslation extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
+
+//            TODO ADD ID primary key
             [['id', 'service_id', 'locale_id'], 'integer'],
             [['title', 'body'], 'required'],
             [['body'], 'string'],

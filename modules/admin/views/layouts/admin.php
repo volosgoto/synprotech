@@ -84,37 +84,35 @@ AppAsset::register($this);
         </div>
         <div class="w3-col s8 w3-bar">
             <span>Welcome, <strong>Mike</strong></span><br>
-            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i></a>
-            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-user"></i></a>
-            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-cog"></i></a>
+<!--            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i></a>-->
+<!--            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-user"></i></a>-->
+<!--            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-cog"></i></a>-->
         </div>
     </div>
     <hr>
     <div class="w3-container w3-center">
         <h5>Dashboard</h5>
     </div>
-    <div class="w3-sidebar w3-bar-block w3-light-grey w3-card" style="width:300px">
-        <a href="<?= Url::home()?>" class="w3-bar-item w3-button">Home</a>
-        <button class="w3-button w3-block w3-left-align" onclick="myAccFunc()">
-            Users <i class="fa fa-caret-down"></i>
-        </button>
-        <div id="demoAcc" class="w3-hide w3-white w3-card">
-            <a href="#" class="w3-bar-item w3-button">Link</a>
-            <a href="#" class="w3-bar-item w3-button">Link</a>
-        </div>
-
-        <div class="w3-dropdown-click">
-            <button class="w3-button" onclick="myDropFunc()">
-                Dropdown <i class="fa fa-caret-down"></i>
-            </button>
-            <div id="demoDrop" class="w3-dropdown-content w3-bar-block w3-white w3-card">
-                <a href="#" class="w3-bar-item w3-button">Link</a>
-                <a href="#" class="w3-bar-item w3-button">Link</a>
-            </div>
-        </div>
-        <a href="#" class="w3-bar-item w3-button">Link 2</a>
-        <a href="#" class="w3-bar-item w3-button">Link 3</a>
+    <div class="w3-bar-block">
+        <a href="#" class="w3-bar-item w3-button w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black" onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>  Close Menu</a>
+        <a href="<?= Url::home()?>" class="w3-bar-item w3-button w3-padding w3-blue"><i class="fa fa-users fa-fw"></i>  Home</a>
+        <a href="<?= Url::toRoute('/admin')?>" class="w3-bar-item w3-button w3-padding"><i class="fa fa-eye fa-fw"></i>  Admin Main</a>
+        <a href="<?= Url::toRoute(['users/index'])?>" class="w3-bar-item w3-button w3-padding"><i class="fa fa-users fa-fw"></i>  Users</a>
+        <a href="<?= Url::toRoute(['locales/index'])?>" class="w3-bar-item w3-button w3-padding"><i class="fa fa-bullseye fa-fw"></i>  Locales</a>
+        <a href="<?= Url::toRoute(['categories/index'])?>" class="w3-bar-item w3-button w3-padding"><i class="fa fa-bullseye fa-fw"></i>  Categories</a>
+        <a href="<?= Url::toRoute(['contacts/index'])?>" class="w3-bar-item w3-button w3-padding"><i class="fa fa-bullseye fa-fw"></i>  Contacts</a>
+        <a href="<?= Url::toRoute(['customers/index'])?>" class="w3-bar-item w3-button w3-padding"><i class="fa fa-bullseye fa-fw"></i>  Customers</a>
+        <a href="<?= Url::toRoute(['partners/index'])?>" class="w3-bar-item w3-button w3-padding"><i class="fa fa-bullseye fa-fw"></i>  Partners</a>
+        <a href="<?= Url::toRoute(['references/index'])?>" class="w3-bar-item w3-button w3-padding"><i class="fa fa-bullseye fa-fw"></i>  References</a>
+        <a href="<?= Url::toRoute(['services/index'])?>" class="w3-bar-item w3-button w3-padding"><i class="fa fa-bullseye fa-fw"></i>  Services</a>
+        <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-diamond fa-fw"></i>  Orders</a>
+        <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-bell fa-fw"></i>  News</a>
+        <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-bank fa-fw"></i>  General</a>
+        <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-history fa-fw"></i>  History</a>
+        <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-cog fa-fw"></i>  Settings</a><br><br>
     </div>
+
+
 </nav>
 
     <!-- Overlay effect when opening sidebar on small screens -->
@@ -146,6 +144,14 @@ AppAsset::register($this);
                     </div>
                     <div class="w3-clear"></div>
                     <h4>Messages</h4>
+                     Google Analytics
+                    <script>
+                        window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+                        ga('create', 'UA-XXXXX-Y', 'auto');
+                        ga('send', 'pageview');
+                    </script>
+                    <script async src='https://www.google-analytics.com/analytics.js'></script>
+                    <!-- End Google Analytics -->
                 </div>
             </div>
             <div class="w3-quarter">
@@ -381,18 +387,6 @@ AppAsset::register($this);
 
 <!--Left DashBord-->
 <script>
-    function myAccFunc() {
-        var x = document.getElementById("demoAcc");
-        if (x.className.indexOf("w3-show") == -1) {
-            x.className += " w3-show";
-            x.previousElementSibling.className += " w3-green";
-        } else {
-            x.className = x.className.replace(" w3-show", "");
-            x.previousElementSibling.className =
-                x.previousElementSibling.className.replace(" w3-green", "");
-        }
-    }
-
     function myDropFunc() {
         var x = document.getElementById("demoDrop");
         if (x.className.indexOf("w3-show") == -1) {
