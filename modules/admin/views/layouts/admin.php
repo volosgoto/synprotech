@@ -83,7 +83,21 @@ AppAsset::register($this);
             <img src="/w3images/avatar2.png" class="w3-circle w3-margin-right" style="width:46px">
         </div>
         <div class="w3-col s8 w3-bar">
-            <span>Welcome, <strong>Mike</strong></span><br>
+            <span>Welcome,
+                <?php if (Yii::$app->user->isGuest): ?>
+                    <ul class="w3-ul w3-small w3-center">
+                    <li><a href="<?= Url::toRoute(['auth/login']) ?>">Log in</a></li>
+                    <li><a href="<?= Url::toRoute(['auth/signup']) ?>">Sign up</a></li>
+                </ul>
+                <?php else: ?>
+                    <?= Html::beginForm(['/auth/logout'], 'post')
+                    . Html::submitButton(
+                        'Logout (' . Yii::$app->user->identity->name . ')',
+                        ['class' => 'btn btn-link logout', 'style' => "padding-top:10px;"]
+                    )
+                    . Html::endForm() ?>
+                <?php endif; ?>
+            </span>
         </div>
     </div>
     <div class="w3-container w3-center">
