@@ -14,6 +14,9 @@ use yii\web\NotFoundHttpException;
 
 AppAsset::register($this);
 ?>
+
+
+
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
 <html lang="<?= Yii::$app->language ?>">
@@ -24,10 +27,10 @@ AppAsset::register($this);
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-        html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
-        body {background-color: magenta}
-    </style>
+    <?php
+        $this->registerCssFile('@web/css/aminpanel.css', ['depends' => ['app\assets\AppAsset']]);
+    ?>
+
     <?= Html::csrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
@@ -35,43 +38,16 @@ AppAsset::register($this);
 <body class="w3-light-grey">
 <?php $this->beginBody() ?>
 
-<!--<div class="wrap">-->
-<!--    --><?php
-//    NavBar::begin([
-//        'brandLabel' => Yii::$app->name,
-//        'brandUrl' => Yii::$app->homeUrl,
-//        'options' => [
-//            'class' => 'navbar-inverse navbar-fixed-top',
-//        ],
-//    ]);
-//    echo Nav::widget([
-//        'options' => ['class' => 'navbar-nav navbar-right'],
-//        'items' => [
-//            ['label' => 'Home', 'url' => ['/site/index']],
-//            ['label' => 'About', 'url' => ['/site/about']],
-//            ['label' => 'Contact', 'url' => ['/site/contact']],
-//            Yii::$app->user->isGuest ? (
-//            ['label' => 'Login', 'url' => ['/site/login']]
-//            ) : (
-//                '<li>'
-//                . Html::beginForm(['/site/logout'], 'post')
-//                . Html::submitButton(
-//                    'Logout (' . Yii::$app->user->identity->username . ')',
-//                    ['class' => 'btn btn-link logout']
-//                )
-//                . Html::endForm()
-//                . '</li>'
-//            )
-//        ],
-//    ]);
-//    NavBar::end();
-//    ?>
+    <div class="wrap">
 
 
 
 <!-- Top container -->
-<div class="w3-bar w3-black w3-large" style="z-index:4">
-    <button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey" onclick="w3_open();"><i class="fa fa-bars"></i>  Menu</button>
+<div class="w3-bar w3-black w3-large">
+    <span class="w3-bar-item w3-left">
+           <a href="<?= Url::home()?>" class=""><i class="fa fa-home fa-fw"></i>Home</a>
+    </span>
+
     <span class="w3-bar-item w3-right">Admine panel</span>
 </div>
 
@@ -79,13 +55,12 @@ AppAsset::register($this);
 <!-- Sidebar/menu -->
 <nav class="w3-sidebar w3-collapse w3-white w3-animate-left w3-blue w3-quarter" id="mySidebar"><br>
 
-    <div class="w3-container">
-        <div class="w3-col s4">
-            <img src="/w3images/avatar2.png" class="w3-circle w3-margin-right" style="width:46px">
-        </div>
-<!--        <div class="w3-col s8 w3-bar w3-center">-->
-        <div class="w3-container w3-center">
-            <p class="">Welcome,</p>
+
+
+    <div class="w3-container w3-center">
+            <h5>Welcome to admin panel</h5>
+            <?= Html::img('@web/images/synprotech32x32.png', ['class'=>'synprotech-logo w3-image w3-hover-opacity', 'alt' => 'synprotech_logo'])?>
+            <div class="w3-container w3-center w3-margin">
             <p>
                 <?php if (Yii::$app->user->isGuest): ?>
                 <?php throw new NotFoundHttpException();?>
@@ -94,19 +69,16 @@ AppAsset::register($this);
                     <?= Html::beginForm(['/auth/logout'], 'post')
                     . Html::submitButton(
                         'Logout (' . Yii::$app->user->identity->name . ')',
-                        ['class' => 'btn btn-link logout', 'style' => "padding-top:10px;"]
+                        ['class' => 'w3-button ', 'style' => "background-color:#00adef; color: #fff"]
                     )
                     . Html::endForm() ?>
                 <?php endif; ?>
             </p>
-        </div>
-    </div>
-    <div class="w3-container w3-center">
-        <h5>Dashboard</h5>
+            </div>
+<!--        btn btn-link logout-->
     </div>
     <div class="w3-bar-block">
         <a href="#" class="w3-bar-item w3-button w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black" onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>  Close Menu</a>
-        <a href="<?= Url::home()?>" class="w3-bar-item w3-button w3-padding w3-blue"><i class="fa fa-users fa-fw"></i>  Home</a>
         <a href="<?= Url::toRoute('/admin')?>" class="w3-bar-item w3-button w3-padding"><i class="fa fa-eye fa-fw"></i>  Admin Main</a>
         <a href="<?= Url::toRoute(['users/index'])?>" class="w3-bar-item w3-button w3-padding"><i class="fa fa-users fa-fw"></i>  Users</a>
         <a href="<?= Url::toRoute(['locales/index'])?>" class="w3-bar-item w3-button w3-padding"><i class="fa fa-bullseye fa-fw"></i>  Locales</a>
@@ -460,7 +432,9 @@ AppAsset::register($this);
 </footer>
 
 <?php $this->endBody() ?>
+
+            <div/>
 </body>
 
-</html>
+    </html>
 <?php $this->endPage() ?>
