@@ -18,8 +18,7 @@ use app\models\LoginForm;
 use app\models\ContactForm;
 use app\components\ContactFormWidget;
 use app\models\SignupForm;
-use app\models\Users;
-
+use app\models\User;
 
 
 class AuthController extends MainController
@@ -70,21 +69,24 @@ class AuthController extends MainController
                 return $this->redirect(['auth/login']);
             }
         }
-
         return $this->render('signup', ['model'=>$model]);
     }
 
 
     public function actionTest() {
-        $user = Users::findOne(1);
 
+//        debug(Yii::$app->user);
+
+//        $user = User::findOne(1);
+
+//        Yii::$app->user->login($user);
 //        Yii::$app->user->logout();
-        Yii::$app->user->login($user);
 //        if (Yii::$app->user->isGuest) {
-//            echo 'Авторизирован';
+//            echo 'Guest';
 //        } else {
-//            echo 'Не авторизирован';
+//            echo 'Autorized';
 //        }
-        debug (Yii::$app->user->identity->isAdmin);
+
+
     }
 }

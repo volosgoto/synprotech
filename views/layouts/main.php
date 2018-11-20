@@ -52,9 +52,9 @@ AppAsset::register($this);
 
 <?= NavbarWidget::widget()?>
 
-<pre>
-<?= print_r($_SERVER) ?>
-</pre>
+<!--<pre>-->
+<?//= print_r($_SERVER) ?>
+<!--</pre>-->
 
 
 <!--Content-->

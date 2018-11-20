@@ -30,7 +30,7 @@ class CategoriesTranslation extends \yii\db\ActiveRecord
     {
         return [
             [['category_id', 'locale_id'], 'integer'],
-            [['title'], 'required'],
+            [['title', 'locale_id'], 'required'],
             [['image', 'title'], 'string', 'max' => 255],
         ];
     }
