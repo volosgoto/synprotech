@@ -10,6 +10,7 @@ use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
 use app\assets\AppAsset;
 use yii\helpers\Url;
+use yii\web\NotFoundHttpException;
 
 AppAsset::register($this);
 ?>
@@ -82,13 +83,13 @@ AppAsset::register($this);
         <div class="w3-col s4">
             <img src="/w3images/avatar2.png" class="w3-circle w3-margin-right" style="width:46px">
         </div>
-        <div class="w3-col s8 w3-bar">
-            <span>Welcome,
+<!--        <div class="w3-col s8 w3-bar w3-center">-->
+        <div class="w3-container w3-center">
+            <p class="">Welcome,</p>
+            <p>
                 <?php if (Yii::$app->user->isGuest): ?>
-                    <ul class="w3-ul w3-small w3-center">
-                    <li><a href="<?= Url::toRoute(['auth/login']) ?>">Log in</a></li>
-                    <li><a href="<?= Url::toRoute(['auth/signup']) ?>">Sign up</a></li>
-                </ul>
+                <?php throw new NotFoundHttpException();?>
+<!--                --><?php //Yii::$app->response->redirect(['/']);?>
                 <?php else: ?>
                     <?= Html::beginForm(['/auth/logout'], 'post')
                     . Html::submitButton(
@@ -97,7 +98,7 @@ AppAsset::register($this);
                     )
                     . Html::endForm() ?>
                 <?php endif; ?>
-            </span>
+            </p>
         </div>
     </div>
     <div class="w3-container w3-center">
