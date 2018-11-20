@@ -123,7 +123,7 @@ AppAsset::register($this);
 
         <button class="w3-button w3-block w3-left-align" onclick="myAccFunc(references)"><i class="fa fa-users fa-fw"></i> References edit <i class="fa fa-caret-down"></i></button>
         <div id="references" class="w3-bar-block w3-hide w3-white w3-card-4">
-            <a href="<?= Url::toRoute(['references/index'])?>" class="w3-bar-item w3-button w3-dark-gray">Partners</a>
+            <a href="<?= Url::toRoute(['references/index'])?>" class="w3-bar-item w3-button w3-dark-gray">References</a>
             <a href="<?= Url::toRoute(['references-translation/index'])?>" class="w3-bar-item w3-button w3-dark-gray">References Translation</a>
         </div>
 
