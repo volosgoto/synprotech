@@ -132,14 +132,13 @@ AppAsset::register($this);
             <a href="<?= Url::toRoute(['services/index'])?>" class="w3-bar-item w3-button w3-dark-gray">Partners</a>
             <a href="<?= Url::toRoute(['services-translation/index'])?>" class="w3-bar-item w3-button w3-dark-gray">Services Translation</a>
         </div>
-
-
-
-
-
-        <a href="<?= Url::toRoute(['services/index'])?>" class="w3-bar-item w3-button w3-padding"><i class="fa fa-bullseye fa-fw"></i>  Services</a>
     </div>
-
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 
 </nav>
 
@@ -423,11 +422,11 @@ AppAsset::register($this);
 
         if (x.className.indexOf("w3-show") == -1) {
             x.className += " w3-show";
-            x.previousElementSibling.className += " w3-green";
+            x.previousElementSibling.className += " w3-teal";
         } else {
             x.className = x.className.replace(" w3-show", "");
             x.previousElementSibling.className =
-                x.previousElementSibling.className.replace(" w3-green", "");
+                x.previousElementSibling.className.replace(" w3-teal", "");
         }
     }
 
@@ -438,10 +437,10 @@ AppAsset::register($this);
 </div>
 
 <footer class="footer">
-    <div class="container">
-        <p class="pull-left">&copy; My Company <?= date('Y') ?></p>
-
-        <p class="pull-right"><?= Yii::powered() ?></p>
+    <div class="w3-container ">
+        <p class="w3-center" style="color: #0D3349">Synpgotech Engineering LLC&copy; <?= date('Y') ?></p>
+        <p class="w3-center" style="color: #0D3349"><?= Yii::powered(). ' on Server ' . $_SERVER['SERVER_SOFTWARE'] ?></p>
+        <p class="w3-center" style="color: #0D3349"><?= 'php: ' . phpversion() ?></p>
     </div>
 </footer>
 

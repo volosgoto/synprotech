@@ -13,6 +13,7 @@ use app\components\NavbarWidget;
 use app\components\ContactFormWidget;
 use \app\components\FooterWidget;
 use app\widgets\Alert;
+use yii\debug;
 
 
 AppAsset::register($this);
@@ -51,6 +52,9 @@ AppAsset::register($this);
 
 <?= NavbarWidget::widget()?>
 
+<pre>
+<?= print_r($_SERVER) ?>
+</pre>
 
 
 <!--Content-->
