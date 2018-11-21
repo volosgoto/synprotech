@@ -12,7 +12,7 @@ use yii\filters\VerbFilter;
 /**
  * ReferencesController implements the CRUD actions for References model.
  */
-class ReferencesController extends Controller
+class ReferencesController extends MainAdminController
 {
     /**
      * {@inheritdoc}

@@ -12,7 +12,7 @@ use yii\filters\VerbFilter;
 /**
  * CategoriesTranslationController implements the CRUD actions for CategoriesTranslation model.
  */
-class CategoriesTranslationController extends Controller
+class CategoriesTranslationController extends MainAdminController
 {
     /**
      * {@inheritdoc}

@@ -12,7 +12,7 @@ use yii\filters\VerbFilter;
 /**
  * CategoriesController implements the CRUD actions for Categories model.
  */
-class CategoriesController extends Controller
+class CategoriesController extends MainAdminController
 {
     /**
      * {@inheritdoc}
@@ -37,7 +37,6 @@ class CategoriesController extends Controller
     {
         $searchModel = new CategoriesSerch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
-
         return $this->render('index', [
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,

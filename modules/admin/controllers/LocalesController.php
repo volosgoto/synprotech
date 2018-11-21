@@ -12,7 +12,7 @@ use yii\filters\VerbFilter;
 /**
  * LocalesController implements the CRUD actions for Locales model.
  */
-class LocalesController extends Controller
+class LocalesController extends MainAdminController
 {
     /**
      * {@inheritdoc}
