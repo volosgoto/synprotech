@@ -8,8 +8,8 @@ use app\models\UserSerch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
-use app\models\UploadImage;
 use yii\web\UploadedFile;
+use app\models\ImageUpload;
 
 /**
  * UsersController implements the CRUD actions for User model.
@@ -127,7 +127,16 @@ class UsersController extends MainAdminController
         throw new NotFoundHttpException('The requested page does not exist.');
     }
 
+    public function actionSetImage($id){
+        $model = new ImageUpload();
 
+        if(Yii::$app->request->isPost){
+            $model->image = UploadedFile::getInstance($model, 'image');
+            $model->upload();
+            return $this->render('image', ['model' => $model]);
+        }
+        return $this->render('image', ['model' => $model]);
+    }
 
 
 }

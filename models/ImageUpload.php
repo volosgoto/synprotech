@@ -15,7 +15,8 @@ use yii\base\Model;
 use yii\web\UploadedFile;
 use Yii;
 
-class UploadImage extends Model {
+class ImageUpload extends Model {
+
     public $image;
 
     public function rules(){
@@ -24,13 +25,7 @@ class UploadImage extends Model {
         ];
     }
 
-//    public function upload(){
-//        if($this->validate()){
-//            $this->image->saveAs("uploads/{$this->image->baseName}.{$this->image->extension}");
-//        }else{
-//            return false;
-//        }
-//    }
+
 
 
     public function upload()
