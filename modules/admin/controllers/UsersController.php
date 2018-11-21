@@ -129,13 +129,5 @@ class UsersController extends MainAdminController
 
 
 
-    public function actionUpload(){
-        $model = new UploadImage();
-        if(Yii::$app->request->isPost){
-            $model->image = UploadedFile::getInstance($model, 'image');
-            $model->upload();
-            return $this->render('upload', ['model' => $model]);
-        }
-        return $this->render('@app/modules/admin/views/upload/upload.php', ['model' => $model]);
-    }
+
 }

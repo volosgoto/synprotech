@@ -13,7 +13,7 @@ namespace app\models;
 
 use yii\base\Model;
 use yii\web\UploadedFile;
-
+use Yii;
 
 class UploadImage extends Model {
     public $image;
@@ -36,7 +36,7 @@ class UploadImage extends Model {
     public function upload()
     {
         if ($this->validate()) {
-            $this->image->saveAs('uploads/' . $this->image->baseName . '.' . $this->image->extension);
+            $this->image->saveAs(Yii::getAlias('@app' ) . '/web/images/uploads/' . $this->image->baseName . '.' . $this->image->extension);
             return true;
         } else {
             return false;

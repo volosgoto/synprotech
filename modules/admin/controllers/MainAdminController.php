@@ -23,8 +23,8 @@ class MainAdminController extends Controller{
         if(Yii::$app->request->isPost){
             $model->image = UploadedFile::getInstance($model, 'image');
             $model->upload();
-            return true;
+            return $this->render('upload', ['model' => $model]);
         }
-        return $this->render('upload', ['model' => $model]);
+        return $this->render('@app/modules/admin/views/upload/upload.php', ['model' => $model]);
     }
 }

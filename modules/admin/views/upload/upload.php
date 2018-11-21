@@ -1,11 +1,10 @@
 <?php
 use yii\widgets\ActiveForm;
+use yii\helpers\Html;
 ?>
 
 <?php if($model->image): ?>
-<!--    <img src="/uploads/--><?//= $model->image?><!--" alt="">-->
-    <?= Html::img('@web/images/uploads/' . ${$model->image}, ['class'=>'w3-image', 'alt' => ''])?>
-
+    <?= Html::img('@web/images/uploads/' . $model->image->name, ['class'=>'w3-image', 'alt' => ''])?>
 <?php endif; ?>
 
 <?php $form = ActiveForm::begin(['options' => ['enctype' => 'multipart/form-data']]) ?>
