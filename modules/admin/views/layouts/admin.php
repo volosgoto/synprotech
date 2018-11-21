@@ -417,23 +417,20 @@ AppAsset::register($this);
     }
 
 </script>
-
-
-
 </div>
 
-<footer class="footer">
-    <div class="w3-container ">
-        <p class="w3-center" style="color: #0D3349">Synpgotech Engineering LLC&copy; <?= date('Y') ?></p>
-        <p class="w3-center" style="color: #0D3349"><?= Yii::powered(). ' on Server ' . $_SERVER['SERVER_SOFTWARE'] ?></p>
-        <p class="w3-center" style="color: #0D3349"><?= 'php: ' . phpversion() ?></p>
-    </div>
+<!-- footer -->
+<div class="container w3-threequarter w3-right">
+    <footer class="footer">
+        <div class="w3-container ">
+            <p class="w3-center" style="color: #0D3349">Synpgotech Engineering LLC&copy; <?= date('Y') ?></p>
+            <p class="w3-center" style="color: #0D3349"><?= Yii::powered(). ' on Server ' . $_SERVER['SERVER_SOFTWARE'] ?></p>
+            <p class="w3-center" style="color: #0D3349"><?= 'php: ' . phpversion() ?></p>
+        </div>
 </footer>
-
+</div>
+<!-- footer end-->
 <?php $this->endBody() ?>
-
-            <div/>
 </body>
-
-    </html>
+</html>
 <?php $this->endPage() ?>

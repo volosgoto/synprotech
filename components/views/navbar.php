@@ -11,6 +11,8 @@ use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
 use app\assets\AppAsset;
 use app\components\NavbarWidget;
+use yii\web\NotFoundHttpException;
+
 
 AppAsset::register($this);
 ?>
@@ -36,13 +38,26 @@ AppAsset::register($this);
     <div class="inner-box-3">
 
         <div class="w3-mobile w3-right w3-margin-right w3-text-gray">
-            <a href="<?= Url::home()?>" class="w3-bar-item w3-button w3-hide-small w3-hover-blue-gray"><b>Home</b></a>
+            <a href="<?= Url::toRoute(['/'])?>" class="w3-bar-item w3-button w3-hide-small w3-hover-blue-gray"><b>Home</b></a>
             <a href="<?= Url::toRoute('/#services');?>" class="w3-bar-item w3-button w3-hide-small w3-hover-blue-gray"><b>Services</b></a>
             <a href="<?= Url::toRoute('partners/index');?>" class="w3-bar-item w3-button w3-hide-small w3-hover-blue-gray"><b>Partners</b></a>
             <a href="<?= Url::toRoute('site/contact');?>" class="w3-bar-item w3-button w3-hide-small w3-hover-blue-gray"><b>Contact us</b></a>
             <a href="<?= Url::toRoute('reference/index');?>" class="w3-bar-item w3-button w3-hide-small w3-hover-blue-gray"><b>Reference list</b></a>
             <a href="<?= Url::toRoute('site/download');?>" class="w3-bar-item w3-button w3-hide-small w3-hover-blue-gray"><b>Download</b></a>
-<!--            <a class="booklet-download w3-bar-item w3-button w3-hide-small w3-hover-blue-gray" href="download?url=download/Booklet_Synprotech_ LLC_nov_2018.pdf"><b>Download</b></a>-->
+            <a href="<?= Url::toRoute('site/download');?>" class="">
+                <b>
+                <?php if (!Yii::$app->user->isGuest): ?>
+                    <?= Html::beginForm(['/auth/logout'], 'post')
+                    . Html::a('Admin panel', '/admin', ['class' => 'w3-bar-item w3-button w3-hide-small w3-hover-blue-gray', 'style' => ""])
+                    . Html::submitButton(
+                        'Logout (' . Yii::$app->user->identity->name . ')',
+                        ['class' => 'w3-bar-item w3-button w3-hide-small w3-hover-blue-gray', 'style' => ""]
+                    )
+                    . Html::endForm() ?>
+                <?php endif; ?>
+                </b>
+            </a>
+            <!--            <a class="booklet-download w3-bar-item w3-button w3-hide-small w3-hover-blue-gray" href="download?url=download/Booklet_Synprotech_ LLC_nov_2018.pdf"><b>Download</b></a>-->
             <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="accondionFunction('toggle-menu')"><i class="fa fa-bars"></i></a>
             <a id="btn-lang" class="w3-bar-item w3-button w3-hide-small w3-hover-blue-gray" href=""><i class="fa fa-angle-right"></i>Ru</a>
             <!-- <a id="btn-lang" href="" class= "w3-bar-item w3-hide-small w3-hover-blue-gray">ru</a> -->

@@ -31,7 +31,7 @@ AppAsset::register($this);
             'method' => 'post',
             'fieldConfig' => [],
         ]); ?>
-        <?= $form->field($model, 'name')->textInput(['autofocus' => true]) ?>
+        <?= $form->field($model, 'name')->textInput() ?>
         <?= $form->field($model, 'email')->textInput() ?>
         <?= $form->field($model, 'subject')->textInput() ?>
         <?= $form->field($model, 'body')->textArea(['rows' => 6]) ?>
