@@ -124,4 +124,9 @@ class ServicesTranslationController extends MainAdminController
 
         throw new NotFoundHttpException('The requested page does not exist.');
     }
+
+
+    public function actionSetImage($id){
+        parent::actionSetImage($id);
+    }
 }

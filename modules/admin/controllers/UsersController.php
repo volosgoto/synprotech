@@ -128,14 +128,7 @@ class UsersController extends MainAdminController
     }
 
     public function actionSetImage($id){
-        $model = new ImageUpload();
-
-        if(Yii::$app->request->isPost){
-            $model->image = UploadedFile::getInstance($model, 'image');
-            $model->upload();
-            return $this->render('image', ['model' => $model]);
-        }
-        return $this->render('image', ['model' => $model]);
+       return parent::actionSetImage($id);
     }
 
 
