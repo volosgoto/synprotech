@@ -134,19 +134,16 @@ class UsersController extends MainAdminController
     public function actionSetImage($id){
         $model = new ImageUpload();
         $user = $this->findModel($id);
-
         $view= Yii::$app->controller->action->id;
 
         if(Yii::$app->request->isPost){
             $model->image = UploadedFile::getInstance($model, 'image');
             $fileName = $model->image;
-
-//            debug($fileName, 'from IF'); die;
             $model->upload($fileName);
             $user->saveImage($fileName);
+
             return $this->render($view, ['model' => $model]);
         }
-//        debug($model, 'else');
         return $this->render($view, ['model' => $model]);
     }
 
