@@ -127,8 +127,27 @@ class UsersController extends MainAdminController
         throw new NotFoundHttpException('The requested page does not exist.');
     }
 
+//    public function actionSetImage($id){
+//       return parent::actionSetImage($id);
+//    }
+
     public function actionSetImage($id){
-       return parent::actionSetImage($id);
+        $model = new ImageUpload();
+        $user = $this->findModel($id);
+
+        $view= Yii::$app->controller->action->id;
+
+        if(Yii::$app->request->isPost){
+            $model->image = UploadedFile::getInstance($model, 'image');
+            $fileName = $model->image;
+
+//            debug($fileName, 'from IF'); die;
+            $model->upload($fileName);
+            $user->saveImage($fileName);
+            return $this->render($view, ['model' => $model]);
+        }
+//        debug($model, 'else');
+        return $this->render($view, ['model' => $model]);
     }
 
 
