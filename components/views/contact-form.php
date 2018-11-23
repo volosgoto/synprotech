@@ -22,8 +22,6 @@ AppAsset::register($this);
                 <h2 class="w3-margin-top"><?= Html::encode($this->title) ?></h2>
             </div>
 
-
-
         <?php $form = ActiveForm::begin([
             'id' => 'email-form',
             'options' => ['class' => 'w3-container w3-padding-xlarge'], /* класс формы */
