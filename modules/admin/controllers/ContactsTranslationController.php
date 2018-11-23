@@ -8,6 +8,8 @@ use app\models\ContactsTranslationSerch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\web\UploadedFile;
+use app\models\ImageUpload;
 
 /**
  * ContactsTranslationController implements the CRUD actions for ContactsTranslation model.
