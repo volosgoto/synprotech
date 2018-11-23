@@ -19,15 +19,4 @@ use yii\web\UploadedFile;
 
 class MainAdminController extends Controller{
 
-    public function actionSetImage($id){
-        $model = new ImageUpload();
-        $view= Yii::$app->controller->action->id;
-
-        if(Yii::$app->request->isPost){
-            $model->image = UploadedFile::getInstance($model, 'image');
-            $model->upload();
-            return $this->render($view, ['model' => $model]);
-        }
-        return $this->render($view, ['model' => $model]);
-    }
 }

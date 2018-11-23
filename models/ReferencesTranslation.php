@@ -59,4 +59,15 @@ class ReferencesTranslation extends \yii\db\ActiveRecord
             'customer_body' => 'Customer Body',
         ];
     }
+
+
+    public function saveImage($file){ // Object
+        $prefix = Yii::$app->security->generateRandomString(4); // Prefix to exclude rewrite file
+
+        if ($file->error == 0) {
+            $this->image = $prefix . $file->name;
+            $this->save();
+        }
+        return false;
+    }
 }

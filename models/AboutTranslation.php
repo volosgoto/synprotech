@@ -55,4 +55,15 @@ class AboutTranslation extends \yii\db\ActiveRecord
             'body_text' => 'Body Text',
         ];
     }
+
+
+    public function saveImage($file){ // Object
+        $prefix = Yii::$app->security->generateRandomString(4); // Prefix to exclude rewrite file
+
+        if ($file->error == 0) {
+            $this->image = $prefix . $file->name;
+            $this->save();
+        }
+        return false;
+    }
 }

@@ -30,10 +30,13 @@ class ImageUpload extends Model {
     public function upload(UploadedFile $file)
     {
         if ($this->validate()) {
-            $file->saveAs(Yii::getAlias('@app' ) . '/web/images/uploads/' . $file->baseName . '.' . $file->extension);
-
+           $file->saveAs(Yii::getAlias('@app' ) . '/web/images/uploads/' . 'upload' . $file->baseName . '.' . $file->extension);
             return true;
         }
         return false;
     }
+
+
+
+
 }

@@ -124,4 +124,21 @@ class PartnersTranslationController extends MainAdminController
 
         throw new NotFoundHttpException(Yii::t('app', 'The requested page does not exist.'));
     }
+
+
+    public function actionSetImage($id){
+        $model = new ImageUpload();
+        $partners = $this->findModel($id);
+        $view= Yii::$app->controller->action->id;
+
+        if(Yii::$app->request->isPost){
+            $model->image = UploadedFile::getInstance($model, 'image');
+            $fileName = $model->image;
+            $model->upload($fileName);
+            $partners->saveImage($fileName);
+
+            return $this->render($view, ['model' => $model]);
+        }
+        return $this->render($view, ['model' => $model]);
+    }
 }

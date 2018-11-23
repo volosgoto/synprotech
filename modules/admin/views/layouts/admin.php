@@ -115,7 +115,7 @@ AppAsset::register($this);
 
         <button class="w3-button w3-block w3-left-align" onclick="myAccFunc(services)"><i class="fa fa-users fa-fw"></i> Services edit <i class="fa fa-caret-down"></i></button>
         <div id="services" class="w3-bar-block w3-hide w3-white w3-card-4">
-            <a href="<?= Url::toRoute(['services/index'])?>" class="w3-bar-item w3-button w3-dark-gray">Partners</a>
+            <a href="<?= Url::toRoute(['services/index'])?>" class="w3-bar-item w3-button w3-dark-gray">Services</a>
             <a href="<?= Url::toRoute(['services-translation/index'])?>" class="w3-bar-item w3-button w3-dark-gray">Services Translation</a>
         </div>
     </div>

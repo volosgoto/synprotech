@@ -2,12 +2,14 @@
 
 namespace app\modules\admin\controllers;
 
+use app\models\ImageUpload;
 use Yii;
 use app\models\CategoriesTranslation;
 use app\models\CategoriesTranslationSerch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\web\UploadedFile;
 
 /**
  * CategoriesTranslationController implements the CRUD actions for CategoriesTranslation model.
@@ -123,5 +125,22 @@ class CategoriesTranslationController extends MainAdminController
         }
 
         throw new NotFoundHttpException(Yii::t('app', 'The requested page does not exist.'));
+    }
+
+
+    public function actionSetImage($id){
+        $model = new ImageUpload();
+        $categories = $this->findModel($id);
+        $view= Yii::$app->controller->action->id;
+
+        if(Yii::$app->request->isPost){
+            $model->image = UploadedFile::getInstance($model, 'image');
+            $fileName = $model->image;
+            $model->upload($fileName);
+            $categories->saveImage($fileName);
+
+            return $this->render($view, ['model' => $model]);
+        }
+        return $this->render($view, ['model' => $model]);
     }
 }

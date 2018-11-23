@@ -131,6 +131,22 @@ class UsersController extends MainAdminController
 //       return parent::actionSetImage($id);
 //    }
 
+//    public function actionSetImage($id){
+//        $model = new ImageUpload();
+//        $user = $this->findModel($id);
+//        $view= Yii::$app->controller->action->id;
+//
+//        if(Yii::$app->request->isPost){
+//            $model->image = UploadedFile::getInstance($model, 'image');
+//            $fileName = $model->image;
+//            $model->upload($fileName);
+//            $user->saveImage($fileName);
+//
+//            return $this->render($view, ['model' => $model]);
+//        }
+//        return $this->render($view, ['model' => $model]);
+//    }
+
     public function actionSetImage($id){
         $model = new ImageUpload();
         $user = $this->findModel($id);
@@ -146,6 +162,5 @@ class UsersController extends MainAdminController
         }
         return $this->render($view, ['model' => $model]);
     }
-
 
 }
