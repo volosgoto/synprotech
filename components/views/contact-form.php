@@ -39,8 +39,6 @@ AppAsset::register($this);
             <?= Html::submitButton('Submit', ['class' => 'w3-button w3-black w3-large w3-hover-blue-gray', 'name' => 'contact-button']) ?>
         </div>
         <?php ActiveForm::end(); ?>
-
-
         </div>
     </div>
 </section>

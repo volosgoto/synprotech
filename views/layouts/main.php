@@ -52,10 +52,6 @@ AppAsset::register($this);
 
 <?= NavbarWidget::widget()?>
 
-<!--<pre>-->
-<?//= print_r($_SERVER) ?>
-<!--</pre>-->
-
 
 <!--Content-->
 <?= $content ?>
@@ -72,7 +68,9 @@ AppAsset::register($this);
 
 <!--main contact form-->
 <?php
-    if (Yii::$app->response->statusCode == 200) echo ContactFormWidget::widget();
+    $action = Yii::$app->controller->action->id;
+    if (Yii::$app->response->statusCode == 200 && $action != 'signup' && $action != 'login')
+        echo ContactFormWidget::widget();
 ?>
 <!--main contact form ENDS-->
 
