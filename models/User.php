@@ -94,8 +94,29 @@ class User extends \yii\db\ActiveRecord implements IdentityInterface
     }
 
 
-    public function saveImage($fileName){
-        $this->image = $fileName->name;
-        $this->save();
+    public function saveImage($file){ // Object
+        $base = $this->getBaseName($file); // basename
+        $ext = $this ->getFileExstension($file); // exstestion
+
+        if ($file->error == 0) {
+            $this->image = $base . $ext;
+            $this->save();
+        }
+        return false;
     }
+
+
+    public function getBaseName($file){
+        $symbolPposition = strpos($file->name, ".");
+        $baseName = substr($file->name, 0, $symbolPposition);
+        $prefix = Yii::$app->security->generateRandomString(4);
+        return strtolower($prefix . $baseName);
+    }
+
+
+    public function getFileExstension($file){
+        $exstension = strrchr($file->name, ".");
+        return strtolower($exstension);
+    }
+
 }
