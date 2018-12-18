@@ -68,7 +68,13 @@ class UsersController extends MainAdminController
     {
         $model = new User();
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+        if ($model->load(Yii::$app->request->post())) {
+
+            $model->password = Yii::$app->security->generatePasswordHash(
+                $model->password, 5);
+                $model->save();
+
+
             return $this->redirect(['view', 'id' => $model->id]);
         }
 

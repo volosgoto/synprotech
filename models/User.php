@@ -105,6 +105,18 @@ class User extends \yii\db\ActiveRecord implements IdentityInterface
     }
 
 
-
-
+    // public function create()
+    // {
+    //     $model = new User();
+    //         $model->save();
+    //         if($model->save())
+    //         {
+    //             return $this->redirect(['auth/login']);
+    //         }
+    //     return $this->render('signup', ['model'=>$model]);
+    // }
 }
+    
+
+
+
